@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang phát triển — đã kiểm chứng qua nghiên cứu, chọn góc, tạo hook và viết thân bài Facebook dạng ảnh  
 **Phạm vi hiện tại:** nghiên cứu, DNA giọng văn, hook, thân bài/retention, quy trình Facebook dạng ảnh cơ bản. Chưa coi skill là hoàn chỉnh.
@@ -371,7 +371,9 @@ Caption phải có hook mở đầu.
 Sau khi nội dung caption đã đạt:
 
 - chỉnh khoảng trắng;
-- thêm emoji vừa đủ;
+- thêm emoji theo Facebook playbook;
+- mặc định hook caption có ít nhất 1 emoji phù hợp nếu chủ đề cho phép;
+- không mặc định đưa emoji vào chữ trên ảnh;
 - nghiên cứu 5 hashtag phù hợp;
 - rồi mới QA toàn bài.
 
