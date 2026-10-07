@@ -1,9 +1,9 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày:** 07/10/2026  
-**Trạng thái:** Đang phát triển — đã kiểm chứng đến hết khối nghiên cứu  
-**Phạm vi hiện tại:** DNA giọng văn, câu mở đầu, nghiên cứu sự thật, nghiên cứu người đọc, nghiên cứu nội dung cạnh tranh, xác định cơ hội nội dung.
+**Trạng thái:** Đang phát triển — đã kiểm chứng qua nghiên cứu, chọn góc, tạo hook và viết thân bài Facebook dạng ảnh  
+**Phạm vi hiện tại:** nghiên cứu, DNA giọng văn, hook, thân bài/retention, quy trình Facebook dạng ảnh cơ bản. Chưa coi skill là hoàn chỉnh.
 
 ---
 
@@ -21,34 +21,58 @@ Với chủ đề chuyên môn, pháp luật, thuế hoặc kế toán, phải n
 
 # 2. Tài liệu nền
 
-## Luôn dùng khi viết hoặc đánh giá giọng Diệu Tâm
+## DNA thương hiệu
 
 > `docs/brand/ktdt-social-writing-dna.md`
+
+Luôn dùng khi viết hoặc đánh giá nội dung Diệu Tâm.
 
 File này quyết định:
 
 - giọng thương hiệu;
-- mức độ thu hút;
+- mức độ gần gũi;
 - cách giải thích;
+- ranh giới bằng chứng;
 - mức độ bán hàng;
-- cách tạo tương tác;
 - những điều phải tránh.
 
-Không tự tạo một giọng khác nếu không có yêu cầu rõ từ người duyệt.
-
-## Dùng khi tạo hoặc đánh giá phần mở đầu
+## Câu mở đầu
 
 > `docs/content/ktdt-hook-language-psychology.md`
 
-File này quyết định:
+Khi tạo hoặc đánh giá hook, **phải áp dụng đồng thời DNA + file hook**.
 
-- cách tìm khoảng cách nhận thức;
-- điểm căng;
-- cơ chế tạo lực cho câu mở đầu;
-- cách chống hook lặp và giật gân;
-- cách kiểm tra câu mở đầu bằng bằng chứng.
+Không chỉ đọc file hook riêng.
 
 Không lấy ví dụ trong file làm mẫu câu cố định.
+
+## Thân bài và retention
+
+> `docs/content/ktdt-body-writing-retention.md`
+
+Dùng sau khi hook đã được duyệt để quyết định:
+
+- trả “món nợ” của hook thế nào;
+- dẫn người đọc theo câu hỏi họ muốn biết tiếp;
+- đưa tình huống thật vào bài;
+- tránh văn pháp lý/giáo trình;
+- tránh câu mơ hồ;
+- xưng hô;
+- CTA tự nhiên.
+
+## Facebook dạng ảnh
+
+> `docs/platform/ktdt-facebook-post-playbook.md`
+
+Dùng khi nền tảng đích là Facebook để quyết định:
+
+- 1 ảnh hay 3 ảnh;
+- tách chữ trên ảnh / caption / hashtag;
+- nhịp đọc;
+- khoảng trắng;
+- emoji;
+- hashtag;
+- đóng gói bài có mục tiêu quảng cáo.
 
 ---
 
@@ -264,44 +288,127 @@ Khi hồ sơ có trạng thái:
 
 > **✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
 
-mới được chuyển sang:
+mới được chuyển sang phần sáng tạo.
 
-- mục tiêu nội dung;
+Thứ tự hiện tại:
+
+> **Mục tiêu → góc chính → định dạng → hook → đường giữ người đọc → CTA → viết → đóng gói nền tảng → QA**
+
+## 8.1. Decision lock — quyết định đã duyệt phải được khóa
+
+Khi người duyệt đã chốt một quyết định như:
+
+- đối tượng;
+- mục tiêu;
 - góc chính;
 - định dạng;
-- cơ chế câu mở đầu;
-- đường giữ người xem;
-- lời kêu gọi hành động.
+- hook;
+- CTA;
 
-Nếu cần tạo câu mở đầu ở giai đoạn này, đọc lại:
+thì quyết định đó trở thành **điểm khóa**.
+
+Các bước sau phải kế thừa nguyên trạng.
+
+AI không được tự “tối ưu lại” một điểm đã khóa chỉ vì chuyển sang bước khác.
+
+Chỉ được mở lại khi:
+
+- phát hiện lỗi factual / bằng chứng / an toàn;
+- có lý do rõ ràng cần xem lại;
+- hoặc người duyệt chủ động yêu cầu đổi.
+
+## 8.2. Tạo hook
+
+Trước khi tạo hook, phải đọc và áp dụng đồng thời:
+
+> `docs/brand/ktdt-social-writing-dna.md`
+
+và
 
 > `docs/content/ktdt-hook-language-psychology.md`
 
-và kiểm tra câu mở đầu theo:
+Sau khi hook được duyệt → khóa hook.
 
-> **liên quan + có điểm căng + cụ thể + đáng tin.**
+## 8.3. Viết thân bài
+
+Sau khi hook được khóa, dùng:
+
+> `docs/content/ktdt-body-writing-retention.md`
+
+Luật quan trọng:
+
+> **Hook mở món nợ nào, thân bài trả món nợ đó trước.**
+
+Không thay hook đã duyệt bằng một hook mới trong caption nếu chưa được người duyệt đồng ý.
+
+## 8.4. Nếu nền tảng là Facebook
+
+Đọc:
+
+> `docs/platform/ktdt-facebook-post-playbook.md`
+
+Mặc định đưa hai lựa chọn creative:
+
+- **1 ảnh**
+- **3 ảnh**
+
+AI khuyến nghị; người duyệt chốt.
+
+Số ảnh dựa trên số bước nhận thức người xem cần đi qua, không dựa trên lượng thông tin bài có.
+
+Khi đã chốt format, khóa format.
+
+## 8.5. Đóng gói Facebook
+
+Output tách riêng:
+
+1. chữ trên ảnh;
+2. caption;
+3. hashtag.
+
+Caption phải có hook mở đầu.
+
+Sau khi nội dung caption đã đạt:
+
+- chỉnh khoảng trắng;
+- thêm emoji vừa đủ;
+- nghiên cứu 5 hashtag phù hợp;
+- rồi mới QA toàn bài.
+
+Hashtag không được tự nghĩ cho đủ số và không được lái ngược nội dung.
 
 ---
 
-# 9. Phạm vi chưa được khóa trong v0.1
+# 9. Phạm vi chưa được khóa trong v0.2
 
-Skill v0.1 **chưa coi các phần sau là quy chuẩn hoàn chỉnh**:
+Skill v0.2 vẫn **chưa phải skill hoàn chỉnh**.
 
-- chọn cách đánh toàn diện;
-- cấu trúc bài theo từng nền tảng;
-- quy chuẩn Facebook/TikTok/Zalo/YouTube;
-- thiết kế carousel;
+Đã có quy chuẩn thử nghiệm cho:
+
+- nghiên cứu;
+- DNA giọng văn;
+- hook;
+- thân bài/retention;
+- Facebook dạng ảnh cơ bản.
+
+Chưa coi các phần sau là quy chuẩn hoàn chỉnh:
+
+- TikTok;
+- Zalo;
+- YouTube;
 - video;
-- hình ảnh;
-- quảng cáo;
-- kiểm định nội dung cuối;
-- học từ dữ liệu sau đăng.
+- thiết kế hình ảnh thực tế;
+- quảng cáo ở cấp campaign / ad set / placement;
+- đo hiệu quả creative sau chạy;
+- QA cuối toàn diện;
+- học từ dữ liệu sau đăng;
+- quy chuẩn hashtag sau khi có dữ liệu thực tế.
 
-Nếu phải làm các phần này trong lúc skill chưa hoàn thiện:
+Nếu phải làm phần chưa khóa:
 
 - dùng nguyên tắc đã được phê duyệt;
 - nói rõ đâu là phần đang thử nghiệm;
-- không tự biến một cách làm tạm thời thành quy tắc lâu dài.
+- không biến một cách làm tạm thời thành quy tắc lâu dài.
 
 ---
 
@@ -332,4 +439,4 @@ Không để tối ưu lượt xem làm suy giảm:
 
 # 11. Câu căn chỉnh cho AI
 
-> **Đừng vội viết. Hãy chắc sự thật, hiểu đúng người đọc, nhìn đúng cạnh tranh và tìm đúng khoảng trống trước. Chỉ khi biết Diệu Tâm có điều gì đáng nói hơn, mới bắt đầu chọn cách đánh.**
+> **Đừng vội viết. Hãy chắc sự thật, hiểu đúng người đọc và chốt từng quyết định theo thứ tự. Một quyết định đã được duyệt thì phải giữ. Khi viết, nói với một người thật trong một tình huống thật; hook mở câu hỏi nào thì thân bài trả câu hỏi đó sớm; nền tảng nào thì đóng gói đúng hành vi của nền tảng đó.**
