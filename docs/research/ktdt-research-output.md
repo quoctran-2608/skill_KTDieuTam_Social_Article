@@ -46,11 +46,11 @@ Khi viết “Điều đã chắc” hoặc một kết luận quan trọng, g�
 
 ---
 
-# 4. Cấu trúc đầu ra bắt buộc
+# 3. Cấu trúc đầu ra bắt buộc
 
 Mỗi hồ sơ nghiên cứu phải có đủ 14 mục sau.
 
-## 2.1. Sự thật trung tâm
+## 3.1. Sự thật trung tâm
 
 Một câu trung tính, không quảng cáo:
 
@@ -60,11 +60,11 @@ Ví dụ dạng:
 
 > “Nghị quyết đã xác lập quyền lợi X cho kỳ Y, nhưng thủ tục thực hiện chi tiết Z chưa được ban hành chính thức.”
 
-Không viết hook ở mục này.
+Không viết câu mở đầu ở mục này.
 
 ---
 
-## 2.2. Điều đã chắc
+## 3.2. Điều đã chắc
 
 Liệt kê ngắn:
 
@@ -81,7 +81,7 @@ Mỗi ý phải có nguồn nội bộ đi kèm trong hồ sơ làm việc.
 
 ---
 
-## 2.3. Điều chưa được phép khẳng định
+## 3.3. Điều chưa được phép khẳng định
 
 Liệt kê rõ:
 
@@ -95,7 +95,7 @@ Liệt kê rõ:
 
 ---
 
-## 2.4. Người đọc chính
+## 3.4. Người đọc chính
 
 Chọn **một nhóm chính**.
 
@@ -113,7 +113,7 @@ Mô tả:
 
 ---
 
-## 2.5. Người đọc phụ
+## 3.5. Người đọc phụ
 
 Chỉ ghi nếu thật sự cần.
 
@@ -129,7 +129,7 @@ Không để người đọc phụ làm loãng bài chính.
 
 ---
 
-## 2.6. Người đọc đang nghĩ gì
+## 3.6. Người đọc đang nghĩ gì
 
 Viết dưới dạng câu tự nhiên:
 
@@ -139,7 +139,7 @@ Viết dưới dạng câu tự nhiên:
 
 ---
 
-## 2.7. Điều họ cần biết
+## 3.7. Điều họ cần biết
 
 Viết:
 
@@ -149,7 +149,7 @@ Phần này phải tạo ra khoảng cách nhận thức.
 
 ---
 
-## 2.8. Khoảng cách nhận thức
+## 3.8. Khoảng cách nhận thức
 
 Tóm tắt:
 
@@ -162,7 +162,7 @@ Nếu không có khoảng cách rõ:
 
 ---
 
-## 2.9. Điểm căng
+## 3.9. Điểm căng
 
 Chọn 1 điểm căng chính, tối đa 2.
 
@@ -181,7 +181,7 @@ Có thể thuộc các nhóm:
 
 ---
 
-## 2.10. Câu hỏi thật của người đọc
+## 3.10. Câu hỏi thật của người đọc
 
 Ghi 3–7 câu hỏi:
 
@@ -200,7 +200,7 @@ Không trình bày giả thuyết như dữ liệu thật.
 
 ---
 
-## 2.11. Nội dung đã bão hòa
+## 3.11. Nội dung đã bão hòa
 
 Nêu rõ:
 
@@ -215,7 +215,7 @@ Mục tiêu:
 
 ---
 
-## 2.12. Khoảng trống nội dung quan sát được
+## 3.12. Khoảng trống nội dung quan sát được
 
 Phải viết thành câu rõ ràng:
 
@@ -237,7 +237,7 @@ Có thể là:
 
 ---
 
-## 2.13. Cơ hội của Diệu Tâm
+## 3.13. Cơ hội của Diệu Tâm
 
 Viết một câu:
 
@@ -252,7 +252,7 @@ và giải thích ngắn:
 
 ---
 
-## 2.14. Lời hứa nội dung khả thi
+## 3.14. Lời hứa nội dung khả thi
 
 Hoàn thành:
 
