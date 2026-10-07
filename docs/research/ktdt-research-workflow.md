@@ -1,6 +1,6 @@
 # QUY TRÌNH NGHIÊN CỨU NỘI DUNG MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Quy trình bắt buộc để biến một chủ đề kế toán – thuế – doanh nghiệp thành một cơ hội nội dung đủ chắc trước khi chọn cách đánh và viết bài.
@@ -218,8 +218,6 @@ Bước này phải tuân theo:
 
 > `docs/research/ktdt-platform-competitor-research.md`
 
-nếu file đó đã tồn tại.
-
 ## Nguyên tắc nền tảng
 
 > **Nghiên cứu thông tin ở nơi thông tin đáng tin nhất.  
@@ -229,6 +227,8 @@ Facebook → nghiên cứu Facebook.
 TikTok → nghiên cứu TikTok.  
 YouTube → nghiên cứu YouTube.  
 Zalo → nghiên cứu Zalo.
+
+**Không mặc định phải nghiên cứu đủ cả bốn nền tảng.** Chỉ nghiên cứu nền tảng dự kiến đăng hoặc những nền tảng thật sự cần để so sánh. Nếu một nội dung sẽ triển khai đa nền tảng, phải tách dữ liệu và kết luận theo từng nền tảng, không trộn chung.
 
 Không lấy:
 
@@ -269,7 +269,7 @@ Nếu nền tảng không cho đủ dữ liệu:
 Không được:
 
 - suy lượt xem;
-- suy mức độ viral;
+- suy mức độ lan truyền;
 - dùng Google để giả làm dữ liệu TikTok;
 - kết luận quảng cáo hiệu quả chỉ vì thấy nó trong thư viện quảng cáo;
 - điền nhận định cho đủ bảng.
@@ -291,6 +291,8 @@ Chỉ sang bước 4 khi có đủ căn cứ để nói:
 > **“Nếu Diệu Tâm làm giống phần lớn nội dung hiện có, bài sẽ không có lý do đủ mạnh để tồn tại.”**
 
 và chỉ ra được ít nhất một hướng khác biệt hợp lý.
+
+Nếu mẫu quan sát còn nhỏ, phải gọi đó là **khoảng trống quan sát được / giả thuyết khoảng trống**, không được gọi chắc chắn là “khoảng trống của toàn thị trường”.
 
 ---
 
@@ -353,7 +355,17 @@ nếu nội dung chỉ có thể giúp người đọc hiểu hoặc tự kiểm
 
 ---
 
-# 7. Điều kiện kết thúc nghiên cứu
+# 7. Chuẩn bàn giao
+
+Kết quả cuối cùng phải được đóng gói theo:
+
+> `docs/research/ktdt-research-output.md`
+
+Không tự tạo một cấu trúc bàn giao khác nếu không có lý do rõ ràng.
+
+---
+
+# 8. Điều kiện kết thúc nghiên cứu
 
 Nghiên cứu chỉ được kết thúc khi có đủ:
 
@@ -382,7 +394,7 @@ Khi thiếu phần có thể làm sai hướng:
 
 ---
 
-# 8. Những lỗi nghiên cứu phải tránh
+# 9. Những lỗi nghiên cứu phải tránh
 
 Không được:
 
@@ -399,7 +411,7 @@ Không được:
 
 ---
 
-# 9. Nguyên tắc bàn giao sang bước chọn cách đánh
+# 10. Nguyên tắc bàn giao sang bước chọn cách đánh
 
 Khối nghiên cứu không quyết định:
 
@@ -419,12 +431,12 @@ Bước **chọn cách đánh** mới quyết định:
 - mục tiêu nội dung;
 - góc chính;
 - định dạng;
-- cơ chế hook;
+- cơ chế câu mở đầu;
 - đường giữ người xem;
 - lời kêu gọi hành động.
 
 ---
 
-# 10. Câu căn chỉnh cho AI
+# 11. Câu căn chỉnh cho AI
 
 > **Đừng vội hỏi “viết gì cho hay”. Hãy làm rõ trước: điều gì là sự thật, ai thật sự quan tâm, họ đang hiểu thiếu ở đâu, người khác đã nói gì và Diệu Tâm còn điều gì đáng nói hơn.**
