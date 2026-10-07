@@ -1,6 +1,6 @@
 # DNA GIỌNG VĂN MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.4  
+**Phiên bản:** 0.5  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Facebook, TikTok, Zalo, YouTube
@@ -37,6 +37,20 @@ Giọng phải:
 - thực tế;
 - đi thẳng vào vấn đề;
 - tôn trọng người đọc.
+
+Đúng và dễ hiểu chưa đủ.
+
+> **Nội dung Diệu Tâm cần có cảm giác đang nói với một người thật trong một tình huống thật.**
+
+Không “thêm cảm xúc” bằng tính từ. Hãy đặt người đọc vào đúng hoàn cảnh của họ rồi mới giải thích:
+
+- họ vừa làm gì;
+- đang nhìn con số nào;
+- đang lo điều gì;
+- đang tự hỏi câu gì;
+- cần quyết định gì tiếp theo.
+
+Cảm xúc phải đi ra từ **tình huống thật, tiền thật, thời hạn thật, hồ sơ thật hoặc câu hỏi thật**.
 
 Không được có cảm giác:
 
@@ -87,6 +101,12 @@ Nếu cần thuật ngữ:
 - chỉ dùng khi thực sự cần;
 - giải thích ngay;
 - không dùng để chứng minh chuyên môn.
+
+Không để người đọc phải tự điền nghĩa vào các từ chung chung như “liên quan”, “xử lý”, “trường hợp”, “vấn đề này”, “đang ở đâu” nếu có thể nói rõ **khoản nào, thời điểm nào, đối tượng nào hoặc hành động nào** mà câu không trở nên nặng hơn.
+
+Nguyên tắc:
+
+> **Nếu người đọc có thể hỏi “cụ thể là gì?”, hãy nói cụ thể ngay khi có thể.**
 
 ---
 
@@ -215,16 +235,17 @@ Không xuất bản nếu nội dung:
 
 # 7. Kiểm nhanh trước khi duyệt
 
-Chỉ cần hỏi 6 câu:
+Chỉ cần hỏi 7 câu:
 
-1. Đúng người có hiểu ngay bài này liên quan gì tới mình không?
+1. Đúng người có thấy mình trong một tình huống thật của bài không?
 2. Câu chữ có chỗ nào mạnh hơn bằng chứng không?
-3. Người không chuyên có hiểu ý chính không?
-4. Phần thân có tiến về phía trước, không lặp không?
-5. Người đọc nhận được giá trị gì nếu không mua dịch vụ?
-6. Bỏ logo đi, bài này có còn rõ, thực tế và đáng tin không?
+3. Có từ nào khiến người đọc phải đoán “cụ thể là gì?” không?
+4. Người không chuyên có hiểu ý chính không?
+5. Phần thân có tiến về phía trước, không lặp không?
+6. Người đọc nhận được giá trị gì nếu không mua dịch vụ?
+7. Bỏ logo đi, bài này có còn rõ, thực tế và đáng tin không?
 
-Nếu câu 1, 2 hoặc 5 không đạt → chưa duyệt.
+Nếu câu 1, 2, 3 hoặc 6 không đạt → chưa duyệt.
 
 ---
 
@@ -244,7 +265,7 @@ Không đưa kỹ thuật câu mở đầu chi tiết trở lại DNA.
 
 # 9. Câu căn giọng cho AI
 
-> **Nói như một người có chuyên môn đang giải thích một việc thật cho khách hàng: ngắn, rõ, cụ thể, hữu ích và không mạnh hơn bằng chứng.**
+> **Nói như một người có chuyên môn đang giải thích một việc thật cho một người thật trong đúng hoàn cảnh của họ: rõ, cụ thể, hữu ích, có hơi người và không mạnh hơn bằng chứng.**
 
 ---
 
