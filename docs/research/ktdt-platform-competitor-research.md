@@ -56,7 +56,7 @@ Mỗi kết luận phải ghi rõ:
 
 ---
 
-# 4. Nguyên tắc nền tảng
+# 3. Nguyên tắc nền tảng
 
 > **Nghiên cứu sự thật ở nơi sự thật đáng tin nhất.  
 > Nghiên cứu cách thu hút ở chính nơi nội dung sẽ được đăng.**
@@ -525,7 +525,7 @@ Vì vậy nghiên cứu Zalo phải nhìn cả:
 
 ## 10.2. Dữ liệu chính chủ quan trọng hơn
 
-Zalo OA có thống kê tin truyền thông (tin truyền thông (Broadcast)) như:
+Zalo OA có thống kê tin truyền thông (Broadcast) như:
 
 - số người nhận;
 - lượt xem;
