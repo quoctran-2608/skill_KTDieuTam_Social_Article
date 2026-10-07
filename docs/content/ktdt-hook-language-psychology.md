@@ -1,633 +1,290 @@
-# QUY CHUẨN SÁNG TẠO HOOK MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
+# QUY CHUẨN CÂU MỞ ĐẦU MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
-**Vai trò:** Tài liệu chuyên sâu để tạo câu mở đầu và phần mở đầu có sức hút cho Facebook, TikTok, Zalo, YouTube. Không thay thế DNA giọng văn.
+**Vai trò:** Giúp AI tìm và viết phần mở đầu ngắn, tự nhiên, có lực nhưng vẫn đúng bằng chứng.
 
 ---
 
 # 1. Mục tiêu
 
-Hook của Diệu Tâm không phải để “giật”.
+Một câu mở đầu tốt phải khiến đúng người có phản xạ:
 
-Hook phải khiến đúng người đọc có phản xạ:
+> **“Khoan, chuyện này liên quan đến mình — và mình muốn biết tiếp.”**
 
-> **“Khoan, chuyện này giống tình huống của mình — nhưng có vẻ còn một điều mình đang nhìn chưa đúng.”**
+Không cần thể hiện hết chuyên môn ở câu đầu.
 
-Một hook đạt phải có đủ bốn yếu tố:
+Không cần tóm tắt toàn bài.
 
-> **Liên quan → Có điểm căng → Cụ thể → Đáng tin**
+Luật lõi:
 
-Nếu thiếu một trong bốn, hook thường rơi vào một trong ba lỗi:
-
-- đúng nhưng nhạt;
-- kích thích nhưng mơ hồ;
-- mạnh nhưng mất niềm tin.
+> **Mâu thuẫn thật + chi tiết vừa đủ + câu chữ tự nhiên.**
 
 ---
 
-# 2. Định nghĩa hook chuẩn Diệu Tâm
+# 2. Ba việc phải biết trước khi viết
 
-Hook chuẩn Diệu Tâm là cách đưa ra **một sự thật đáng chú ý có liên quan trực tiếp tới người đọc**, thường nằm trong khoảng cách giữa:
+Trước khi nghĩ câu chữ, chỉ cần chốt 3 thứ:
 
-> **Điều họ đang tin / đang yên tâm / đang làm theo thói quen**
+### 1. Người đọc đang nghĩ gì?
 
-và
+> “Họ có thể đang nghĩ: …”
 
-> **Điều họ thực sự cần biết để tránh hiểu sai, quyết định sai hoặc bỏ lỡ một cách làm tốt hơn.**
+### 2. Sự thật nào khiến họ phải nhìn lại?
 
-Hook không được bắt đầu từ “câu chữ hay”.
+> “Điều họ cần biết thêm là: …”
 
-Hook phải bắt đầu từ **mâu thuẫn thật**.
+### 3. Chi tiết tối thiểu nào làm mâu thuẫn trở nên thật?
 
----
+Có thể là:
 
-# 3. Hai câu AI bắt buộc phải trả lời trước khi viết hook
+- một con số;
+- một mốc thời gian;
+- một khoản tiền;
+- một loại hồ sơ;
+- một hành động;
+- một tình huống.
 
-Trước khi nghĩ bất kỳ câu mở đầu nào, AI phải hoàn thành:
-
-> **Người đọc có thể đang nghĩ:** ______
-
-> **Điều họ cần biết thêm là:** ______
-
-Nếu hai câu gần như giống nhau, nghĩa là chưa có đủ khoảng cách nhận thức để tạo hook mạnh.
-
-Khi đó cần:
-
-- đổi góc;
-- tìm chi tiết khác;
-- hoặc thừa nhận chủ đề này không cần một hook mạnh.
-
-Không được bịa nghịch lý chỉ để gây chú ý.
+Nếu chưa có mâu thuẫn thật → đừng cố làm câu giật.
 
 ---
 
-# 4. Bản đồ 8 điểm căng cốt lõi
+# 3. Nguyên tắc quan trọng nhất
 
-AI phải chọn **một điểm căng chính**, tối đa hai nếu thực sự cần.
+## Hook không phải bản tóm tắt thu nhỏ của bài
 
-## 4.1. Ảo giác an toàn
+Đừng nhét vào câu mở đầu:
 
-Người đọc nghĩ tình trạng đang ổn vì nhìn vào một dấu hiệu quen thuộc.
+- toàn bộ căn cứ;
+- tất cả điều kiện;
+- mọi ngoại lệ;
+- thuật ngữ chuyên môn chưa cần;
+- phần giải thích mà thân bài sẽ trả lời.
+
+Chỉ mang vào:
+
+> **lượng thông tin tối thiểu để người đọc hiểu đúng mâu thuẫn.**
+
+Phần còn lại để thân bài trả lời.
+
+---
+
+# 4. Quy trình tạo câu mở đầu
+
+## Bước 1 — Chọn mâu thuẫn mạnh nhất
+
+Nếu chủ đề đã có một mâu thuẫn tự nhiên mạnh:
+
+> **đào sâu mâu thuẫn đó.**
+
+Không bắt buộc tìm thêm cơ chế khác chỉ để đa dạng.
 
 Ví dụ bản chất:
 
-> Tổng công nợ không tăng  
-> nhưng tuổi nợ đang xấu đi.
+> được giảm cho cả năm  
+> nhưng tiền từ đầu năm đã nộp.
 
-> Có hóa đơn  
-> nhưng hồ sơ vẫn thiếu căn cứ cần thiết.
-
-Dùng khi có một tín hiệu “trông ổn” nhưng chưa đủ để kết luận.
+Đây đã là một mâu thuẫn đủ mạnh.
 
 ---
 
-## 4.2. Mâu thuẫn con số
+## Bước 2 — Viết như người đọc tự nói
 
-Hai con số kể hai câu chuyện khác nhau.
+Ưu tiên ngôn ngữ đời thường:
 
-Ví dụ:
+- “đã nộp rồi”;
+- “thì sao?”;
+- “có phải…?”;
+- “vậy phần này tính thế nào?”
 
-> Báo cáo có lãi  
-> nhưng tiền mặt không đủ trả nghĩa vụ ngắn hạn.
-
-> Doanh thu tăng  
-> nhưng công nợ quá hạn tăng nhanh hơn.
-
-Đây là điểm căng rất phù hợp với nội dung tài chính - kế toán vì con số tự tạo lực mà không cần tính từ giật gân.
+Tránh biến câu mở đầu thành câu thuyết minh pháp lý nếu chưa cần.
 
 ---
 
-## 4.3. Hiểu lầm phổ biến
+## Bước 3 — Tạo 3–5 phương án
 
-Người đọc tin một quy tắc đơn giản, nhưng thực tế cần thêm điều kiện.
+Không cần sáu cơ chế khác nhau.
 
-Ví dụ:
+Có thể giữ cùng một mâu thuẫn và thử:
 
-> Có hóa đơn và chuyển khoản chưa chắc đã đủ để kết luận một khoản chi được xử lý an toàn.
+- câu khẳng định + câu hỏi;
+- đối lập hai vế;
+- tình huống ngắn;
+- một câu rất ngắn;
+- cách nói trực tiếp hơn.
 
-Không dùng kiểu “mọi người đều sai”.
-
-Chỉ dùng khi hiểu lầm đó thực sự tồn tại.
-
----
-
-## 4.4. Chi phí bị che khuất
-
-Một lựa chọn tưởng tiết kiệm hoặc tiện trước mắt lại tạo chi phí lớn hơn về sau.
-
-Ví dụ bản chất:
-
-> bỏ một bước kiểm tra nhỏ  
-> → mất nhiều thời gian xử lý khi hồ sơ bị hỏi lại.
-
-Không được tự bịa số tiền tổn thất để tăng kịch tính.
+Chỉ đổi sang cơ chế khác khi mâu thuẫn hiện tại chưa đủ lực.
 
 ---
 
-## 4.5. Độ trễ hậu quả
+## Bước 4 — Cắt
 
-Hiện tại chưa thấy vấn đề nhưng hậu quả xuất hiện muộn.
+Với mỗi phương án, hỏi:
 
-Ví dụ:
+> **Bỏ từ này đi có còn đúng và còn lực không?**
 
-> sai từ kỳ này  
-> nhưng vài kỳ sau mới lộ ra khi đối chiếu số liệu.
+Nếu có → bỏ.
 
-Đây là dạng hook mạnh nhưng dễ bị lạm dụng để hù dọa.
+Đặc biệt cắt:
 
-Chỉ dùng khi có căn cứ rõ về cơ chế hậu quả.
-
----
-
-## 4.6. Sai thứ tự hành động
-
-Phản xạ tự nhiên không phải việc nên làm đầu tiên.
-
-Ví dụ:
-
-> nhận yêu cầu giải trình không có nghĩa việc đầu tiên là gửi ngay toàn bộ chứng từ.
-
-Hoặc:
-
-> trước khi sửa số liệu, cần xác định nguyên nhân lệch ở đâu.
-
-Dạng này tạo tò mò bằng hành động ngược trực giác, rất phù hợp với nội dung hướng dẫn.
-
----
-
-## 4.7. Mâu thuẫn quyết định
-
-Các bên nhìn cùng một tình huống nhưng kết luận khác nhau.
-
-Ví dụ:
-
-> sếp thấy doanh thu tăng;
-> kế toán lại thấy dòng tiền xấu đi.
-
-> chứng từ nhìn có vẻ đủ;
-> người kiểm tra nội bộ lại thấy chuỗi bằng chứng chưa khớp.
-
-Dạng này phù hợp để kể tình huống.
-
----
-
-## 4.8. Cơ hội bị bỏ quên
-
-Không phải hook nào cũng phải nói về rủi ro.
-
-Có thể tạo lực từ một cách nhìn hoặc cách làm tốt hơn mà người đọc chưa tận dụng.
-
-Ví dụ:
-
-> chỉ cần đổi cách nhìn báo cáo công nợ, doanh nghiệp có thể biết nên thu khoản nào trước.
-
-> cùng một dữ liệu bán hàng, nếu thêm một chỉ số đúng có thể giúp nhìn dòng tiền sớm hơn.
-
-Điểm này giúp Diệu Tâm không trở thành một kênh chỉ toàn “sai - phạt - truy thu - nguy hiểm”.
-
----
-
-# 5. Nguyên tắc tâm lý quan trọng nhất
-
-## 5.1. Tự liên quan
-
-Người đọc dừng khi nhận ra:
-
-> “Đây là chuyện của mình.”
-
-Không cần lúc nào cũng dùng “bạn”.
-
-Có thể đạt bằng:
-
-- tình huống quen thuộc;
-- con số;
-- hồ sơ;
-- mốc thời gian;
-- quyết định;
-- hành vi;
-- vai trò.
-
----
-
-## 5.2. Khoảng thiếu thông tin vừa đủ
-
-Tò mò tốt không phải là giấu hết.
-
-Cách đúng:
-
-> **Cho đủ bối cảnh để người đọc thấy liên quan, nhưng giữ lại lời giải hoặc biến số quan trọng.**
-
-Không dùng:
-
-> “Có một điều rất nhiều doanh nghiệp chưa biết…”
-
-nếu chưa cho biết đó là chuyện gì.
-
----
-
-## 5.3. Lệch kỳ vọng có căn cứ
-
-Một sự thật trái dự đoán có lực tự nhiên.
-
-Ví dụ:
-
-> Công ty có lãi chưa chắc có tiền.
-
-Điểm mạnh nằm ở **sự thật**, không nằm ở từ “sốc”.
-
----
-
-## 5.4. Cụ thể hơn trừu tượng
-
-Ưu tiên:
-
-- tiền thật;
-- số ngày;
-- kỳ kê khai;
-- loại hồ sơ;
-- tên chứng từ;
-- hành vi;
-- trước/sau;
-- được/không được.
-
-Nguyên tắc:
-
-> **Thay tính từ mạnh bằng chi tiết mạnh.**
-
-Không viết:
-
-> Rủi ro rất nghiêm trọng.
-
-Nếu có thể viết:
-
-> Khoản này đã quá hạn 120 ngày và chưa có kế hoạch thu hồi.
-
----
-
-## 5.5. Dễ hiểu hơn uyên bác
-
-Hook không phải nơi chứng minh chuyên môn.
-
-Nếu hai câu cùng đúng, chọn câu người đọc hiểu nhanh hơn.
-
-Không mở đầu bằng thuật ngữ nếu thuật ngữ chưa cần thiết.
-
----
-
-# 6. Quy tắc ngôn ngữ “mắt thấy được”
-
-Ưu tiên câu có hình ảnh cụ thể trong đầu người đọc.
-
-Trừu tượng:
-
-> Quản trị tài chính chưa chặt.
-
-Cụ thể:
-
-> Tài khoản ngân hàng còn 300 triệu nhưng 10 ngày tới phải trả 520 triệu.
-
-Trừu tượng:
-
-> Công nợ có rủi ro.
-
-Cụ thể:
-
-> Ba khoản phải thu đã quá hạn hơn 90 ngày.
-
-Trừu tượng:
-
-> Hồ sơ chưa đảm bảo.
-
-Cụ thể:
-
-> Có hóa đơn nhưng chưa khớp hợp đồng, biên bản bàn giao và dòng tiền thanh toán.
-
-AI phải luôn hỏi:
-
-> **Có thể thay một khái niệm chung bằng một chi tiết người đọc nhìn thấy được không?**
-
----
-
-# 7. Bảy cơ chế tạo lực cho hook
-
-Đây là **cơ chế**, không phải mẫu câu bắt buộc.
-
-## 7.1. Đập ảo giác an toàn
-
-Cho thấy thứ đang tạo cảm giác yên tâm chưa đủ để kết luận.
-
-## 7.2. Đặt hai con số đối nhau
-
-Dùng hai số thật để tạo mâu thuẫn.
-
-## 7.3. Sửa một hiểu lầm tốn kém
-
-Chỉ ra một niềm tin phổ biến nhưng thiếu điều kiện.
-
-## 7.4. Tái hiện hiện trường
-
-Đưa người đọc vào một tình huống có lời thoại, chứng từ, con số hoặc hành động quen thuộc.
-
-## 7.5. Lật bài toán chi phí
-
-Cho thấy chi phí “rẻ trước mắt” và chi phí thật về sau.
-
-## 7.6. Đưa ra hành động ngược phản xạ
-
-Nói việc người đọc **không nên làm đầu tiên**, rồi dẫn sang việc nên làm.
-
-## 7.7. Đóng khung mốc ranh giới
-
-Dùng thời hạn hoặc thời điểm thay đổi khi nó thực sự tạo khác biệt cho hành động.
-
----
-
-# 8. Cấu trúc phần mở đầu ngắn
-
-Không bắt buộc mọi bài có đúng ba dòng.
-
-Nhưng trong **khối nhìn đầu tiên**, nên làm được ba nhiệm vụ:
-
-1. **Bẻ kỳ vọng hoặc gọi đúng vấn đề.**
-2. **Đưa chi tiết thật để neo câu chuyện.**
-3. **Cho người đọc lý do xem tiếp.**
-
-Có thể gộp hai hoặc ba nhiệm vụ vào một câu nếu tự nhiên.
-
-Không viết đủ ba dòng chỉ để hoàn thành công thức.
-
----
-
-# 9. Câu hỏi không phải mặc định
-
-Không dùng câu hỏi chỉ vì nghĩ rằng câu hỏi tạo tò mò.
-
-Chỉ dùng khi câu hỏi:
-
-- là vấn đề thật;
-- có câu trả lời không hiển nhiên;
-- người đọc có lý do muốn biết đáp án.
-
-Yếu:
-
-> Bạn đã biết quản lý công nợ đúng cách chưa?
-
-Tốt hơn về bản chất:
-
-> Khách nợ 450 triệu thì đã đáng lo chưa?
-
-Câu hỏi thứ hai chứa tình huống thật và một đáp án chưa hiển nhiên.
-
----
-
-# 10. Không mặc định dùng nỗi sợ
-
-Không phải bài nào cũng nên nói về:
-
-- bị phạt;
-- mất tiền;
-- truy thu;
-- sai;
-- rủi ro.
-
-AI phải chọn cách đóng khung phù hợp với sự thật:
-
-- rủi ro;
-- lợi ích;
-- cơ hội;
-- tiết kiệm thời gian;
-- nhìn rõ hơn;
-- kiểm soát tốt hơn;
-- tránh hiểu sai.
-
-Nguyên tắc:
-
-> **Tăng mức quan tâm, không tăng mức hoảng sợ.**
-
----
-
-# 11. Quy trình tạo hook bắt buộc
-
-## Bước 1 — Chốt sự thật trung tâm
-
-Viết một câu hoàn toàn trung tính:
-
-> Điều đáng biết nhất trong nội dung này là gì?
-
-Nếu chưa trả lời rõ, chưa được viết hook.
-
-## Bước 2 — Chốt nhận thức hiện tại
-
-> Người đọc có thể đang nghĩ gì?
-
-## Bước 3 — Chốt điều họ cần biết thêm
-
-> Thực tế nào làm thay đổi cách nhìn đó?
-
-## Bước 4 — Chọn điểm căng
-
-Chọn 1 trong 8 điểm căng.
-
-## Bước 5 — Chọn chi tiết neo
-
-Chọn một chi tiết thật:
-
-- con số;
-- thời hạn;
-- loại hồ sơ;
-- hành động;
-- đối tượng;
-- tình huống.
-
-## Bước 6 — Tạo ít nhất 6 phương án khác cơ chế
-
-Không phải đổi vài từ.
-
-Ví dụ sáu hướng:
-
-- khẳng định;
-- đối lập;
-- tình huống;
-- con số;
-- câu hỏi thật;
-- hành động ngược trực giác.
-
-## Bước 7 — Loại phương án lặp
-
-So với các bài gần đây, loại nếu:
-
-- liên tục “Nếu doanh nghiệp…”;
-- liên tục “3 điều cần…”;
-- liên tục hỏi;
-- liên tục cảnh báo;
-- liên tục dùng nghịch lý;
-- liên tục mở bằng cùng một nhịp câu.
-
-## Bước 8 — Chọn bằng bộ lọc 6 phép thử
-
----
-
-# 12. Bộ lọc 6 phép thử
-
-## 12.1. Phép thử nhận ra mình
-
-Đúng người có thấy tình huống quen thuộc không?
-
-## 12.2. Phép thử không hiển nhiên
-
-Câu có đang nói lại một chân lý ai cũng biết không?
-
-Nếu có, tìm mâu thuẫn hoặc chi tiết sâu hơn.
-
-## 12.3. Phép thử mắt thấy
-
-Có chi tiết cụ thể nào giúp người đọc hình dung không?
-
-## 12.4. Phép thử khoảng cách nhận thức
-
-Có sự khác biệt giữa điều người đọc đang nghĩ và điều nội dung muốn chỉ ra không?
-
-## 12.5. Phép thử bằng chứng
-
-Mọi:
-
-- con số;
-- hậu quả;
-- mức độ chắc chắn;
-- thời gian;
-- kết luận;
-
-có được nguồn hoặc dữ liệu hỗ trợ không?
-
-Nếu không → giảm mức khẳng định hoặc loại hook.
-
-## 12.6. Phép thử trả nợ
-
-Phần thân có giải quyết đúng lời hứa của hook không?
-
-Nếu hook nói một đằng, phần thân bán dịch vụ hoặc nói chuyện khác → loại.
-
----
-
-# 13. Thang điểm chọn hook
-
-Mỗi tiêu chí 0–2 điểm:
-
-- **Liên quan**
-- **Rõ**
-- **Có lực kéo**
-- **Cụ thể**
-- **Đúng bằng chứng**
-- **Không lặp**
-
-Tổng tối đa: 12.
-
-Quy tắc:
-
-- dưới 9: viết lại;
-- 9–10: dùng được nhưng cần xem lại;
-- 11–12: mạnh.
-
-Nếu **Đúng bằng chứng = 0** → loại ngay, bất kể tổng điểm.
-
----
-
-# 14. Từ ngữ cần tránh và cách thay
-
-| Dạng | Yếu / rỗng | Ưu tiên |
-|---|---|---|
-| Đối tượng | quý doanh nghiệp, mọi người | chủ doanh nghiệp thương mại, hộ kinh doanh, kế toán nội bộ |
-| Vấn đề | rất quan trọng, nhiều bất cập | lệch số dư, quá hạn 90 ngày, thiếu chứng từ, đọng vốn |
-| Hậu quả | rủi ro nghiêm trọng | bị loại khoản chi, phát sinh tiền chậm nộp, thiếu tiền trả nghĩa vụ |
-| Tính từ | sốc, bí mật, kinh hoàng | bỏ tính từ, dùng chi tiết thật |
-| Tò mò | có một điều bạn chưa biết | nêu rõ bối cảnh, giữ lại lời giải |
-
-Không biến cột “ưu tiên” thành kho từ khóa phải nhồi.
-
----
-
-# 15. Ranh giới an toàn của Diệu Tâm
-
-Câu chữ được phép:
-
-> **mạnh hơn cách diễn đạt hành chính**
-
-nhưng tuyệt đối không được:
-
-> **mạnh hơn bằng chứng.**
-
-Không được:
-
-- biến khả năng thành chắc chắn;
-- lấy ví dụ giả làm tình huống thật;
-- bịa số tiền;
-- bịa tỷ lệ;
-- bịa thời gian;
-- bịa cơ chế kiểm tra;
-- tạo hậu quả không được nguồn hỗ trợ;
-- nói “mọi doanh nghiệp”, “100%”, “chắc chắn”, “sẽ bị” nếu thực tế không cho phép.
-
----
-
-# 16. Chống mỏi hook
-
-Cùng một thương hiệu không có nghĩa mọi bài phải mở giống nhau.
-
-AI phải theo dõi các bài gần đây và tránh:
-
-- nhiều bài liên tiếp cùng một loại điểm căng;
-- nhiều bài liên tiếp cùng cú pháp;
-- liên tục dùng cảnh báo;
-- liên tục dùng câu hỏi;
-- liên tục dùng con số;
-- liên tục dùng “nếu… thì…”.
+- thuật ngữ chưa cần;
+- lời giải thích;
+- tính từ mạnh;
+- phần chứng minh;
+- từ nối hành chính.
 
 Mục tiêu:
 
-> **Giọng nhất quán, cách vào bài đa dạng.**
+> **câu ngắn nhất vẫn đúng và vẫn đủ sức kéo.**
 
 ---
 
-# 17. Không đánh giá hook chỉ bằng lượt dừng
+## Bước 5 — Chọn bằng 4 cửa
 
-Hook tốt phải kéo được đúng người và giữ niềm tin.
+Không chấm điểm.
 
-Khi có dữ liệu, không chỉ nhìn:
+Chỉ kiểm:
 
-- lượt xem;
-- lượt nhấp;
-- lượt dừng.
+### Cửa 1 — Hiểu ngay
 
-Cần nhìn thêm:
+Đúng người có hiểu trong một nhịp câu không?
 
-- tỷ lệ xem tiếp;
-- thời gian xem;
-- lượt lưu;
-- chia sẻ;
-- bình luận có chất lượng;
-- tin nhắn;
-- nhu cầu tư vấn;
-- tỷ lệ chuyển đổi.
+### Cửa 2 — Muốn biết tiếp
 
-Một hook tăng lượt nhấp nhưng làm người đọc thất vọng không phải hook tốt.
+Có một điều chưa được giải quyết khiến họ muốn xem tiếp không?
+
+### Cửa 3 — Đúng bằng chứng
+
+Câu có hứa hoặc khẳng định quá mức không?
+
+Nếu có → loại.
+
+### Cửa 4 — Thân bài trả được
+
+Phần sau có trả đúng điều câu mở đầu đặt ra không?
+
+Nếu không → loại.
 
 ---
 
-# 18. Nguyên tắc cuối cùng
+# 5. Cụ thể nhưng không nhồi chi tiết
 
-> **Đừng bắt đầu bằng câu chữ.**
+“Cụ thể” không có nghĩa là đưa càng nhiều số liệu càng tốt.
 
-Hãy tìm:
+Chỉ cần chi tiết đủ để người đọc hình dung.
 
-1. người đọc đang nghĩ gì;
-2. sự thật nào làm thay đổi cách nhìn đó;
-3. chi tiết thật nào khiến sự khác biệt trở nên cụ thể;
-4. cách diễn đạt nào đủ sắc nhưng vẫn đúng hoàn toàn.
+Ví dụ:
 
-Sau đó mới viết.
+> **Được giảm thuế cho cả năm 2026. Nhưng tiền từ đầu năm đã nộp rồi thì sao?**
 
-Câu căn chỉnh cho AI:
+Có hai chi tiết đủ mạnh:
 
-> **Đừng hỏi “câu nào nghe giật hơn”. Hãy hỏi: điều gì trong sự thật này khiến đúng người đọc phải nhìn lại cách họ đang nghĩ? Hãy nói điều đó bằng một chi tiết cụ thể, dễ hiểu, và không mạnh hơn bằng chứng.**
+- cả năm 2026;
+- tiền đã nộp từ đầu năm.
+
+Không nhất thiết phải nhét thêm tên văn bản, ngày ban hành, thủ tục bù trừ hay mọi điều kiện ngay ở câu đầu.
+
+Nguyên tắc:
+
+> **Ít chi tiết hơn, miễn đó là chi tiết đúng.**
+
+---
+
+# 6. Khi nào dùng câu hỏi
+
+Câu hỏi tốt khi:
+
+- đó là câu hỏi người đọc thật sự có;
+- đáp án không hiển nhiên;
+- câu hỏi chứa tình huống đủ cụ thể.
+
+Không hỏi chỉ để tạo tò mò.
+
+Yếu:
+
+> “Bạn đã biết quy định mới chưa?”
+
+Tốt hơn:
+
+> “Được giảm cho cả năm, nhưng tiền đã nộp rồi thì sao?”
+
+---
+
+# 7. Hộp gợi ý khi bí
+
+Chỉ dùng khi chưa tìm được mâu thuẫn tự nhiên.
+
+Có thể thử nhìn chủ đề qua:
+
+- **ảo giác an toàn:** tưởng ổn nhưng chưa đủ để kết luận;
+- **hai con số trái nhau:** số này tốt nhưng số kia xấu;
+- **hiểu lầm:** quy tắc tưởng đơn giản nhưng còn điều kiện;
+- **chi phí ẩn:** tiết kiệm trước mắt nhưng tốn hơn về sau;
+- **độ trễ:** hôm nay chưa thấy nhưng hậu quả đến sau;
+- **sai thứ tự:** phản xạ đầu tiên không phải việc nên làm trước;
+- **mâu thuẫn quyết định:** hai bên nhìn cùng việc nhưng kết luận khác;
+- **cơ hội bỏ quên:** có lợi ích hoặc cách làm tốt hơn chưa được tận dụng.
+
+Đây là **gợi ý khi bí**, không phải checklist phải chạy qua.
+
+---
+
+# 8. Những lỗi thường làm câu mở đầu yếu đi
+
+Loại hoặc sửa khi thấy:
+
+- cố chứng minh chuyên môn ngay câu đầu;
+- thêm quá nhiều điều kiện;
+- dùng từ hành chính khi từ đời thường đã đủ;
+- giải thích luôn câu trả lời;
+- bịa nghịch lý để gây chú ý;
+- dùng “sốc”, “bí mật”, “100%”, “chắc chắn”;
+- hỏi mơ hồ;
+- đổi vài từ nhưng thực chất tạo nhiều câu giống nhau;
+- ép phải khác cơ chế dù một cơ chế đang rất mạnh.
+
+---
+
+# 9. Chống lặp
+
+Giọng có thể nhất quán nhưng cách vào bài không nên giống nhau liên tục.
+
+Khi có lịch sử bài gần đây, tránh dùng nhiều bài liên tiếp:
+
+- cùng nhịp câu;
+- cùng kiểu cảnh báo;
+- cùng một câu hỏi;
+- cùng “nếu… thì…”;
+- cùng kiểu mở bằng con số.
+
+Nhưng:
+
+> **không hy sinh câu hay chỉ để khác.**
+
+Nếu một cách mở là tốt nhất cho sự thật hiện tại, ưu tiên chất lượng trước.
+
+---
+
+# 10. Ranh giới an toàn
+
+Câu mở đầu được phép sắc hơn văn bản hành chính.
+
+Không được:
+
+- mạnh hơn bằng chứng;
+- biến khả năng thành chắc chắn;
+- bịa số;
+- bịa hậu quả;
+- giấu điều kiện làm thay đổi bản chất;
+- tạo cảm giác chắc chắn sẽ được hoàn/giảm/xử lý theo một cách khi thủ tục chưa chốt.
+
+Nếu cần thêm một từ để tránh hiểu sai bản chất → thêm.
+
+Nếu chỉ thêm để câu nghe “chuyên nghiệp hơn” → thường nên bỏ.
+
+---
+
+# 11. Câu căn chỉnh cho AI
+
+> **Tìm mâu thuẫn thật mạnh nhất. Giữ lại chi tiết tối thiểu để nó vẫn đúng. Viết như người thật đang nghĩ, rồi cắt đến khi không còn từ thừa.**
