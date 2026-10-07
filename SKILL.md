@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.5  
+**Phiên bản:** 0.6  
 **Ngày:** 07/10/2026  
 **Vai trò:** File điều phối trung tâm / runtime orchestrator  
 **Trạng thái:** Đang phát triển — đã kiểm chứng thực tế đến Facebook dạng ảnh: nghiên cứu → chọn cách đánh → hook → thân bài → đóng gói → tạo ảnh → QA cơ bản.
@@ -20,6 +20,32 @@ Khi người dùng đưa URL của `SKILL.md` cùng một yêu cầu làm nội 
 7. Khi một quyết định đã được duyệt, ghi nhận nó là **decision lock** và không tự đổi ở bước sau.
 
 > **Mặc định là chế độ tương tác từng bước. Chỉ chạy liền nhiều bước nếu người dùng chủ động yêu cầu không cần duyệt từng bước.**
+
+## Quy ước duyệt checkpoint
+
+Ở cuối mỗi checkpoint, AI chỉ xin duyệt **một lần**.
+
+- AI trình bày kết quả của checkpoint hiện tại và dừng.
+- Khi người dùng trả lời `OK`, `duyệt`, `chốt`, `tiếp tục` hoặc chọn một phương án, điều đó đồng thời có nghĩa:
+  1. duyệt checkpoint hiện tại;
+  2. khóa các decision lock vừa được chốt;
+  3. **ngay ở turn kế tiếp, AI phải thực hiện checkpoint tiếp theo và đưa kết quả của checkpoint đó.**
+
+Không được trả lời kiểu:
+
+> “Đã chốt. Hãy nói OK lần nữa để tôi sang bước tiếp.”
+
+Một checkpoint = tối đa một lần duyệt, trừ khi người dùng yêu cầu sửa.
+
+## Khi user chỉ đưa URL skill + nhiệm vụ
+
+Không yêu cầu người dùng paste lại các file con nếu các URL trong danh bạ có thể truy cập được.
+
+Ví dụ prompt đủ để khởi động:
+
+> “Dùng skill tại https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/SKILL.md để làm bài Facebook về [chủ đề].”
+
+AI phải tự đọc file điều phối, tự mở file con theo checkpoint và chạy tuần tự.
 
 Nếu một file bắt buộc không mở được, phải nói rõ file nào không truy cập được và **dừng bước đó**. Không được tự bịa nội dung của file.
 
@@ -260,7 +286,7 @@ URLs:
 Đề xuất **một mục tiêu chính** và tối đa một mục tiêu phụ. Nói rõ hành vi mong muốn của người xem.
 
 ### Gate
-> **Người dùng duyệt mục tiêu → khóa mục tiêu → dừng chờ OK cho góc.**
+> **Trình bày mục tiêu và dừng. Khi người dùng OK/chọn phương án → khóa mục tiêu và ở turn kế tiếp chạy ngay CHECKPOINT 3.**
 
 ---
 
@@ -276,7 +302,7 @@ URLs:
 Không viết hook ở bước này.
 
 ### Gate
-> **Người dùng duyệt góc → khóa góc → dừng chờ OK.**
+> **Trình bày góc và dừng. Khi người dùng OK/chọn phương án → khóa góc và ở turn kế tiếp chạy ngay CHECKPOINT 4.**
 
 ---
 
@@ -295,7 +321,7 @@ Mặc định đưa 2 lựa chọn:
 AI khuyến nghị một phương án dựa trên số bước nhận thức người xem cần đi qua. Người dùng chốt.
 
 ### Gate
-> **Khóa format / số ảnh → dừng chờ OK.**
+> **Trình bày các lựa chọn format và khuyến nghị rồi dừng. Khi người dùng OK/chọn phương án → khóa format / số ảnh và ở turn kế tiếp chạy ngay CHECKPOINT 5.**
 
 ---
 
@@ -320,7 +346,7 @@ URLs:
 Không chèn ví dụ từ tài liệu như đáp án mẫu.
 
 ### Gate
-> **Người dùng chọn / duyệt hook → khóa nguyên văn hook → dừng chờ OK.**
+> **Trình bày các hook và khuyến nghị rồi dừng. Khi người dùng OK/chọn một hook → khóa nguyên văn hook và ở turn kế tiếp chạy ngay CHECKPOINT 6.**
 
 ---
 
@@ -343,7 +369,7 @@ Chỉ dựng **xương sống**, chưa viết caption hoàn chỉnh:
 - đâu là điều đã chắc / điều cần giải thích / việc cần làm.
 
 ### Gate
-> **Người dùng duyệt retention path → khóa cấu trúc → dừng chờ OK.**
+> **Trình bày retention path và dừng. Khi người dùng OK → khóa cấu trúc và ở turn kế tiếp chạy ngay CHECKPOINT 7.**
 
 ---
 
@@ -357,7 +383,7 @@ Chỉ dựng **xương sống**, chưa viết caption hoàn chỉnh:
 Đề xuất CTA chính phù hợp mục tiêu đã khóa. CTA phải đi ra tự nhiên từ giá trị bài, không mặc định bán dịch vụ.
 
 ### Gate
-> **Người dùng duyệt CTA → khóa CTA → dừng chờ OK.**
+> **Trình bày CTA và dừng. Khi người dùng OK/chọn phương án → khóa CTA và ở turn kế tiếp chạy ngay CHECKPOINT 8.**
 
 ---
 
@@ -383,7 +409,15 @@ URLs:
 - CTA đúng bản đã khóa.
 
 ### Gate
-> **Đưa bản viết để người dùng duyệt. Dừng chờ OK.**
+> **Đưa bản viết và dừng. Khi người dùng OK → ở turn kế tiếp chạy ngay CHECKPOINT 9 nếu là Facebook.**
+
+---
+
+## NHÁNH NỀN TẢNG SAU CHECKPOINT 8
+
+- Nếu nền tảng đích là **Facebook dạng ảnh** → chạy CHECKPOINT 9 đến CHECKPOINT 13 bên dưới.
+- Nếu nền tảng khác Facebook và repo chưa có playbook tương ứng → **không áp quy tắc Facebook**. Phải nói rõ playbook nền tảng đó chưa được khóa, đưa một kế hoạch thử nghiệm ngắn và chờ người dùng duyệt trước khi tiếp tục.
+- Không được tự suy rằng quy tắc 1 ảnh / 3 ảnh, emoji Facebook hoặc 5 hashtag Facebook áp cho TikTok, Zalo hay YouTube.
 
 ---
 
@@ -410,7 +444,7 @@ Với Facebook:
 - hashtag là dữ liệu động: nếu có web, research hiện tại; không tự bịa độ phổ biến.
 
 ### Gate
-> **Người dùng duyệt text đóng gói → khóa chữ trên ảnh / caption / hashtag → dừng chờ OK.**
+> **Đưa bản đóng gói và dừng. Khi người dùng OK → khóa chữ trên ảnh / caption / hashtag và ở turn kế tiếp chạy ngay CHECKPOINT 10.**
 
 ---
 
@@ -432,7 +466,7 @@ Với Facebook:
 Với chủ đề thời sự / luật / chính sách đang thay đổi, re-check dữ kiện hiện tại nếu cần.
 
 ### Gate
-> **Nếu đạt, báo `TEXT ĐÃ ĐỦ CHUẨN ĐỂ TẠO ẢNH` và dừng chờ OK.**
+> **Nếu đạt, báo `TEXT ĐÃ ĐỦ CHUẨN ĐỂ TẠO ẢNH` và dừng. Khi người dùng OK → ở turn kế tiếp chạy ngay CHECKPOINT 11.**
 
 ---
 
@@ -456,7 +490,7 @@ Tóm tắt ngắn:
 Nếu thiếu logo đúng mà bắt buộc phải dùng logo, chỉ lúc này mới yêu cầu người dùng upload / cung cấp logo.
 
 ### Gate
-> **Hỏi người dùng có tạo ảnh ngay không. Nếu OK → sang CHECKPOINT 12.**
+> **Trình bày concept ảnh và hỏi tạo ảnh ngay không. Khi người dùng OK → ở turn kế tiếp tạo ảnh ngay theo CHECKPOINT 12, không hỏi lại các điểm đã khóa.**
 
 ---
 
