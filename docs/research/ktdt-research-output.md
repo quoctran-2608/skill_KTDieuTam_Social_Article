@@ -1,6 +1,6 @@
 # CHUẨN ĐẦU RA NGHIÊN CỨU — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn hóa đầu ra sau khi hoàn thành nghiên cứu, trước khi chuyển sang bước chọn cách đánh.
@@ -27,7 +27,26 @@ Không được bàn giao một đống đường dẫn hoặc ghi chú rời r�
 
 ---
 
-# 2. Cấu trúc đầu ra bắt buộc
+# 2. Sổ nguồn bắt buộc
+
+Trước 14 mục nội dung, hồ sơ phải có một **sổ nguồn** để mọi dữ kiện quan trọng truy ngược được.
+
+Mỗi nguồn ghi:
+
+- mã nguồn (S1, S2...);
+- tên văn bản/bài/trang;
+- đơn vị/cơ quan;
+- ngày ban hành/đăng nếu có;
+- ngày xác minh;
+- đường dẫn hoặc định danh;
+- dùng để chứng minh điều gì;
+- trạng thái nguồn.
+
+Khi viết “Điều đã chắc” hoặc một kết luận quan trọng, gắn mã nguồn liên quan trong hồ sơ làm việc.
+
+---
+
+# 4. Cấu trúc đầu ra bắt buộc
 
 Mỗi hồ sơ nghiên cứu phải có đủ 14 mục sau.
 
@@ -196,11 +215,13 @@ Mục tiêu:
 
 ---
 
-## 2.12. Khoảng trống nội dung
+## 2.12. Khoảng trống nội dung quan sát được
 
 Phải viết thành câu rõ ràng:
 
-> **“Nhiều bên đang nói A, nhưng ít bên làm rõ B cho nhóm C.”**
+> **“Trong mẫu đã quan sát, nhiều bên đang nói A, nhưng ít bên làm rõ B cho nhóm C.”**
+
+Nếu dữ liệu đủ rộng mới được nâng thành kết luận về thị trường. Nếu dữ liệu còn hạn chế, phải gọi đây là **giả thuyết khoảng trống** cần thử nghiệm.
 
 Khoảng trống không nhất thiết là chủ đề mới.
 
@@ -252,7 +273,7 @@ nếu chỉ có thể giúp họ hiểu hoặc tự kiểm tra.
 
 ---
 
-# 3. Mức độ tin cậy của hồ sơ
+# 4. Mức độ tin cậy của hồ sơ
 
 Mỗi hồ sơ phải ghi một trong ba mức:
 
@@ -260,8 +281,10 @@ Mỗi hồ sơ phải ghi một trong ba mức:
 
 - dữ kiện cốt lõi có nguồn chính thức;
 - người đọc có tín hiệu rõ;
-- cạnh tranh có đủ mẫu;
+- **nền tảng đích** có mẫu quan sát đủ tốt;
 - khoảng trống có bằng chứng tương đối tốt.
+
+Không yêu cầu phải có dữ liệu tốt ở cả bốn nền tảng nếu nội dung chỉ nhắm một nền tảng.
 
 ## Trung bình
 
@@ -280,7 +303,7 @@ Nếu mức thấp:
 
 ---
 
-# 4. Ghi giới hạn dữ liệu
+# 5. Ghi giới hạn dữ liệu
 
 Bắt buộc có mục:
 
@@ -300,7 +323,7 @@ Giấu giới hạn mới là lỗi.
 
 ---
 
-# 5. Quyết định: đi tiếp hay dừng
+# 6. Quyết định: đi tiếp hay dừng
 
 Cuối hồ sơ chỉ được ghi một trong hai trạng thái.
 
@@ -328,15 +351,22 @@ Không được sang bước viết chỉ vì “đã tốn nhiều thời gian 
 
 ---
 
-# 6. Mẫu bàn giao chuẩn
+# 7. Mẫu bàn giao chuẩn
 
 Dùng mẫu sau:
 
 ## HỒ SƠ NGHIÊN CỨU
 
 **Chủ đề:**  
+**Nền tảng đích:**  
+**Khoảng thời gian quan sát nội dung cạnh tranh:**  
 **Ngày xác minh:**  
 **Mức độ tin cậy:** Cao / Trung bình / Thấp
+
+### Sổ nguồn
+| Mã | Nguồn | Ngày | Chứng minh | Trạng thái |
+| --- | --- | --- | --- | --- |
+| S1 | ... | ... | ... | ... |
 
 ### 1. Sự thật trung tâm
 ...
@@ -392,11 +422,11 @@ hoặc
 
 ---
 
-# 7. Những thứ không được nhét vào hồ sơ nghiên cứu
+# 8. Những thứ không được nhét vào hồ sơ nghiên cứu
 
 Không đưa vào đây:
 
-- hook cuối cùng;
+- câu mở đầu cuối cùng;
 - caption cuối cùng;
 - số slide;
 - kịch bản video hoàn chỉnh;
@@ -410,7 +440,7 @@ Có thể ghi **giả thuyết cơ hội**, nhưng không được viết thành
 
 ---
 
-# 8. Kiểm tra chất lượng đầu ra
+# 9. Kiểm tra chất lượng đầu ra
 
 Trước khi bàn giao, hỏi:
 
@@ -428,11 +458,11 @@ Nếu có từ 2 câu “không” trở lên:
 
 ---
 
-# 9. Quy tắc cuối
+# 10. Quy tắc cuối
 
 > **Một hồ sơ nghiên cứu tốt phải giảm số điều AI phải đoán ở bước sáng tạo.**
 
-Nếu sau research, AI vẫn phải đoán:
+Nếu sau nghiên cứu, AI vẫn phải đoán:
 
 - ai là người đọc;
 - điều gì là sự thật;
