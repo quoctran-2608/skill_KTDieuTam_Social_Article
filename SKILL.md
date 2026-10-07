@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.3  
+**Phiên bản:** 0.4  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang phát triển — đã kiểm chứng qua nghiên cứu, chọn góc, tạo hook và viết thân bài Facebook dạng ảnh  
 **Phạm vi hiện tại:** nghiên cứu, DNA giọng văn, hook, thân bài/retention, quy trình Facebook dạng ảnh cơ bản. Chưa coi skill là hoàn chỉnh.
@@ -292,7 +292,7 @@ mới được chuyển sang phần sáng tạo.
 
 Thứ tự hiện tại:
 
-> **Mục tiêu → góc chính → định dạng → hook → đường giữ người đọc → CTA → viết → đóng gói nền tảng → QA**
+> **Mục tiêu → góc chính → định dạng → hook → đường giữ người đọc → CTA → viết → đóng gói nền tảng → tạo ảnh nếu định dạng có ảnh → QA**
 
 ## 8.1. Decision lock — quyết định đã duyệt phải được khóa
 
@@ -379,6 +379,36 @@ Sau khi nội dung caption đã đạt:
 
 Hashtag không được tự nghĩ cho đủ số và không được lái ngược nội dung.
 
+## 8.6. Sau khi chốt text Facebook dạng ảnh
+
+Khi đã chốt:
+
+- chữ trên ảnh;
+- caption;
+- CTA;
+- hashtag nếu có;
+
+AI phải **chủ động đề nghị bước tiếp theo là tạo ảnh hoàn chỉnh**.
+
+Không coi bài Facebook dạng ảnh là hoàn thành chỉ vì phần text đã xong.
+
+Quy trình:
+
+1. tóm tắt ngắn concept ảnh cần tạo;
+2. xác nhận các điểm đã khóa như số ảnh, chữ trên ảnh, logo, tỷ lệ và phong cách;
+3. hỏi người duyệt có muốn tạo ảnh ngay không;
+4. nếu người duyệt đồng ý → **tạo ảnh ngay**, không hỏi lại những điểm đã được duyệt;
+5. sau khi tạo → QA ảnh;
+6. nếu có lỗi rõ ràng về chữ, logo, tỷ lệ, bố cục hoặc chi tiết thừa → sửa trước khi coi là xong.
+
+Nếu người duyệt chủ động muốn dừng ở phần text thì mới được kết thúc mà chưa tạo ảnh.
+
+Luật cứng:
+
+> **Nếu output đã chốt là bài dạng ảnh, “viết xong” chưa phải “hoàn thành”.**
+
+Sau khi người duyệt đã khóa chữ trên ảnh, AI không được tự đổi câu chữ trong lúc tạo ảnh, trừ khi phát hiện lỗi hiển thị hoặc được người duyệt yêu cầu mở lại quyết định.
+
 ---
 
 # 9. Phạm vi chưa được khóa trong v0.2
@@ -399,7 +429,7 @@ Chưa coi các phần sau là quy chuẩn hoàn chỉnh:
 - Zalo;
 - YouTube;
 - video;
-- thiết kế hình ảnh thực tế;
+- thiết kế hình ảnh nâng cao / hệ thống visual identity toàn diện;
 - quảng cáo ở cấp campaign / ad set / placement;
 - đo hiệu quả creative sau chạy;
 - QA cuối toàn diện;
