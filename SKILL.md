@@ -1,9 +1,9 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.7  
+**Phiên bản:** 0.8  
 **Ngày:** 07/10/2026  
 **Vai trò:** File điều phối trung tâm / runtime orchestrator  
-**Trạng thái:** Đang phát triển — đã kiểm chứng thực tế đến Facebook dạng ảnh: nghiên cứu → chọn cách đánh → hook → thân bài → đóng gói → tạo ảnh → QA cơ bản.
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok writing đang ở playbook thử nghiệm v0.1.
 
 ---
 
@@ -152,6 +152,11 @@ Nếu một file bắt buộc không mở được, phải nói rõ file nào kh
 - Path: `docs/platform/ktdt-facebook-post-playbook.md`
 - URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
 - Dùng ở: chọn 1 ảnh / 3 ảnh, đóng gói caption, spacing, emoji, hashtag, tạo ảnh và QA ảnh.
+
+### TikTok writing
+- Path: `docs/platform/ktdt-tiktok-writing-playbook.md`
+- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
+- Dùng ở: phần chữ TikTok — caption hoặc text post, search keyword, nhịp chữ, CTA và hashtag. **Không dùng để sản xuất video.**
 
 > **Luật tải file:** Không cần đọc toàn bộ repo ở mỗi lần chạy. Chỉ mở file đúng với checkpoint hiện tại theo bảng điều phối bên dưới. Khi một checkpoint yêu cầu nhiều file, phải đọc đủ các file đó trước khi tạo đầu ra.
 
@@ -419,16 +424,28 @@ Không viết hook ở bước này.
 - `docs/platform/ktdt-facebook-post-playbook.md`
 - URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
 
+### Nếu TikTok writing, bắt buộc đọc
+- `docs/platform/ktdt-tiktok-writing-playbook.md`
+- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
+
 ### Làm với Facebook
 Mặc định đưa 2 lựa chọn:
 
 - **1 ảnh**;
 - **3 ảnh**.
 
-AI khuyến nghị một phương án dựa trên số bước nhận thức người xem cần đi qua. Người dùng chốt.
+AI khuyến nghị một phương án dựa trên số bước nhận thức người xem cần đi qua.
+
+### Làm với TikTok writing
+Chỉ chọn định dạng chữ:
+
+- **Caption / phần mô tả TikTok**;
+- **TikTok Text Post**.
+
+Không mở nhánh sản xuất video nếu user chỉ yêu cầu viết bài TikTok.
 
 ### Gate
-> **Trình bày các lựa chọn format và khuyến nghị rồi dừng. Khi người dùng OK/chọn phương án → khóa format / số ảnh và ở turn kế tiếp chạy ngay CHECKPOINT 5.**
+> **Trình bày lựa chọn format phù hợp và khuyến nghị rồi dừng. Khi người dùng OK/chọn phương án → khóa format và ở turn kế tiếp chạy ngay CHECKPOINT 5.**
 
 ---
 
@@ -500,11 +517,13 @@ Chỉ dựng **xương sống**, chưa viết caption hoàn chỉnh:
 - `docs/brand/ktdt-social-writing-dna.md`
 - `docs/content/ktdt-body-writing-retention.md`
 - nếu Facebook: `docs/platform/ktdt-facebook-post-playbook.md`
+- nếu TikTok: `docs/platform/ktdt-tiktok-writing-playbook.md`
 
 URLs:
 - https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
 - https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-body-writing-retention.md
 - https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
+- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
 
 ### Luật
 - giữ nguyên các decision lock;
@@ -516,15 +535,78 @@ URLs:
 - CTA đúng bản đã khóa.
 
 ### Gate
-> **Đưa bản viết và dừng. Khi người dùng OK → ở turn kế tiếp chạy ngay CHECKPOINT 9 nếu là Facebook.**
+> **Đưa bản viết và dừng. Khi người dùng OK → nếu Facebook chạy CHECKPOINT 9; nếu TikTok chạy CHECKPOINT 9T.**
 
 ---
 
 ## NHÁNH NỀN TẢNG SAU CHECKPOINT 8
 
-- Nếu nền tảng đích là **Facebook dạng ảnh** → chạy CHECKPOINT 9 đến CHECKPOINT 13 bên dưới.
-- Nếu nền tảng khác Facebook và repo chưa có playbook tương ứng → **không áp quy tắc Facebook**. Phải nói rõ playbook nền tảng đó chưa được khóa, đưa một kế hoạch thử nghiệm ngắn và chờ người dùng duyệt trước khi tiếp tục.
-- Không được tự suy rằng quy tắc 1 ảnh / 3 ảnh, emoji Facebook hoặc 5 hashtag Facebook áp cho TikTok, Zalo hay YouTube.
+- Nếu nền tảng đích là **Facebook dạng ảnh** → chạy CHECKPOINT 9 đến CHECKPOINT 13.
+- Nếu nền tảng đích là **TikTok writing** → chạy CHECKPOINT 9T đến CHECKPOINT 11T.
+- Nếu nền tảng khác và repo chưa có playbook tương ứng → không áp playbook Facebook/TikTok. Nói rõ phần đó chưa khóa và đưa kế hoạch thử nghiệm để user duyệt.
+- Không được bê quy tắc Facebook sang TikTok hoặc ngược lại.
+
+---
+
+## CHECKPOINT 9T — ĐÓNG GÓI TIKTOK WRITING
+
+### Bắt buộc đọc
+- `docs/platform/ktdt-tiktok-writing-playbook.md`
+- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
+
+### Làm
+Tách rõ:
+
+1. hook / câu đầu;
+2. caption hoặc text post;
+3. CTA;
+4. cụm từ khóa tìm kiếm chính;
+5. 3–5 hashtag.
+
+Không tạo shot list, cảnh quay, timeline dựng hay voiceover nếu user chỉ yêu cầu viết bài TikTok.
+
+Keyword và hashtag là dữ liệu động. Nếu có web hoặc công cụ TikTok phù hợp thì research hiện tại trước khi chốt.
+
+### Gate
+> **Đưa bản đóng gói TikTok và dừng. Khi user OK → khóa text / CTA / keyword / hashtag và chạy CHECKPOINT 10T.**
+
+---
+
+## CHECKPOINT 10T — QA TIKTOK WRITING
+
+### Bắt buộc đọc
+- `docs/brand/ktdt-social-writing-dna.md`
+- `docs/content/ktdt-body-writing-retention.md`
+- `docs/platform/ktdt-tiktok-writing-playbook.md`
+
+### Kiểm
+- factual / bằng chứng;
+- hook debt đã được trả sớm;
+- từ khóa chính rõ và tự nhiên;
+- không keyword stuffing;
+- nhịp chữ dễ quét;
+- không copy nguyên caption Facebook;
+- CTA chỉ một hành động chính;
+- hashtag liên quan thật;
+- không tự chuyển sang sản xuất video.
+
+### Gate
+> **Nếu đạt, báo `TIKTOK TEXT ĐÃ ĐỦ CHUẨN` và dừng. Khi user OK → chạy CHECKPOINT 11T.**
+
+---
+
+## CHECKPOINT 11T — BÀN GIAO TIKTOK
+
+Bàn giao:
+
+1. hook / câu đầu;
+2. caption hoặc text post hoàn chỉnh;
+3. CTA;
+4. từ khóa tìm kiếm chính;
+5. 3–5 hashtag;
+6. ghi chú factual nếu có phần đang chờ hướng dẫn chính thức.
+
+Không thêm tài liệu sản xuất video.
 
 ---
 
@@ -664,13 +746,17 @@ Chỉ được coi bài dạng ảnh là hoàn thành khi:
 | 2 Mục tiêu | hồ sơ nghiên cứu + DNA khi cần |
 | 3 Góc | hồ sơ nghiên cứu |
 | 4 Format Facebook | `ktdt-facebook-post-playbook.md` |
+| 4 Format TikTok writing | `ktdt-tiktok-writing-playbook.md` |
 | 5 Hook | `ktdt-social-writing-dna.md` + `ktdt-hook-language-psychology.md` |
 | 6 Retention | `ktdt-social-writing-dna.md` + `ktdt-body-writing-retention.md` |
 | 7 CTA | DNA + body/retention |
 | 8 Viết | DNA + body/retention + playbook nền tảng |
-| 9 Đóng gói | Facebook playbook |
-| 10 QA text | DNA + body/retention + playbook nền tảng |
+| 9 Đóng gói Facebook | Facebook playbook |
+| 10 QA text Facebook | DNA + body/retention + Facebook playbook |
 | 11–12 Ảnh | Facebook playbook + tài sản brand của user |
+| 9T Đóng gói TikTok | TikTok writing playbook |
+| 10T QA TikTok | DNA + body/retention + TikTok writing playbook |
+| 11T Bàn giao TikTok | TikTok writing playbook |
 
 ---
 
@@ -714,7 +800,7 @@ Luật cốt lõi:
 
 Chưa khóa hoàn chỉnh:
 
-- TikTok;
+- TikTok **video production** (TikTok writing đã có playbook thử nghiệm);
 - Zalo;
 - YouTube;
 - video;
