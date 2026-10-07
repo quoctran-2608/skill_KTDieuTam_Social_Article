@@ -1,6 +1,6 @@
 # QUY CHUẨN CÂU MỞ ĐẦU MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
+**Phiên bản:** 0.4  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Giúp AI tìm và viết phần mở đầu ngắn, tự nhiên, có lực nhưng vẫn đúng bằng chứng.
@@ -35,16 +35,23 @@ Trước khi nghĩ câu chữ, chỉ cần chốt 3 thứ:
 
 > “Điều họ cần biết thêm là: …”
 
-### 3. Chi tiết tối thiểu nào làm mâu thuẫn trở nên thật?
+### 3. Chi tiết nào đang gánh lực cho mâu thuẫn?
 
 Có thể là:
 
 - một con số;
 - một mốc thời gian;
 - một khoản tiền;
+- một từ chỉ phạm vi như “cả”, “trước”, “sau”;
 - một loại hồ sơ;
 - một hành động;
 - một tình huống.
+
+Không hỏi “chi tiết nào quan trọng với chủ đề?”. Hỏi:
+
+> **“Chi tiết nào đang làm mâu thuẫn này tồn tại hoặc trở nên rõ?”**
+
+Nếu bỏ chi tiết đó mà lực của câu giảm rõ → đó là chi tiết phải giữ.
 
 Nếu chưa có mâu thuẫn thật → đừng cố làm câu giật.
 
@@ -64,9 +71,13 @@ Nếu chưa có mâu thuẫn thật → đừng cố làm câu giật.
 
 Chỉ mang vào:
 
-> **lượng thông tin tối thiểu để người đọc hiểu đúng mâu thuẫn.**
+> **những chi tiết đang làm mâu thuẫn rõ hơn, đúng hơn hoặc đáng quan tâm hơn.**
 
 Phần còn lại để thân bài trả lời.
+
+Nguyên tắc:
+
+> **Giữ những từ đang gánh mâu thuẫn. Thêm chi tiết nếu nó làm câu rõ hơn mà không làm nặng câu. Cắt phần chỉ làm câu đầy đủ hơn nhưng không làm người đọc hiểu hoặc quan tâm hơn.**
 
 ---
 
@@ -82,10 +93,12 @@ Không bắt buộc tìm thêm cơ chế khác chỉ để đa dạng.
 
 Ví dụ bản chất:
 
-> được giảm cho cả năm  
-> nhưng tiền từ đầu năm đã nộp.
+> quyền lợi áp dụng cho toàn kỳ  
+> nhưng một phần tiền đã được nộp từ trước.
 
 Đây đã là một mâu thuẫn đủ mạnh.
+
+Trong ví dụ này, các từ thể hiện **phạm vi toàn kỳ** và **thời điểm đã nộp trước** chính là những từ gánh lực. Không được cắt chúng chỉ để câu ngắn hơn.
 
 ---
 
@@ -120,11 +133,15 @@ Chỉ đổi sang cơ chế khác khi mâu thuẫn hiện tại chưa đủ lự
 
 ## Bước 4 — Cắt
 
-Với mỗi phương án, hỏi:
+Với mỗi phương án, hỏi lần lượt:
 
-> **Bỏ từ này đi có còn đúng và còn lực không?**
+> **Từ này có đang gánh mâu thuẫn không?**
 
-Nếu có → bỏ.
+> **Từ này có làm câu rõ hoặc đáng tin hơn mà không làm nặng câu không?**
+
+> **Nếu bỏ nó, người đọc có hiểu hoặc quan tâm ít hơn không?**
+
+Chỉ bỏ khi câu vẫn đúng, vẫn rõ và vẫn giữ nguyên lực.
 
 Đặc biệt cắt:
 
@@ -136,7 +153,13 @@ Nếu có → bỏ.
 
 Mục tiêu:
 
-> **câu ngắn nhất vẫn đúng và vẫn đủ sức kéo.**
+> **câu gọn nhất vẫn giữ nguyên lực.**
+
+Không tối ưu cho “ít chữ nhất”.
+
+Tối ưu cho:
+
+> **ít chữ thừa nhất.**
 
 ---
 
@@ -172,22 +195,33 @@ Nếu không → loại.
 
 “Cụ thể” không có nghĩa là đưa càng nhiều số liệu càng tốt.
 
-Chỉ cần chi tiết đủ để người đọc hình dung.
+Chi tiết trong câu mở đầu có ba loại:
 
-Ví dụ:
+## Chi tiết gánh lực
 
-> **Được giảm thuế cho cả năm 2026. Nhưng tiền từ đầu năm đã nộp rồi thì sao?**
+Nếu bỏ đi, mâu thuẫn yếu rõ.
 
-Có hai chi tiết đủ mạnh:
+→ **Phải giữ.**
 
-- cả năm 2026;
-- tiền đã nộp từ đầu năm.
+## Chi tiết làm rõ
 
-Không nhất thiết phải nhét thêm tên văn bản, ngày ban hành, thủ tục bù trừ hay mọi điều kiện ngay ở câu đầu.
+Không tạo mâu thuẫn nhưng giúp câu chính xác, cụ thể hoặc đáng tin hơn mà gần như không làm nặng câu.
+
+→ **Có thể thêm.**
+
+## Chi tiết chỉ làm đầy đủ
+
+Đúng nhưng không làm người đọc hiểu hơn, quan tâm hơn hoặc tin hơn ở khoảnh khắc đầu.
+
+→ **Để xuống thân bài.**
 
 Nguyên tắc:
 
-> **Ít chi tiết hơn, miễn đó là chi tiết đúng.**
+> **Không phải càng ít chi tiết càng tốt. Phải giữ đúng chi tiết đang làm việc.**
+
+Một con số có thể đáng giữ nếu nó làm câu cụ thể hơn mà không phá nhịp.
+
+Một thuật ngữ có thể đáng bỏ nếu chỉ làm câu nghe chuyên môn hơn mà không thay đổi cách người đọc hiểu vấn đề.
 
 ---
 
@@ -205,9 +239,9 @@ Yếu:
 
 > “Bạn đã biết quy định mới chưa?”
 
-Tốt hơn:
+Tốt hơn về bản chất:
 
-> “Được giảm cho cả năm, nhưng tiền đã nộp rồi thì sao?”
+> một câu hỏi đặt trực tiếp hai vế thật đang mâu thuẫn với nhau, bằng ngôn ngữ người đọc tự dùng.
 
 ---
 
@@ -287,4 +321,4 @@ Nếu chỉ thêm để câu nghe “chuyên nghiệp hơn” → thường nên
 
 # 11. Câu căn chỉnh cho AI
 
-> **Tìm mâu thuẫn thật mạnh nhất. Giữ lại chi tiết tối thiểu để nó vẫn đúng. Viết như người thật đang nghĩ, rồi cắt đến khi không còn từ thừa.**
+> **Tìm mâu thuẫn thật mạnh nhất. Giữ những từ đang gánh mâu thuẫn. Thêm chi tiết nếu nó làm câu rõ hơn mà không làm nặng câu. Cắt phần chỉ làm câu đầy đủ hơn nhưng không làm người đọc hiểu hoặc quan tâm hơn. Viết như người thật đang nghĩ.**
