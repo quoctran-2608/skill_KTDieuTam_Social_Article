@@ -1,6 +1,6 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
@@ -64,6 +64,20 @@ Chữ trên ảnh ưu tiên:
 
 Nếu hook đã được duyệt thì không tự thay hook chỉ vì chuyển sang bước thiết kế ảnh.
 
+## Emoji trên ảnh
+
+Không mặc định đưa emoji vào chữ trên ảnh.
+
+Với creative ảnh của Diệu Tâm, ưu tiên:
+
+> **chữ sạch + tương phản rõ + hook đủ lực**
+
+Emoji chỉ dùng trên ảnh khi thiết kế thực sự cần và người duyệt chủ động chọn.
+
+Nguyên tắc mặc định:
+
+> **Ảnh không cần emoji để tạo lực nếu câu chữ đã đủ mạnh.**
+
 ---
 
 # 4. Caption
@@ -99,20 +113,43 @@ Không chia đoạn máy móc sau mỗi câu nếu các câu vẫn thuộc cùng
 
 # 6. Emoji
 
+Emoji chủ yếu dùng trong **caption**, không phải để trang trí creative ảnh.
+
+## Hook caption
+
+Hook caption nên có **ít nhất 1 emoji phù hợp** khi emoji giúp:
+
+- dẫn mắt ngay ở dòng đầu;
+- làm bài bớt khô;
+- vẫn giữ đúng mức độ nghiêm túc của chủ đề.
+
+Không thêm emoji chỉ để hoàn thành quy tắc.
+
+Nếu chủ đề đặc biệt nghiêm túc hoặc emoji làm giảm độ tin cậy, có thể bỏ.
+
+## Thân caption
+
 Emoji dùng để:
 
 - dẫn mắt;
 - báo chuyển ý;
 - nhấn một cảnh báo hoặc hành động;
-- tạo nhịp nhẹ.
+- tạo nhịp nhẹ;
+- chia các cụm thông tin dài thành những điểm đọc dễ hơn.
 
 Không dùng để trang trí dày đặc.
 
-Không để emoji làm nội dung mất chất chuyên môn.
+Không để nhiều emoji liên tiếp làm bài mất chất chuyên môn.
+
+Ưu tiên một emoji có chức năng rõ ở các điểm chuyển ý quan trọng thay vì rải đều toàn bài.
 
 Nguyên tắc:
 
-> **Vừa đủ để dễ đọc, không nhiều đến mức người đọc chú ý vào emoji hơn thông tin.**
+> **Đủ để bài có nhịp và dễ quét; không nhiều đến mức emoji cạnh tranh với thông tin.**
+
+Tách rõ:
+
+> **Caption: có thể dùng emoji có chủ đích. Ảnh: không mặc định dùng emoji.**
 
 ---
 
@@ -159,7 +196,7 @@ Trước khi duyệt, hỏi:
 2. Hook đã duyệt có được giữ đúng không?
 3. Caption có hook mở đầu không?
 4. Có tường chữ không?
-5. Emoji có giúp đọc hay chỉ trang trí?
+5. Hook caption đã có emoji phù hợp nếu chủ đề cho phép chưa, và emoji trong bài có giúp đọc thay vì chỉ trang trí?
 6. Số ảnh có phục vụ hành vi mong muốn không?
 7. CTA có khớp mục tiêu bài không?
 8. Hashtag đã được research sau khi chốt nội dung chưa?
