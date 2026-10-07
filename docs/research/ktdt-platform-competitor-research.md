@@ -1,6 +1,6 @@
 # NGHIÊN CỨU ĐỐI THỦ VÀ NỘI DUNG CẠNH TRANH THEO NỀN TẢNG — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn nghiên cứu cách nội dung đang thu hút người xem trên Facebook, TikTok, YouTube và Zalo trước khi chọn cách đánh.
@@ -360,9 +360,22 @@ Quan sát đặc biệt:
 
 Không lấy kết quả Google làm thay dữ liệu TikTok nếu không thể quan sát video thật.
 
-Nếu không truy cập được:
+Nếu không truy cập trực tiếp được TikTok:
 
-> ghi **chưa đủ dữ liệu TikTok**.
+1. ưu tiên TikTok Creator Search Insights, Creative Center, Keyword Insights, hashtag trend và tài liệu chính thức;
+2. ghi rõ phần nào không quan sát được trực tiếp;
+3. được phép dùng **YouTube Shorts / YouTube Search / Facebook** làm dữ liệu bổ trợ về cách đóng gói nội dung;
+4. mọi kết luận từ nền tảng khác phải gắn nhãn:
+
+> **Suy luận chéo nền tảng — không phải bằng chứng hiệu quả trên TikTok.**
+
+Không được lấy dữ liệu YouTube/Facebook rồi trình bày như chỉ số TikTok.
+
+Không được nói:
+
+> “cách này đang thắng trên TikTok”
+
+nếu bằng chứng thực tế chỉ đến từ nền tảng khác.
 
 ## 8.2. TikTok Creative Center / Top Ads
 
