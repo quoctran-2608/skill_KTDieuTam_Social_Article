@@ -1,6 +1,6 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
@@ -14,8 +14,14 @@ Khi tạo bài Facebook dạng ảnh, luôn tách rõ:
 1. **Chữ trên ảnh**
 2. **Caption**
 3. **Hashtag**
+4. **Ảnh hoàn chỉnh**
 
 Không gộp chữ trên ảnh vào caption rồi coi đó là một output duy nhất.
+
+Nếu định dạng đã chốt là bài dạng ảnh, bài chỉ được coi là hoàn thành khi:
+
+- ảnh đã được tạo và QA;
+- hoặc người duyệt chủ động yêu cầu dừng ở phần text.
 
 ---
 
@@ -188,9 +194,61 @@ Ba ảnh phù hợp khi việc hiểu đúng cần thêm một hoặc hai bướ
 
 ---
 
-# 9. Kiểm nhanh Facebook
+# 9. Tạo ảnh sau khi chốt nội dung
 
-Trước khi duyệt, hỏi:
+Khi chữ trên ảnh, caption và hashtag đã được duyệt, AI phải chủ động đề nghị:
+
+> **Bước tiếp theo là tạo ảnh Facebook hoàn chỉnh.**
+
+Trước khi tạo, tóm tắt ngắn:
+
+- số ảnh;
+- tỷ lệ ảnh;
+- chữ trên ảnh;
+- phong cách hình;
+- màu chủ đạo nếu đã có;
+- có dùng logo hay không;
+- vị trí logo nếu đã được chốt.
+
+Nếu người duyệt đồng ý → tạo ảnh ngay.
+
+Không hỏi lại những gì đã được duyệt.
+
+## Decision lock khi tạo ảnh
+
+Các điểm đã khóa phải được giữ nguyên:
+
+- hook;
+- chữ trên ảnh;
+- số ảnh;
+- logo;
+- vị trí logo nếu đã duyệt;
+- định hướng phong cách chính.
+
+Không tự đổi câu chữ để “đẹp ảnh hơn”.
+
+Nếu phát hiện câu quá dài hoặc lỗi hiển thị, phải báo và xin mở lại điểm khóa trước khi sửa nội dung.
+
+## QA ảnh sau khi tạo
+
+Kiểm ít nhất:
+
+1. đúng tỷ lệ/kích thước phù hợp Facebook;
+2. chữ chính đọc rõ trên điện thoại;
+3. hook đúng nguyên văn đã duyệt;
+4. không có lỗi dấu tiếng Việt rõ ràng;
+5. logo rõ, đúng vị trí, không có nền rác/viền lạ;
+6. không có chi tiết thừa cạnh tranh với hook;
+7. bố cục cân và có vùng thở;
+8. hình ảnh phù hợp mục tiêu organic/quảng cáo của bài.
+
+Nếu có lỗi rõ → sửa trước khi coi là bản hoàn chỉnh.
+
+---
+
+# 10. Kiểm nhanh Facebook
+
+Trước khi duyệt toàn bài, hỏi:
 
 1. Chữ trên ảnh và caption đã tách riêng chưa?
 2. Hook đã duyệt có được giữ đúng không?
@@ -200,9 +258,10 @@ Trước khi duyệt, hỏi:
 6. Số ảnh có phục vụ hành vi mong muốn không?
 7. CTA có khớp mục tiêu bài không?
 8. Hashtag đã được research sau khi chốt nội dung chưa?
+9. Nếu bài là dạng ảnh, ảnh hoàn chỉnh đã được tạo và QA chưa?
 
 ---
 
-# 10. Câu căn chỉnh cho AI
+# 11. Câu căn chỉnh cho AI
 
 > **Đóng gói nội dung theo hành vi người dùng Facebook: dừng nhanh, đọc dễ, hiểu đúng và biết bước tiếp theo. Không thêm ảnh, emoji hay hashtag chỉ để bài trông “đủ”.**
