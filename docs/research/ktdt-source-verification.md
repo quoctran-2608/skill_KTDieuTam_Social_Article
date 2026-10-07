@@ -1,6 +1,6 @@
 # QUY TẮC KIỂM CHỨNG NGUỒN — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn bắt buộc khi nghiên cứu nội dung kế toán, thuế, pháp luật và chính sách trước khi viết bài mạng xã hội.
@@ -30,11 +30,14 @@ Khi xác nhận quy định pháp luật, thuế, kế toán hoặc thủ tục 
 Ưu tiên cao nhất:
 
 - văn bản quy phạm pháp luật gốc;
+- văn bản ban hành/sửa đổi/thay thế chính thức;
 - Quốc hội;
 - Chính phủ;
 - Bộ Tài chính;
 - Cục Thuế và cơ quan thuế có thẩm quyền;
 - cơ quan nhà nước trực tiếp ban hành hoặc hướng dẫn vấn đề.
+
+**Trong cùng Cấp 1, văn bản pháp lý gốc có trọng số cao hơn bài giải thích/tin bài của chính cơ quan nhà nước.** Bài giải thích chính thức rất hữu ích để hiểu bối cảnh nhưng không thay thế nội dung văn bản khi hai cách diễn đạt khác nhau.
 
 Dùng cấp này để xác nhận:
 
@@ -273,7 +276,30 @@ Nếu mâu thuẫn chưa giải quyết được:
 
 ---
 
-# 9. Vai trò của đối thủ và mạng xã hội
+# 9. Sổ nguồn và khả năng truy nguyên
+
+Mỗi hồ sơ nghiên cứu phải giữ một **sổ nguồn** tối thiểu gồm:
+
+- mã nguồn;
+- tên nguồn/văn bản;
+- cơ quan hoặc đơn vị;
+- ngày ban hành/đăng;
+- ngày AI xác minh;
+- đường dẫn hoặc định danh;
+- nguồn này đang chứng minh dữ kiện nào;
+- trạng thái: chính thức / dự thảo / tham khảo.
+
+Mọi kết luận quan trọng phải truy ngược được về ít nhất một nguồn trong sổ.
+
+Không được để tình trạng:
+
+> “AI nhớ là đã đọc ở đâu đó.”
+
+Khi nguồn thay đổi theo thời gian, lưu ngày xác minh để lần sau biết có cần kiểm lại hay không.
+
+---
+
+# 10. Vai trò của đối thủ và mạng xã hội
 
 Đối thủ có thể dạy Diệu Tâm:
 
@@ -297,9 +323,13 @@ Nguyên tắc:
 
 > **Đối thủ dạy cách nói. Nguồn chính thức quyết định điều được nói.**
 
+Cách nghiên cứu đối thủ chi tiết nằm tại:
+
+> `docs/research/ktdt-platform-competitor-research.md`
+
 ---
 
-# 10. Hồ sơ dữ kiện tối thiểu trước khi viết
+# 11. Hồ sơ dữ kiện tối thiểu trước khi viết
 
 Với một chủ đề kế toán/thuế/pháp lý, phải có ít nhất:
 
@@ -318,7 +348,7 @@ Nếu thiếu một mục có thể làm người đọc hiểu sai → chưa đ
 
 ---
 
-# 11. Điều kiện được đi tiếp
+# 12. Điều kiện được đi tiếp
 
 Chỉ được coi là **DỮ KIỆN ĐÃ CHẮC** khi:
 
@@ -335,7 +365,7 @@ Nếu chưa đạt:
 
 ---
 
-# 12. Quy tắc cuối
+# 13. Quy tắc cuối
 
 Trước khi dùng một dữ kiện trong hook hoặc nội dung, hỏi:
 
