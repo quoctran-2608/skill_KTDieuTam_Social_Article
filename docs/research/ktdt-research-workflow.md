@@ -1,6 +1,6 @@
 # QUY TRÌNH NGHIÊN CỨU NỘI DUNG MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Quy trình bắt buộc để biến một chủ đề kế toán – thuế – doanh nghiệp thành một cơ hội nội dung đủ chắc trước khi chọn cách đánh và viết bài.
@@ -31,35 +31,80 @@ Chỉ khi đủ cả 4 lớp mới được chuyển sang bước **chọn cách
 
 ---
 
-# 2. Tiền bước — Nếu chưa có chủ đề
+# 2. Tiền bước — Quét chủ đề nóng khi chưa có chủ đề
 
-Nếu người dùng chưa chọn chủ đề, AI được phép quét tin mới để đề xuất chủ đề.
+Nếu người dùng chưa chọn chủ đề, AI **phải chủ động quét tin mới**, không hỏi người dùng “muốn viết gì?” trước.
 
-Ưu tiên chủ đề có:
+## 2.1. Cửa sổ thời gian
 
-- mới hoặc đang nóng;
-- liên quan trực tiếp đến kế toán, thuế, tài chính doanh nghiệp, hộ kinh doanh hoặc vận hành;
-- có tác động rõ tới một nhóm người;
-- có tiền, thời hạn, quyền lợi, nghĩa vụ, rủi ro, quyết định hoặc thay đổi đáng chú ý;
-- có nguồn đủ mạnh để kiểm chứng;
-- có khả năng tạo ra một “điểm căng” thật.
+Ưu tiên theo thứ tự:
+
+1. **24–72 giờ gần nhất**;
+2. nếu chưa có đủ ứng viên tốt → mở rộng tối đa **7 ngày**;
+3. nội dung cũ hơn chỉ giữ nếu tuần hiện tại có:
+   - diễn biến mới;
+   - văn bản mới;
+   - deadline mới;
+   - thay đổi thực thi;
+   - hoặc mức quan tâm mới có bằng chứng.
+
+Nếu có khả năng truy cập web/search, bắt buộc dùng dữ liệu hiện tại.
+
+Không được tự gọi một chủ đề là “hot” dựa trên kiến thức model cũ.
+
+## 2.2. Phạm vi ưu tiên
+
+Ưu tiên chủ đề liên quan trực tiếp tới:
+
+- thuế;
+- kế toán;
+- tài chính / vận hành doanh nghiệp;
+- hộ kinh doanh;
+- hóa đơn / chứng từ;
+- lao động / BHXH khi có tác động doanh nghiệp;
+- thủ tục, chính sách hoặc deadline có ảnh hưởng thực tế đến khách hàng Diệu Tâm.
+
+## 2.3. Năm tiêu chí sàng lọc
+
+Một ứng viên mạnh nên đạt ít nhất **4/5**:
+
+1. **Mới / nóng** — có diễn biến mới hoặc thời điểm cần chú ý.
+2. **Liên quan đúng tệp** — ảnh hưởng rõ tới người đọc Diệu Tâm.
+3. **Tác động thực tế** — có tiền, thời hạn, quyền lợi, nghĩa vụ, hồ sơ, rủi ro hoặc quyết định.
+4. **Kiểm chứng được** — có nguồn đủ mạnh để nghiên cứu sâu.
+5. **Có điểm căng thật** — có hiểu lầm, mâu thuẫn, thay đổi, chi phí ẩn hoặc câu hỏi chưa rõ.
+
+## 2.4. Không đánh đồng “được đăng nhiều” với “hot”
 
 Không chọn chủ đề chỉ vì:
 
 - tiêu đề báo nghe lớn;
-- nhiều trang đăng lại;
+- nhiều trang đăng lại cùng một thông cáo;
 - có từ “nóng”, “sốc”, “mới nhất”;
-- có khả năng kéo lượt xem nhưng ít giá trị cho người đọc của Diệu Tâm.
+- một bài có lượt xem cao nhưng không biết bối cảnh;
+- có khả năng kéo view nhưng ít giá trị cho người đọc Diệu Tâm.
 
-Khi đề xuất nhiều chủ đề, mỗi chủ đề phải nói ngắn gọn:
+## 2.5. Đầu ra shortlist
+
+Đề xuất **3–5 chủ đề**.
+
+Mỗi chủ đề phải nói ngắn gọn:
 
 - chuyện gì mới;
+- thời điểm / độ mới;
 - ai bị ảnh hưởng;
-- vì sao đáng viết;
+- vì sao đáng viết ngay;
 - điểm căng tiềm năng;
-- mức độ chắc của nguồn.
+- mức độ chắc ban đầu của nguồn;
+- đánh giá: **Nên làm / Có thể làm / Chưa nên làm**.
 
-Đây chỉ là bước sàng lọc. Chưa được xem là nghiên cứu sâu.
+Cuối shortlist phải có:
+
+> **KHUYẾN NGHỊ SỐ 1**
+
+Nếu người dùng chỉ trả **OK**, mặc định chọn khuyến nghị số 1 để nghiên cứu sâu.
+
+Đây chỉ là bước sàng lọc. Chưa được xem là nghiên cứu sâu và chưa được viết hook.
 
 ---
 
