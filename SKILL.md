@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.6  
+**Phiên bản:** 0.7  
 **Ngày:** 07/10/2026  
 **Vai trò:** File điều phối trung tâm / runtime orchestrator  
 **Trạng thái:** Đang phát triển — đã kiểm chứng thực tế đến Facebook dạng ảnh: nghiên cứu → chọn cách đánh → hook → thân bài → đóng gói → tạo ảnh → QA cơ bản.
@@ -37,15 +37,59 @@ Không được trả lời kiểu:
 
 Một checkpoint = tối đa một lần duyệt, trừ khi người dùng yêu cầu sửa.
 
-## Khi user chỉ đưa URL skill + nhiệm vụ
+## Chế độ AUTO-START khi user chỉ đưa URL skill
 
-Không yêu cầu người dùng paste lại các file con nếu các URL trong danh bạ có thể truy cập được.
+Prompt tối thiểu hợp lệ:
 
-Ví dụ prompt đủ để khởi động:
+> **“Tiến hành chạy skill https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/SKILL.md”**
 
-> “Dùng skill tại https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/SKILL.md để làm bài Facebook về [chủ đề].”
+Khi nhận đúng kiểu prompt này mà **không có chủ đề, nền tảng hoặc mục tiêu cụ thể**, AI **không được hỏi lại “muốn viết chủ đề gì?”**.
 
-AI phải tự đọc file điều phối, tự mở file con theo checkpoint và chạy tuần tự.
+AI phải tự khởi động như sau:
+
+1. đọc `SKILL.md`;
+2. mở `docs/research/ktdt-research-workflow.md`;
+3. chạy **CHECKPOINT A — Quét chủ đề nóng**;
+4. tìm các chủ đề mới / nóng / sốt / đang được quan tâm trong **24–72 giờ gần nhất**;
+5. nếu chưa có đủ ứng viên tốt, mở rộng cửa sổ tối đa **7 ngày**;
+6. chỉ giữ chủ đề liên quan rõ đến:
+   - thuế;
+   - kế toán;
+   - hộ kinh doanh;
+   - doanh nghiệp;
+   - hóa đơn;
+   - lao động / BHXH khi có tác động vận hành doanh nghiệp;
+   - chính sách tài chính / thủ tục có ảnh hưởng thực tế tới nhóm khách hàng Diệu Tâm;
+7. xếp hạng và đề xuất chủ đề tốt nhất;
+8. dừng để người dùng duyệt.
+
+Nếu người dùng chỉ trả **OK** mà không chọn số khác, mặc định hiểu là:
+
+> **duyệt chủ đề AI đang khuyến nghị số 1.**
+
+Sau đó AI phải chạy ngay checkpoint nghiên cứu sâu tiếp theo ở turn kế tiếp.
+
+### Mặc định nền tảng khi AUTO-START
+
+Do quy trình hiện tại đã được kiểm chứng sâu nhất cho Facebook dạng ảnh:
+
+> **Nếu user không chỉ định nền tảng, mặc định nền tảng đích = Facebook dạng ảnh.**
+
+Đây là default runtime, không phải quy luật thương hiệu vĩnh viễn. Nếu user chỉ định nền tảng khác thì dùng nền tảng user chọn.
+
+### Không yêu cầu prompt dài
+
+Không yêu cầu người dùng phải ghi thêm:
+
+- chủ đề;
+- đối tượng;
+- góc;
+- mục tiêu;
+- định dạng;
+
+nếu họ muốn skill tự tìm từ đầu.
+
+Không yêu cầu người dùng paste lại file con nếu URL trong danh bạ có thể truy cập được.
 
 Nếu một file bắt buộc không mở được, phải nói rõ file nào không truy cập được và **dừng bước đó**. Không được tự bịa nội dung của file.
 
@@ -150,8 +194,9 @@ Nếu prompt đã cung cấp đủ thông tin cho checkpoint hiện tại, làm 
 
 Chỉ hỏi lại khi thiếu dữ kiện làm thay đổi đáng kể kết quả, ví dụ:
 
-- chưa biết chủ đề và không thể suy ra;
-- chưa biết nền tảng đích trước bước nghiên cứu cạnh tranh;
+- chỉ hỏi về chủ đề nếu user **đã yêu cầu một phạm vi hẹp nhưng phạm vi đó vẫn mơ hồ**;
+- không hỏi chủ đề trong AUTO-START: phải tự quét chủ đề nóng;
+- không hỏi nền tảng trong AUTO-START: mặc định Facebook dạng ảnh;
 - chưa có logo nhưng người dùng yêu cầu phải dùng đúng logo;
 - chưa rõ mục tiêu kinh doanh khi mục tiêu quyết định cách đánh.
 
@@ -159,26 +204,88 @@ Chỉ hỏi lại khi thiếu dữ kiện làm thay đổi đáng kể kết qu�
 
 # 3. RUNTIME FLOW — CHẠY TỪNG BƯỚC
 
-## CHECKPOINT 0 — Nhận brief
+## CHECKPOINT 0 — Xác định chế độ chạy
 
-### Mục tiêu
-Xác định tối thiểu:
+### Nếu user đã cho chủ đề
 
-- chủ đề hoặc yêu cầu tìm chủ đề;
-- nền tảng đích;
-- mục tiêu nội dung / kinh doanh nếu người dùng đã nêu;
-- tài sản đầu vào có sẵn như link, file, logo.
+Ghi nhận:
 
-Nếu người dùng chưa có chủ đề, dùng **tiền bước chọn chủ đề** trong:
+- chủ đề;
+- nền tảng nếu có;
+- mục tiêu nếu có;
+- tài sản đầu vào nếu có.
+
+Nếu không có nền tảng → mặc định Facebook dạng ảnh, trừ khi yêu cầu cho thấy nền tảng khác.
+
+Sau đó đi thẳng tới **CHECKPOINT 1.1 — Nghiên cứu sự thật**. Không cần xin một lượt OK chỉ để xác nhận lại brief nếu brief đã rõ.
+
+### Nếu user KHÔNG cho chủ đề
+
+Không hỏi lại.
+
+Chạy ngay **CHECKPOINT A — QUÉT CHỦ ĐỀ NÓNG** bên dưới.
+
+---
+
+## CHECKPOINT A — QUÉT CHỦ ĐỀ NÓNG / HOT TREND
+
+### Bắt buộc đọc
 
 - `docs/research/ktdt-research-workflow.md`
 - URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
 
+Khi cần kiểm nhanh độ chắc của ứng viên, dùng thêm:
+
+- `docs/research/ktdt-source-verification.md`
+- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-source-verification.md
+
+### Cửa sổ thời gian
+
+1. ưu tiên tin / thay đổi / thảo luận đáng chú ý trong **24–72 giờ gần nhất**;
+2. nếu chưa có đủ ứng viên chất lượng → mở rộng tối đa **7 ngày**;
+3. chủ đề cũ hơn 7 ngày chỉ được giữ nếu **tuần này có diễn biến mới, deadline mới hoặc mức quan tâm mới**.
+
+### Phải dùng dữ liệu hiện tại
+
+Nếu môi trường có web/search, phải research web hiện tại.
+
+Không được dùng kiến thức cũ trong model để tự tuyên bố một chủ đề đang “hot”.
+
+### Lọc chủ đề
+
+Mỗi ứng viên phải có ít nhất 4/5 yếu tố:
+
+1. **Mới / đang nóng** — có diễn biến mới hoặc deadline gần.
+2. **Đúng tệp Diệu Tâm** — ảnh hưởng rõ đến doanh nghiệp, hộ kinh doanh, kế toán / vận hành.
+3. **Tác động thực tế** — tiền, thuế, hồ sơ, quyền lợi, nghĩa vụ, thời hạn hoặc quyết định.
+4. **Kiểm chứng được** — có nguồn đủ mạnh để research sâu.
+5. **Có điểm căng nội dung** — tồn tại hiểu lầm, thay đổi, mâu thuẫn, chi phí hoặc câu hỏi thật.
+
+Không coi một chủ đề là hot chỉ vì nhiều báo copy cùng một thông cáo.
+
 ### Đầu ra
-Tóm tắt brief đang hiểu trong vài dòng. Nếu đủ để nghiên cứu, đề nghị bắt đầu CHECKPOINT 1.1.
+
+Đề xuất **3–5 chủ đề**.
+
+Mỗi chủ đề ghi rất ngắn:
+
+- chuyện gì vừa xảy ra;
+- thời điểm / độ mới;
+- ai bị ảnh hưởng;
+- vì sao đáng làm ngay;
+- điểm căng tiềm năng;
+- độ chắc nguồn ban đầu;
+- đánh giá: **Nên làm / Có thể làm / Chưa nên làm**.
+
+Cuối cùng chọn:
+
+> **KHUYẾN NGHỊ SỐ 1**
+
+và giải thích ngắn vì sao.
 
 ### Gate
-> **Chờ người dùng OK.**
+
+> **Dừng sau shortlist. Nếu user nói OK → mặc định chọn KHUYẾN NGHỊ SỐ 1, khóa chủ đề và ở turn kế tiếp chạy ngay CHECKPOINT 1.1. Nếu user chọn chủ đề khác → khóa chủ đề đó và chạy CHECKPOINT 1.1.**
 
 ---
 
@@ -548,7 +655,8 @@ Chỉ được coi bài dạng ảnh là hoàn thành khi:
 
 | Checkpoint | File bắt buộc |
 |---|---|
-| 0 Brief / chọn chủ đề | `ktdt-research-workflow.md` nếu cần |
+| 0 Chế độ chạy | `SKILL.md` | 
+| A Quét chủ đề nóng | `ktdt-research-workflow.md` + `ktdt-source-verification.md` khi cần |
 | 1.1 Sự thật | `ktdt-research-workflow.md` + `ktdt-source-verification.md` |
 | 1.2 Người đọc | `ktdt-research-workflow.md` |
 | 1.3 Cạnh tranh | `ktdt-research-workflow.md` + `ktdt-platform-competitor-research.md` |
@@ -622,4 +730,4 @@ Nếu người dùng yêu cầu phần chưa khóa, phải nói rõ đây là ph
 
 # 7. CÂU CĂN CHỈNH CHO AI
 
-> **Đọc file điều phối trước. Chỉ mở file con đúng với checkpoint hiện tại. Làm một bước, đưa kết quả, chờ người dùng duyệt rồi mới đi tiếp. Quyết định đã chốt thì giữ nguyên. Nghiên cứu phải chắc trước khi sáng tạo; khi viết phải nói với một người thật trong một tình huống thật; khi đã chọn bài dạng ảnh thì chỉ hoàn thành sau khi ảnh đã được tạo và QA hoặc người dùng chủ động dừng ở phần text.**
+> **Nếu user chỉ nói “Tiến hành chạy skill [URL]”, hãy tự bắt đầu bằng quét chủ đề nóng trong ngày/tuần, không hỏi họ muốn viết gì. Sau đó làm một checkpoint, đưa kết quả, chờ duyệt rồi tự chạy checkpoint kế tiếp. Quyết định đã chốt thì giữ nguyên. Nghiên cứu phải chắc trước khi sáng tạo; khi viết phải nói với một người thật trong một tình huống thật; khi đã chọn bài dạng ảnh thì chỉ hoàn thành sau khi ảnh đã được tạo và QA hoặc người dùng chủ động dừng ở phần text.**
