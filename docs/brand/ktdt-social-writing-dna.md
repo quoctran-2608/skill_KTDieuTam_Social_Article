@@ -1,6 +1,6 @@
 # DNA GIỌNG VĂN MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Facebook, TikTok, Zalo, YouTube
@@ -14,9 +14,9 @@ Mọi nội dung mạng xã hội của Kế Toán Diệu Tâm phải đạt đ�
 > **Dừng → Giữ → Hiểu → Tin → Hành động**
 
 - **Dừng:** đúng người thấy ngay nội dung có liên quan đến mình.
-- **Giữ:** sau câu đầu vẫn còn lý do để đọc hoặc xem tiếp.
+- **Giữ:** sau phần mở đầu vẫn còn lý do để đọc hoặc xem tiếp.
 - **Hiểu:** người không chuyên vẫn hiểu đúng.
-- **Tin:** thông tin chính xác, điềm tĩnh, không phóng đại.
+- **Tin:** thông tin chính xác, cụ thể, không phóng đại.
 - **Hành động:** người đọc biết nên kiểm gì, làm gì, bình luận gì hoặc khi nào nên liên hệ Diệu Tâm.
 
 ---
@@ -47,81 +47,52 @@ Không được có cảm giác:
 
 ---
 
-# 3. Mức độ thu hút
+# 3. Nguyên tắc thu hút
 
-Diệu Tâm phải **thu hút nhưng không giật gân**.
+Diệu Tâm phải **thu hút bằng sự thật đáng chú ý**, không bằng từ ngữ kích động.
 
-Mặc định dùng mức thu hút này:
+Không có một mẫu hook cố định của Diệu Tâm.
 
-> **Nói đúng đối tượng + đúng vấn đề + đúng hậu quả hoặc lợi ích.**
+Trước khi viết phần mở đầu, phải tìm ra:
 
-Ví dụ tốt:
+1. người đọc đang nghĩ hoặc đang yên tâm về điều gì;
+2. sự thật nào làm họ cần nhìn lại;
+3. chi tiết cụ thể nào khiến sự khác biệt đó trở nên rõ ràng.
 
-> Nếu doanh nghiệp đang dùng cách xử lý cũ, đây là ba chỗ nên kiểm trước kỳ kê khai tiếp theo.
+Câu chữ được phép:
 
-Có thể mạnh hơn khi bằng chứng cho phép:
+> **mạnh hơn cách diễn đạt hành chính**
 
-> Sai ở bước này có thể làm số liệu kê khai lệch ngay từ đầu.
+nhưng không được:
 
-Không dùng kiểu:
+> **mạnh hơn bằng chứng.**
 
-> SỐC!  
-> 90% doanh nghiệp đang làm sai!  
-> Không biết là mất tiền!  
-> Coi chừng bị phạt nặng!
+Không được tạo sức hút bằng cách:
 
-trừ khi có bằng chứng trực tiếp đủ mạnh và cách nói đó thực sự chính xác.
+- hù dọa;
+- bịa con số;
+- biến khả năng thành chắc chắn;
+- phóng đại hậu quả;
+- cố tình mơ hồ;
+- dùng cùng một kiểu mở bài lặp đi lặp lại.
 
----
+Quy chuẩn chuyên sâu về hook nằm tại:
 
-# 4. Quy tắc câu mở đầu
+> `docs/content/ktdt-hook-language-psychology.md`
 
-Dòng đầu phải làm ít nhất một trong bốn việc, tốt nhất là hai việc trở lên:
-
-1. gọi đúng người;
-2. gọi đúng vấn đề;
-3. cho thấy hậu quả hoặc lợi ích;
-4. tạo một câu hỏi khiến người đọc muốn biết phần tiếp theo.
-
-Ưu tiên mở bằng:
-
-- thay đổi thật;
-- lỗi thật;
-- con số thật;
-- mốc thời gian;
-- nghịch lý;
-- tình huống thực tế;
-- câu hỏi người đọc thực sự có thể hỏi.
-
-Ví dụ:
-
-> Công ty có lãi nhưng cuối tuần vẫn thiếu tiền trả lương — chuyện này hoàn toàn có thể xảy ra.
-
-> Khách còn nợ 450 triệu chưa phải thông tin đáng lo nhất. Câu cần hỏi là: bao nhiêu trong số đó đã quá hạn 30, 60 hay 90 ngày?
-
-Hạn chế:
-
-> Bạn đã biết chưa?
-
-> Thông tin rất quan trọng dành cho doanh nghiệp.
-
-> Kế Toán Diệu Tâm xin chia sẻ...
-
-> Trong bối cảnh hiện nay...
-
-Nếu có thể nói điều quan trọng ở dòng 1 thì không đẩy xuống dòng 5.
+Khi tạo hook, phải dùng tài liệu đó làm chuẩn chính.
 
 ---
 
-# 5. Quy tắc giữ người đọc
+# 4. Quy tắc giữ người đọc
 
-Câu đầu tốt chưa đủ.
+Một phần mở đầu tốt chưa đủ.
 
-Phần sau phải tiếp tục đi tới, không được vòng vo.
+Nội dung phía sau phải tiếp tục tiến về phía trước, không vòng vo.
 
 Ưu tiên nhịp:
 
-> **Chuyện gì → Vì sao đáng quan tâm → Hiểu đúng thế nào → Ví dụ → Nên làm gì**
+> **Chuyện gì → Vì sao đáng quan tâm → Hiểu đúng thế nào → Ví dụ / bằng chứng → Nên làm gì**
 
 Không bắt buộc bài nào cũng đủ 5 phần.
 
@@ -131,13 +102,21 @@ Không lặp cùng một ý theo kiểu:
 
 > nêu ý → ví dụ → giải thích lại đúng ý vừa nêu.
 
-Nếu phần cuối không thêm điều kiện, hành động hoặc góc nhìn mới thì bỏ.
+Nếu một đoạn không thêm:
+
+- thông tin;
+- bằng chứng;
+- điều kiện;
+- cách hiểu;
+- hành động;
+
+thì cân nhắc bỏ.
 
 Chi tiết người đọc cần biết trước phải lên trước. Căn cứ sâu có thể xuống sau.
 
 ---
 
-# 6. Quy tắc dễ hiểu
+# 5. Quy tắc dễ hiểu
 
 Ưu tiên tiếng Việt bình thường.
 
@@ -147,23 +126,21 @@ Nếu phải dùng thuật ngữ:
 - nói bằng hậu quả thực tế;
 - cho ví dụ khi cần.
 
-Ưu tiên:
+Ưu tiên cách nói:
 
-> “chỗ cần kiểm”
-
-> “điểm dễ nhầm”
-
-> “việc cần làm trước”
-
-> “chưa thể kết luận chỉ từ con số này”
-
-> “trường hợp này cần đối chiếu thêm”
+- “chỗ cần kiểm”;
+- “điểm dễ nhầm”;
+- “việc cần làm trước”;
+- “chưa thể kết luận chỉ từ con số này”;
+- “trường hợp này cần đối chiếu thêm”.
 
 Không dùng từ chuyên môn chỉ để tạo cảm giác uyên bác.
 
+Nếu có thể thay một khái niệm trừu tượng bằng một chi tiết người đọc nhìn thấy được, ưu tiên chi tiết.
+
 ---
 
-# 7. Quy tắc tạo giá trị
+# 6. Quy tắc tạo giá trị
 
 Người đọc phải nhận được giá trị ngay cả khi không mua dịch vụ.
 
@@ -175,37 +152,41 @@ Một bài tốt nên giúp họ ít nhất một việc:
 - tự kiểm tra một con số;
 - biết hồ sơ nào cần xem;
 - biết câu gì cần hỏi kế toán;
+- biết việc nào nên làm trước;
 - biết khi nào cần hỗ trợ chuyên sâu.
 
 Không dùng kiểu:
 
-> nêu lỗi nguy hiểm → giấu cách xử lý → ép người đọc nhắn tin.
+> nêu vấn đề nguy hiểm → giấu cách xử lý → ép người đọc nhắn tin.
 
-Hữu ích trước, bán sau.
+Nguyên tắc:
+
+> **Hữu ích trước, bán sau.**
 
 ---
 
-# 8. Quy tắc tạo tương tác
+# 7. Quy tắc tạo tương tác
 
 Không xin bình luận cho có.
 
-Không dùng:
+Không mặc định dùng:
 
-> Bạn nghĩ sao?
+> “Bạn nghĩ sao?”
 
-> Hãy để lại bình luận nhé!
+> “Hãy để lại bình luận nhé!”
 
-Ưu tiên câu hỏi dễ trả lời và giúp hiểu nhu cầu thật:
+Ưu tiên câu hỏi:
 
-> Doanh nghiệp bạn đang vướng ở khâu nào: doanh thu, hóa đơn hay hồ sơ đầu vào?
-
-> Nếu đang gặp tình trạng có lãi nhưng thiếu tiền, khoản nào đang chiếm nhiều nhất: công nợ, tồn kho hay chi phí phải trả?
+- dễ trả lời;
+- gắn với tình huống thật;
+- giúp Diệu Tâm hiểu nhu cầu của người đọc;
+- có thể mở ra nội dung tiếp theo.
 
 Không cố tạo tranh cãi giả để lấy tương tác.
 
 ---
 
-# 9. Quy tắc kêu gọi hành động
+# 8. Quy tắc kêu gọi hành động
 
 Lời kêu gọi phải tương xứng với mức độ quan tâm của người đọc.
 
@@ -219,7 +200,7 @@ Có thể dùng:
 - nhắn Diệu Tâm;
 - đặt lịch trao đổi.
 
-Chỉ mời liên hệ khi:
+Chỉ mời liên hệ mạnh khi:
 
 - trường hợp cần xem dữ liệu cụ thể;
 - có nhiều ngoại lệ;
@@ -230,7 +211,7 @@ Không kết mọi bài bằng “liên hệ ngay”.
 
 ---
 
-# 10. Cách xưng hô
+# 9. Cách xưng hô
 
 Ưu tiên:
 
@@ -242,7 +223,7 @@ Không lạm dụng “bạn” để cố tạo cảm giác thân thiện.
 
 ---
 
-# 11. Điều phải tránh
+# 10. Điều phải tránh
 
 Không được:
 
@@ -262,7 +243,7 @@ Không được:
 
 ---
 
-# 12. Ba nhóm người đọc chính
+# 11. Ba nhóm người đọc chính
 
 ## Chủ doanh nghiệp
 
@@ -297,34 +278,47 @@ Có thể chuyên môn sâu hơn nhưng vẫn:
 
 ---
 
-# 13. Tự kiểm trước khi duyệt
+# 12. Tự kiểm trước khi duyệt
 
 Trước khi coi bài đạt DNA, AI phải trả lời:
 
-1. Dòng đầu có cho đúng người một lý do để dừng không?
-2. Người đọc có hiểu ngay bài đang nói chuyện gì không?
-3. Câu mở đầu có đúng hoàn toàn với nguồn không?
-4. Phần sau có xứng đáng với câu mở đầu không?
-5. Có đoạn nào đang lấy đà mà chưa tạo giá trị không?
-6. Người không chuyên có hiểu ý chính không?
-7. Bài có giúp người đọc làm hoặc kiểm được một việc không?
-8. Có câu nào gây sợ, gây sốc hoặc phóng đại không?
-9. Lời mời bình luận hoặc liên hệ có tự nhiên không?
-10. Bỏ logo đi, giọng này có còn rõ ràng, thực tế, đáng tin và hữu ích không?
+1. Phần mở đầu có cho đúng người một lý do để dừng không?
+2. Phần mở đầu có tuân theo quy chuẩn hook chuyên sâu không?
+3. Người đọc có hiểu nhanh bài đang nói chuyện gì không?
+4. Mọi khẳng định mạnh có được bằng chứng hỗ trợ không?
+5. Phần thân có trả đúng lời hứa của phần mở đầu không?
+6. Có đoạn nào đang lấy đà mà chưa tạo giá trị không?
+7. Người không chuyên có hiểu ý chính không?
+8. Bài có giúp người đọc làm hoặc kiểm được một việc không?
+9. Có câu nào gây sợ, gây sốc hoặc phóng đại không?
+10. Lời mời bình luận hoặc liên hệ có tự nhiên không?
+11. Cách mở và nhịp bài có bị lặp với các bài gần đây không?
+12. Bỏ logo đi, giọng này có còn rõ ràng, thực tế, đáng tin và hữu ích không?
 
-Nếu câu 1, 3, 4 hoặc 8 không đạt → **không xuất bản**.
+Nếu câu 1, 4, 5 hoặc 9 không đạt → **không xuất bản**.
 
 ---
 
-# 14. Câu căn giọng cho AI
+# 13. Câu căn giọng cho AI
 
 Trước khi viết, tự nhắc:
 
-> **Tôi đang nói với một người thật đang lướt rất nhanh. Hãy cho họ một lý do chính đáng để dừng lại, giải thích điều đáng biết bằng tiếng Việt dễ hiểu, không nói quá nguồn, tạo giá trị thật và chỉ mời hành động khi đã đủ tin cậy.**
+> **Tôi đang nói với một người thật đang lướt rất nhanh. Hãy tìm điều trong sự thật này khiến họ phải nhìn lại cách mình đang nghĩ, nói điều đó bằng tiếng Việt cụ thể và dễ hiểu, không mạnh hơn bằng chứng, tạo giá trị thật và chỉ mời hành động khi đã đủ tin cậy.**
 
 ---
 
-# 15. Quy tắc cập nhật DNA
+# 14. Quy tắc cập nhật DNA
+
+DNA chỉ giữ những nguyên tắc thương hiệu ổn định.
+
+Không đưa vào DNA:
+
+- kỹ thuật hook chi tiết;
+- kích thước hình;
+- quy chuẩn nền tảng;
+- cấu trúc trường đăng;
+- quy tắc quảng cáo riêng từng nền tảng;
+- mẹo ngắn hạn.
 
 Không sửa DNA sau một phản hồi đơn lẻ nếu đó chỉ là yêu cầu riêng của một bài.
 
