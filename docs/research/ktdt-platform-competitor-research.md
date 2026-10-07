@@ -1,6 +1,6 @@
 # NGHIÊN CỨU ĐỐI THỦ VÀ NỘI DUNG CẠNH TRANH THEO NỀN TẢNG — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.1  
+**Phiên bản:** 0.2  
 **Ngày:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn nghiên cứu cách nội dung đang thu hút người xem trên Facebook, TikTok, YouTube và Zalo trước khi chọn cách đánh.
@@ -12,7 +12,7 @@
 Nghiên cứu đối thủ không nhằm:
 
 - sao chép câu chữ;
-- sao chép hook;
+- sao chép câu mở đầu;
 - tìm một bài nhiều lượt xem rồi bắt chước;
 - dùng đối thủ để xác nhận luật.
 
@@ -34,7 +34,29 @@ Nguyên tắc:
 
 ---
 
-# 2. Nguyên tắc nền tảng
+# 2. Phạm vi nghiên cứu
+
+Chỉ nghiên cứu sâu **nền tảng dự kiến đăng**.
+
+Không mặc định phải phân tích đủ Facebook, TikTok, YouTube và Zalo cho mọi bài.
+
+Nếu một nội dung sẽ triển khai trên nhiều nền tảng:
+
+- tạo tập dữ liệu riêng cho từng nền tảng;
+- kết luận riêng cho từng nền tảng;
+- không cộng lượt xem/tương tác giữa các nền tảng;
+- không suy rằng một cơ chế hiệu quả ở nền tảng A sẽ tự động hiệu quả ở nền tảng B.
+
+Mỗi kết luận phải ghi rõ:
+
+- nền tảng;
+- khoảng thời gian quan sát;
+- số lượng/mức độ đa dạng của mẫu nếu biết;
+- giới hạn truy cập dữ liệu.
+
+---
+
+# 4. Nguyên tắc nền tảng
 
 > **Nghiên cứu sự thật ở nơi sự thật đáng tin nhất.  
 > Nghiên cứu cách thu hút ở chính nơi nội dung sẽ được đăng.**
@@ -68,7 +90,7 @@ Website chỉ có thể giúp:
 
 ---
 
-# 3. Ba loại đối thủ cần nghiên cứu
+# 4. Ba loại đối thủ cần nghiên cứu
 
 ## 3.1. Đối thủ kinh doanh trực tiếp
 
@@ -132,7 +154,7 @@ Dùng để học:
 
 ---
 
-# 4. Không coi mọi chỉ số là bằng chứng giống nhau
+# 5. Không coi mọi chỉ số là bằng chứng giống nhau
 
 Khi quan sát nội dung công khai, phân biệt:
 
@@ -157,8 +179,8 @@ Có thể ghi lại như dữ kiện quan sát.
 
 Ví dụ:
 
-- “hook này hiệu quả vì…”
-- “video này viral do…”
+- “câu mở đầu này hiệu quả vì…”
+- “video này lan truyền do…”
 - “quảng cáo này chuyển đổi tốt…”
 
 Đây là suy luận.
@@ -168,11 +190,11 @@ Không được trình bày suy luận như sự thật nếu không có dữ li
 Nguyên tắc:
 
 > **Thấy bài tồn tại không có nghĩa bài hiệu quả.  
-> Thấy nhiều lượt xem không có nghĩa hook là nguyên nhân duy nhất.**
+> Thấy nhiều lượt xem không có nghĩa câu mở đầu là nguyên nhân duy nhất.**
 
 ---
 
-# 5. Cửa sổ thời gian nghiên cứu
+# 6. Cửa sổ thời gian nghiên cứu
 
 Không chỉ nhìn bài mới nhất.
 
@@ -192,7 +214,7 @@ Nếu chủ đề rất mới, ưu tiên mẫu gần thời điểm hiện tại
 
 ---
 
-# 6. Những trường cần ghi cho mỗi nội dung
+# 7. Những trường cần ghi cho mỗi nội dung
 
 Khi có dữ liệu, ghi tối thiểu:
 
@@ -204,7 +226,7 @@ Khi có dữ liệu, ghi tối thiểu:
 - người đọc mục tiêu;
 - lời hứa;
 - góc triển khai;
-- cơ chế hook;
+- cơ chế câu mở đầu;
 - câu mở / phần mở;
 - dạng nội dung;
 - hình / khung đầu;
@@ -221,7 +243,7 @@ Không cần điền trường không thể quan sát.
 
 ---
 
-# 7. FACEBOOK
+# 8. FACEBOOK
 
 Facebook phải tách thành hai lớp:
 
@@ -310,7 +332,7 @@ Khi sau này có quyền truy cập dữ liệu chính chủ, **Meta Page/Post/A
 
 ---
 
-# 8. TIKTOK
+# 9. TIKTOK
 
 Tách:
 
@@ -356,8 +378,8 @@ Có thể dùng **TikTok Creative Center — Trung tâm Sáng tạo TikTok** đ�
 
 Có thể quan sát:
 
-- Reach;
-- CTR;
+- độ phủ (Reach);
+- tỷ lệ nhấp (CTR);
 - tỷ lệ xem 2 giây;
 - tỷ lệ xem 6 giây;
 - tỷ lệ chuyển đổi khi có;
@@ -381,7 +403,7 @@ Dùng nó để tạo giả thuyết cần thử.
 
 ---
 
-# 9. YOUTUBE
+# 10. YOUTUBE
 
 Bắt buộc tách:
 
@@ -439,6 +461,8 @@ Không nói:
 
 > video A tốt hơn B chỉ vì A nhiều lượt xem hơn.
 
+Không so lượt xem thô giữa các kênh khác quy mô nếu chưa điều chỉnh được bối cảnh. Khi không có dữ liệu chuẩn hóa, chỉ coi lượt xem là **tín hiệu quan sát**, không phải thước đo tuyệt đối.
+
 Cần xem:
 
 - ngày đăng;
@@ -461,7 +485,7 @@ hơn chỉ nhìn lượt xem.
 
 ---
 
-# 10. ZALO OA
+# 11. ZALO OA
 
 Dữ liệu hiệu suất đối thủ công khai trên Zalo OA thường hạn chế hơn các nền tảng khác.
 
@@ -476,11 +500,11 @@ Có thể nghiên cứu công khai:
 - nội dung;
 - lời kêu gọi;
 - nhịp đăng;
-- cách dùng Broadcast nếu có thể quan sát.
+- cách dùng tin truyền thông (Broadcast) nếu có thể quan sát.
 
 Không được gọi một bài Zalo là:
 
-> “viral”
+> “lan truyền”
 
 nếu không có dữ liệu chứng minh.
 
@@ -489,7 +513,7 @@ nếu không có dữ liệu chứng minh.
 Theo tài liệu chính thức, bài viết/video OA có thể được dùng cho:
 
 - xuất bản trên trang OA;
-- gửi qua Broadcast;
+- gửi qua tin truyền thông (Broadcast);
 - duy trì tương tác qua bình luận;
 - thúc đẩy chuyển đổi bằng nút kêu gọi hành động.
 
@@ -497,15 +521,15 @@ Vì vậy nghiên cứu Zalo phải nhìn cả:
 
 > **nội dung bài**  
 > và  
-> **khả năng dùng bài đó trong Broadcast.**
+> **khả năng dùng bài đó trong tin truyền thông (Broadcast).**
 
 ## 10.2. Dữ liệu chính chủ quan trọng hơn
 
-Zalo OA có thống kê Broadcast như:
+Zalo OA có thống kê tin truyền thông (tin truyền thông (Broadcast)) như:
 
 - số người nhận;
 - lượt xem;
-- CTR;
+- tỷ lệ nhấp (CTR);
 - lượt chia sẻ.
 
 Khi Diệu Tâm có dữ liệu này, nó phải trở thành nguồn học chính về Zalo.
@@ -514,7 +538,7 @@ Không để suy đoán từ đối thủ có trọng số cao hơn dữ liệu 
 
 ---
 
-# 11. NGHIÊN CỨU BÌNH LUẬN
+# 12. NGHIÊN CỨU BÌNH LUẬN
 
 Bình luận không chỉ dùng để đo “tương tác”.
 
@@ -541,7 +565,7 @@ Không lấy một bình luận đơn lẻ làm bằng chứng rằng:
 
 ---
 
-# 12. PHÂN TÍCH KHOẢNG TRỐNG
+# 13. PHÂN TÍCH KHOẢNG TRỐNG
 
 Sau khi xem mẫu nội dung, không dừng ở:
 
@@ -551,7 +575,7 @@ Phải trả lời:
 
 1. Chủ đề nào ai cũng đang nói?
 2. Góc nào đang lặp?
-3. Hook nào đang bị dùng quá nhiều?
+3. Câu mở đầu nào đang bị dùng quá nhiều?
 4. Câu hỏi nào người xem vẫn hỏi?
 5. Phần nào đối thủ giải thích chưa rõ?
 6. Có đối tượng nào bị bỏ quên?
@@ -562,7 +586,13 @@ Phải trả lời:
 
 Đầu ra quan trọng nhất:
 
-> **Khoảng trống nội dung**
+> **Khoảng trống nội dung quan sát được**
+
+Chỉ được gọi là **khoảng trống thị trường** khi mẫu đủ rộng và đa dạng để hỗ trợ kết luận đó. Với mẫu nhỏ hoặc dữ liệu truy cập hạn chế, phải dùng ngôn ngữ:
+
+- “trong mẫu đã quan sát…”;
+- “chưa thấy nhiều nội dung…”;
+- “đây là giả thuyết khoảng trống cần thử”.
 
 Ví dụ dạng:
 
@@ -570,11 +600,11 @@ Ví dụ dạng:
 
 ---
 
-# 13. CHỐNG SAO CHÉP
+# 14. CHỐNG SAO CHÉP
 
 Không được lấy:
 
-- câu hook;
+- câu câu mở đầu;
 - câu ví von;
 - cấu trúc đặc trưng;
 - hình ảnh đặc trưng;
@@ -599,7 +629,7 @@ Nguyên tắc:
 
 ---
 
-# 14. KHI DỮ LIỆU KHÔNG ĐỦ
+# 15. KHI DỮ LIỆU KHÔNG ĐỦ
 
 Có ba mức:
 
@@ -620,7 +650,7 @@ Ghi thẳng:
 Không:
 
 - bịa chỉ số;
-- suy diễn “viral”;
+- suy diễn “lan truyền”;
 - lấy nền tảng khác thay thế;
 - lấy bài báo thay bình luận thật;
 - lấy Ads Library làm bảng xếp hạng hiệu quả;
@@ -628,18 +658,18 @@ Không:
 
 ---
 
-# 15. Đầu ra bắt buộc
+# 16. Đầu ra bắt buộc
 
 Kết thúc nghiên cứu nền tảng phải có:
 
 - nền tảng được nghiên cứu;
 - tập dữ liệu quan sát;
 - giới hạn dữ liệu;
-- 3–5 mẫu hình đáng chú ý;
+- 3–5 mẫu hình đáng chú ý (nếu mẫu đủ);
 - nội dung đã bão hòa;
 - nội dung đang cạnh tranh;
 - câu hỏi người xem;
-- kiểu hook đang lặp;
+- kiểu câu mở đầu đang lặp;
 - định dạng đang được dùng;
 - khoảng trống;
 - cơ hội cho Diệu Tâm;
@@ -647,12 +677,12 @@ Kết thúc nghiên cứu nền tảng phải có:
 
 ---
 
-# 16. Điều kiện được đi tiếp
+# 17. Điều kiện được đi tiếp
 
 Chỉ coi bước nghiên cứu cạnh tranh đạt khi:
 
 - không dùng đối thủ để xác nhận luật;
-- organic và paid được tách khi cần;
+- nội dung tự nhiên và quảng cáo trả phí được tách khi cần;
 - Shorts và video dài được tách;
 - có ghi giới hạn dữ liệu;
 - không suy hiệu quả khi không có bằng chứng;
@@ -671,7 +701,7 @@ thì nghiên cứu chưa xong.
 
 ---
 
-# 17. Quy tắc học sau khi Diệu Tâm có dữ liệu thật
+# 18. Quy tắc học sau khi Diệu Tâm có dữ liệu thật
 
 Theo thời gian, dữ liệu của chính Diệu Tâm phải có trọng số ngày càng cao.
 
@@ -691,19 +721,19 @@ Không để xu hướng đối thủ kéo Diệu Tâm rời khỏi:
 
 ---
 
-# 18. Nguồn nền tảng dùng để hiệu chỉnh tài liệu
+# 19. Nguồn nền tảng dùng để hiệu chỉnh tài liệu
 
 Các nguyên tắc nền tảng trong file này được đối chiếu với tài liệu chính thức, gồm:
 
 - Meta Facebook Help / Meta Ads Library;
 - TikTok for Business Creative Center / Top Ads;
 - YouTube Help / YouTube Analytics;
-- Zalo Official Account hướng dẫn bài viết, video và Broadcast.
+- Zalo Official Account hướng dẫn bài viết, video và tin truyền thông (Broadcast).
 
 Khi nền tảng thay đổi tính năng hoặc cách hiển thị, cần kiểm lại nguồn chính thức trước khi sửa quy tắc.
 
 ---
 
-# 19. Câu căn chỉnh cho AI
+# 20. Câu căn chỉnh cho AI
 
 > **Đừng hỏi “đối thủ đang viết gì để mình viết giống”. Hãy hỏi: họ đang chiếm sự chú ý bằng cơ chế nào, người xem còn câu hỏi gì, phần nào đã quá đông và Diệu Tâm có thể tạo giá trị rõ hơn ở đâu.**
