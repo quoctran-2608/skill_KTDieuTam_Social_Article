@@ -1,7 +1,7 @@
 # NGHIÊN CỨU ĐỐI THỦ VÀ NỘI DUNG CẠNH TRANH THEO NỀN TẢNG — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
-**Ngày:** 07/10/2026  
+**Phiên bản:** 0.4  
+**Ngày:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn nghiên cứu cách nội dung đang thu hút người xem trên Facebook, TikTok, YouTube và Zalo trước khi chọn cách đánh.
 
@@ -40,12 +40,17 @@ Chỉ nghiên cứu sâu **nền tảng dự kiến đăng**.
 
 Không mặc định phải phân tích đủ Facebook, TikTok, YouTube và Zalo cho mọi bài.
 
-Nếu một nội dung sẽ triển khai trên nhiều nền tảng:
+Nếu một content case sẽ triển khai trên nhiều nền tảng:
 
-- tạo tập dữ liệu riêng cho từng nền tảng;
-- kết luận riêng cho từng nền tảng;
+- **không research lại factual core / audience core từ đầu** nếu Shared Research Core đã được khóa;
+- tạo tập dữ liệu **platform delta** riêng cho từng nền tảng;
+- kết luận packaging riêng cho từng nền tảng;
 - không cộng lượt xem/tương tác giữa các nền tảng;
 - không suy rằng một cơ chế hiệu quả ở nền tảng A sẽ tự động hiệu quả ở nền tảng B.
+
+Nguyên tắc:
+
+> **Research Core dùng chung; platform behavior nghiên cứu riêng.**
 
 Mỗi kết luận phải ghi rõ:
 
@@ -339,6 +344,90 @@ Tách:
 - nội dung tự nhiên;
 - quảng cáo.
 
+## 8.0. TikTok Platform Delta Research khi đã có Research Core
+
+Nếu TikTok nối tiếp một bài Facebook trong cùng content case:
+
+> **Không full research lại từ đầu.**
+
+Kế thừa:
+
+- verified facts;
+- source package;
+- audience;
+- reader situation;
+- core tension;
+- evidence boundary;
+- dangerous misunderstanding;
+- useful action;
+- approved Facebook wording khi vẫn còn phù hợp.
+
+Chỉ nghiên cứu phần TikTok còn thiếu:
+
+- người dùng TikTok có thể tìm vấn đề này bằng câu nào;
+- search phrase / keyword tự nhiên;
+- Title nào phù hợp;
+- cover / Slide 1 nên dừng bằng cơ chế gì;
+- carousel cùng loại thường chia nội dung thành các bước nào;
+- lượng chữ trên ảnh;
+- số slide hợp lý;
+- carousel và Caption đang chia vai trò thế nào;
+- CTA phù hợp với intent;
+- hashtag liên quan;
+- câu hỏi / confusion có tính TikTok-specific;
+- content gap còn chưa được giải thích tốt.
+
+Không kiểm lại các factual question đã khóa chỉ để “cho chắc”. Chỉ reopen factual layer khi phát hiện:
+
+- nguồn mới;
+- nguồn mâu thuẫn;
+- dữ kiện có tính thời gian đã thay đổi;
+- hoặc user yêu cầu kiểm lại.
+
+Output nội bộ của Delta Research nên ngắn:
+
+- Search intent
+- Recommended Title treatment
+- Carousel behavior
+- Slide-count hypothesis
+- TikTok-specific gap
+- Keyword / hashtag candidates
+
+Sau đó đi thẳng tới checkpoint **Title + Carousel Structure**.
+
+## 8.0A. TikTok Photo Carousel — trọng tâm mặc định của “bài viết TikTok”
+
+Khi nghiên cứu TikTok Photo Carousel, ưu tiên quan sát:
+
+- Title;
+- cover;
+- Slide 1;
+- số slide;
+- nhiệm vụ từng slide;
+- cách một chủ đề được chia thành các bước vuốt;
+- mật độ chữ;
+- typography / readability;
+- quan hệ giữa carousel và Caption;
+- CTA;
+- keyword / search intent;
+- hashtag;
+- câu hỏi trong bình luận;
+- phần nội dung đang lặp;
+- phần người đọc còn thiếu.
+
+Mục tiêu không phải tìm một template để chép.
+
+Phải trả lời được:
+
+1. Người đang tìm gì?
+2. Carousel hiện có thường đang nói gì?
+3. Họ đang chia nội dung như thế nào?
+4. Phần nào đang lặp?
+5. Người đọc còn thiếu câu trả lời gì?
+6. Diệu Tâm có thể hữu ích hơn ở đâu?
+
+> **Nghiên cứu nền tảng khác để tìm cơ chế và giả thuyết, không dùng nền tảng khác để giả lập dữ liệu TikTok.**
+
 ## 8.1. TikTok tự nhiên
 
 Nghiên cứu trực tiếp trên TikTok khi có quyền truy cập nền tảng.
@@ -362,10 +451,21 @@ Không lấy kết quả Google làm thay dữ liệu TikTok nếu không thể 
 
 Nếu không truy cập trực tiếp được TikTok:
 
-1. ưu tiên TikTok Creator Search Insights, Creative Center, Keyword Insights, hashtag trend và tài liệu chính thức;
-2. ghi rõ phần nào không quan sát được trực tiếp;
-3. được phép dùng **YouTube Shorts / YouTube Search / Facebook** làm dữ liệu bổ trợ về cách đóng gói nội dung;
-4. mọi kết luận từ nền tảng khác phải gắn nhãn:
+> **Không dừng workflow chỉ vì không đọc được TikTok trực tiếp.**
+
+Thứ tự fallback:
+
+1. TikTok trực tiếp;
+2. TikTok Creator Search Insights;
+3. TikTok Creative Center / Keyword Insights / hashtag trend;
+4. tài liệu chính thức TikTok;
+5. YouTube Shorts / YouTube Search;
+6. Facebook;
+7. nguồn social marketing đáng tin.
+
+Phải ghi rõ phần nào không quan sát được trực tiếp.
+
+Được phép dùng **YouTube Shorts / YouTube Search / Facebook** làm dữ liệu bổ trợ về cách đóng gói nội dung, nhưng mọi kết luận từ nền tảng khác phải gắn nhãn:
 
 > **Suy luận chéo nền tảng — không phải bằng chứng hiệu quả trên TikTok.**
 
