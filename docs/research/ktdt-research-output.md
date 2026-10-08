@@ -1,7 +1,7 @@
 # CHUẨN ĐẦU RA NGHIÊN CỨU — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
-**Ngày:** 07/10/2026  
+**Phiên bản:** 0.3  
+**Ngày:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn hóa đầu ra sau khi hoàn thành nghiên cứu, trước khi chuyển sang bước chọn cách đánh.
 
@@ -458,7 +458,86 @@ Nếu có từ 2 câu “không” trở lên:
 
 ---
 
-# 10. Quy tắc cuối
+# 10. RESEARCH PACKAGE DÙNG XUYÊN PLATFORM
+
+Sau khi hồ sơ đạt trạng thái:
+
+> **✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
+
+AI phải coi nó là **Research Package / Content Case source of truth** cho các platform tiếp theo.
+
+Research Package cần giữ được tối thiểu:
+
+- **Topic**
+- **Verified truth**
+- **Evidence / source package**
+- **Certain**
+- **Pending / uncertain**
+- **Audience**
+- **Reader situation**
+- **Main reader question**
+- **Core tension**
+- **Dangerous misunderstanding**
+- **Useful action**
+- **Approved angle** khi đã được khóa ở bước sáng tạo
+- **Reusable wording** đã được user duyệt và vẫn còn đúng
+- **Time-sensitive items requiring refresh**
+
+## 10.1. Quy tắc reuse
+
+Khi cùng content case chuyển Facebook → TikTok:
+
+> **Không bắt platform sau nghiên cứu lại những gì Research Package đã khóa.**
+
+Platform sau được phép dùng lại:
+
+- facts;
+- sources;
+- audience;
+- situation;
+- core tension;
+- evidence boundary;
+- misunderstanding;
+- useful action.
+
+Nếu Facebook đã hoàn tất, có thể bổ sung vào handoff:
+
+- approved hook;
+- approved phrasing;
+- approved explanation;
+- CTA insight;
+- wording user đã chấp thuận.
+
+## 10.2. Trường cần refresh
+
+Mục **Time-sensitive items requiring refresh** phải ghi những dữ kiện dễ thay đổi như:
+
+- trạng thái dự thảo / chính thức;
+- hướng dẫn thực thi;
+- deadline;
+- biểu mẫu;
+- số liệu;
+- mức phí / thuế suất / ngưỡng;
+- tình trạng triển khai.
+
+Khi platform sau bắt đầu, chỉ refresh các mục này nếu có lý do cần kiểm lại.
+
+Không reset toàn bộ hồ sơ.
+
+## 10.3. Kiểm tra khả năng handoff
+
+Trước khi coi Research Package là đạt, hỏi thêm:
+
+1. Platform sau có thể biết ngay điều gì đã bị khóa không?
+2. Có biết phần nào được phép reuse không?
+3. Có biết phần nào nhạy thời gian cần refresh không?
+4. Có thể thích nghi sang platform khác mà không phải research lại factual core không?
+
+Nếu không, hồ sơ cần bổ sung trước khi handoff.
+
+---
+
+# 11. Quy tắc cuối
 
 > **Một hồ sơ nghiên cứu tốt phải giảm số điều AI phải đoán ở bước sáng tạo.**
 
