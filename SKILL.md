@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.11  
+**Phiên bản:** 0.12  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -384,6 +384,14 @@ Mỗi chủ đề chỉ cần:
 - likely route;
 - đánh giá: **Nên làm / Có thể làm / Chưa nên làm**.
 
+### Kiểm framing trước khi khuyến nghị — nội bộ
+
+Trước khi đưa ra **KHUYẾN NGHỊ SỐ 1**, AI tự kiểm: framing dự kiến có dễ làm người đọc hiểu rằng Diệu Tâm đang hướng dẫn né/lách quy định, cổ súy sai phạm hoặc khai thác sự cố để câu chú ý không?
+
+Nếu **topic tốt nhưng framing chưa tốt**, tự đề xuất cách đặt vấn đề chính xác, hữu ích và phù hợp vai trò tư vấn tuân thủ của Diệu Tâm **trước khi trình user**. Không loại topic chỉ vì liên quan nợ thuế, cưỡng chế, vi phạm hay rủi ro; không làm mất tension thật chỉ để câu chữ nghe an toàn hơn. Nếu điều kiện pháp lý còn chưa chắc, để R1 xác minh, không tự diễn giải thành quyền được làm.
+
+Đây là kiểm tra nội bộ trong shortlist, **không thêm checkpoint hay thang điểm**.
+
 Cuối cùng chọn:
 
 > **KHUYẾN NGHỊ SỐ 1**
@@ -585,6 +593,14 @@ Nó chỉ trả lời:
 > topic này có đủ lý do để đáng ưu tiên đem đi test với cold audience hay không.
 
 Không được nói “quảng cáo sẽ hiệu quả” nếu chưa có dữ liệu thực.
+
+**Kiểm lại framing trước khi chốt Route — nội bộ:**
+
+Nếu topic mạnh nhưng framing ban đầu có nguy cơ gây hiểu sai về quy định hoặc hình ảnh Diệu Tâm, **ưu tiên sửa framing, không tự động hạ Route A**. Giữ Route A khi sức nặng thực của topic vẫn đủ sau khi sửa.
+
+Ghi ngắn trong Content Case **cách đặt vấn đề nên dùng và ý diễn đạt cần tránh**, để S2/Hook Facebook/Title và cover TikTok không quay lại framing đã loại chỉ nhằm tăng attention. Giữ đủ chủ thể, điều kiện, giới hạn pháp lý đã xác minh; framing không được dùng để che một claim sai.
+
+Nếu sau khi sửa framing, topic không còn đủ sức hút như đánh giá ban đầu, **đánh giá lại Route A/B/C**. Không tạo gate duyệt riêng cho user.
 
 ### RECOMMENDED ROUTE
 
