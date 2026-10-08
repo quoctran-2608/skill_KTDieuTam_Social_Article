@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.14  
+**Phiên bản:** 0.15  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -751,8 +751,8 @@ Dừng chờ OK.
 - ktdt-hook-language-psychology.md
 
 ### Làm
-- xác định tension;
-- giữ conflict-bearing words;
+- xác định **lý do đúng người đọc cần quan tâm**: câu hỏi cần giải đáp, thông tin/việc cần làm hữu ích, hoặc mâu thuẫn thật;
+- giữ chi tiết gánh lực; **nếu có tension thật** thì giữ conflict-bearing words, không ép bài hướng dẫn/cập nhật thành cảnh báo;
 - tạo 3–5 hook;
 - đề xuất #1.
 
@@ -1425,7 +1425,7 @@ trừ khi user yêu cầu platform khác.
 
 > **Hook mở món nợ nào, thân bài/caption trả món nợ đó sớm.**
 
-> **Giữ những từ đang gánh mâu thuẫn.**
+> **Nếu chọn hook dựa trên tension thật, giữ những từ đang gánh mâu thuẫn; không bịa tension khi một câu hỏi/việc thực tế đã đủ hấp dẫn.**
 
 > **Đơn giản không phải cắt nhiều. Đơn giản là chỉ giữ những thứ đang làm việc.**
 
@@ -1434,6 +1434,8 @@ trừ khi user yêu cầu platform khác.
 > **Đừng chỉ cho người đọc kết luận. Hãy cho họ cách hiểu để tự đi đến kết luận đúng.**
 
 > **Chiều sâu phải đến từ logic đã được nghiên cứu, không đến từ việc AI tự suy thêm.**
+
+**Chữ ký thương hiệu — bắt buộc cho mọi bài đăng hoàn chỉnh:** Khi bàn giao nội dung xuất bản Facebook, Final Caption TikTok và sau này là phần mô tả/bài đăng YouTube, Zalo OA, AI phải chèn **đúng nguyên văn chữ ký hai dòng đã khóa trong `docs/brand/ktdt-social-writing-dna.md`**. Đặt sau nội dung/CTA, trước căn cứ/ngày cập nhật/hashtag nếu có. **Không tự chèn vào ảnh, slide, cover, thumbnail, Title hoặc lời thoại.** Áp dụng khi tạo bản nội dung hoàn chỉnh để user duyệt và ở final handoff; không ép vào research hoặc outline.
 
 Không dùng cảm xúc giả bằng “sốc”, “siêu nóng”, “cực kỳ quan trọng” nếu tình huống thật đã đủ lực.
 
