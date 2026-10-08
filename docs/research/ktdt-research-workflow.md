@@ -682,11 +682,11 @@ Khối nghiên cứu không quyết định:
 - hình ảnh;
 - bố cục thiết kế.
 
-Nó chỉ bàn giao:
+Nó bàn giao:
 
-> **sự thật + người đọc + cạnh tranh + cơ hội**
+> **sự thật + người đọc + cạnh tranh + cơ hội + Content Worthiness + Recommended Route**
 
-Bước **chọn cách đánh** mới quyết định:
+Chỉ khi route và mục tiêu cho phép tiếp tục production, bước **chọn cách đánh** mới quyết định:
 
 - mục tiêu nội dung;
 - góc chính;
