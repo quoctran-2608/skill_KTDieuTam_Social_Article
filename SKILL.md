@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.16  
+**Phiên bản:** 0.17  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.5 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -1193,6 +1193,8 @@ Nếu câu trả lời chỉ là:
 
 Caption phải tạo một **Knowledge Gain Delta** thật.
 
+**Đối chiếu bắt buộc với exact carousel đã khóa:** AI tự chỉ ra cụ thể Caption bổ sung **tiêu chí, cách phân biệt, điều kiện, logic quyết định hoặc cách áp dụng nào** mà các slide chưa cung cấp. Chỉ tính là giá trị mới nếu người đọc hiểu/áp dụng đúng hơn nhờ chi tiết đó. **Đổi cách nói, đặt tên cho các bước hiển nhiên hoặc nhắc lại cùng một lưu ý không phải Knowledge Gain Delta.** Không tìm ra giá trị mới có căn cứ → chưa PASS, phải viết lại, không tự tạo claim để đạt gate.
+
 ### G2 — UNDERSTANDING
 
 Caption có giúp người đọc hiểu thêm ít nhất một lớp phù hợp không:
@@ -1222,7 +1224,7 @@ hoặc:
 
 > **“Tôi nên kiểm các biến theo thứ tự nào?”**
 
-Mục tiêu là cho người đọc một **mental model**, không chỉ một kết luận để nhớ.
+Mục tiêu là cho người đọc một **mental model**, không chỉ một kết luận để nhớ. **Mental model phải làm rõ biến/tiêu chí hoặc quyết định thực sự thay đổi theo kết quả đối chiếu; sơ đồ mũi tên hay danh sách bước hiển nhiên không tự được tính là giá trị áp dụng.**
 
 ### G4 — HUMAN VOICE
 
@@ -1262,7 +1264,7 @@ Nếu chỉ đổi cách nói → cắt.
 
 **Cắt** câu chỉ nhắc lại lý do cần quan tâm, cảnh báo hoặc trấn an mà không thêm thông tin, điều kiện, giới hạn hay hành động mới. **Không cắt** lưu ý thực sự cần để tránh hiểu sai và giữ đúng bằng chứng.
 
-Mọi phần “sâu” phải được Research Core hỗ trợ.
+Mọi phần “sâu” phải được Research Core hỗ trợ. **Nếu khi rewrite xuất hiện nhận định mới về nghĩa vụ, quyền lợi hoặc hệ quả pháp lý, phải đối chiếu được với chứng cứ cụ thể trong Research Core.** Nguồn chung về một chức năng/thủ tục không tự chứng minh kết luận pháp lý mở rộng. Nếu không đủ căn cứ → bỏ nhận định hoặc quay lại xác minh phần thiếu; không dùng cách nói dè dặt để thay bằng chứng.
 
 > **Không invent insight để làm bài có vẻ sâu.**
 
