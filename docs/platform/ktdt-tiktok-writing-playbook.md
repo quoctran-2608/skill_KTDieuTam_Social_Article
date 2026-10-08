@@ -1,6 +1,6 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
+**Phiên bản:** 0.4  
 **Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Thử nghiệm — bổ sung Depth & Voice Review sau lesson từ case thực tế  
 **Phạm vi:** TikTok Photo Carousel gồm Title, chữ từng slide, Caption, Hashtag, concept ảnh, tạo ảnh và QA. Không bao gồm sản xuất video trừ khi user chủ động yêu cầu.
@@ -137,10 +137,12 @@ Depth Target phải xuất phát từ Research Core hoặc dữ kiện đã veri
 
 ## Slide 1 ưu tiên
 
-- làm đúng người dừng lại;
-- mở mâu thuẫn thật;
-- cho lý do để vuốt tiếp;
+- làm đúng người dừng lại bằng **lý do quan tâm thật**;
+- lý do đó có thể là **câu hỏi thực tế cần giải đáp, thông tin/việc cần làm hữu ích, hoặc mâu thuẫn/rủi ro thật**;
+- cho lý do rõ ràng để vuốt tiếp;
 - tự đứng được như cover.
+
+Không ép bài hướng dẫn/cập nhật quy định thành cảnh báo hoặc nghịch lý chỉ để tạo attention; nếu có tension tự nhiên mạnh, vẫn khai thác.
 
 Không ép một câu làm cả hai nhiệm vụ nếu điều đó làm Title hoặc Hook yếu đi.
 
@@ -199,7 +201,7 @@ Rule cắt:
 
 ## Vai trò theo nhịp
 
-- **Slide 1 — Dừng:** mở tension, khiến muốn vuốt.
+- **Slide 1 — Dừng:** nêu lý do cụ thể để đúng người muốn vuốt tiếp; không bắt buộc phải có tension.
 - **Slide giữa — Hiểu:** trả món nợ hook, giải thích, chặn hiểu sai, nêu điều kiện/giới hạn.
 - **Slide cuối — Làm:** checklist, việc cần kiểm, quyết định tiếp theo hoặc CTA.
 
@@ -226,11 +228,11 @@ Phần giải thích dài, ngoại lệ hoặc ngữ cảnh bổ sung để Capt
 
 > **Đơn giản không phải cắt nhiều. Đơn giản là chỉ giữ những thứ đang làm việc.**
 
-Và giữ nguyên lesson chung:
+Và áp dụng Hook Psychology chung:
 
-> **Giữ những từ đang gánh mâu thuẫn. Thêm chi tiết nếu nó làm câu rõ hơn mà không làm nặng câu. Cắt phần chỉ làm câu đầy đủ hơn nhưng không làm người đọc hiểu hoặc quan tâm hơn.**
+> **Giữ chi tiết tạo sức nặng cho câu hỏi, thông tin hoặc việc cần làm. Nếu hook dựa trên mâu thuẫn thật, giữ những từ đang gánh mâu thuẫn đó. Cắt phần chỉ làm đầy đủ mà không giúp người xem hiểu hoặc muốn đọc tiếp.**
 
-Không cắt một từ chỉ vì muốn “ngắn kiểu TikTok” nếu từ đó đang tạo lực cho mâu thuẫn.
+Không cắt chi tiết quan trọng chỉ để “ngắn kiểu TikTok”; cũng không thêm lời cảnh báo nếu một câu hỏi/việc thực tế đã đủ lực.
 
 ---
 
@@ -549,6 +551,8 @@ Title hoàn chỉnh.
 ## Block 2 — Caption TikTok hoàn chỉnh + hashtag
 
 Caption đã gồm CTA và hashtag ở cuối.
+
+**Caption Final bắt buộc có chữ ký thương hiệu đúng hai dòng** theo `docs/brand/ktdt-social-writing-dna.md`, đặt sau nội dung/CTA, trước căn cứ/ngày cập nhật (nếu có) và hashtag. Không chèn chữ ký vào Title, cover, slide hay ảnh carousel.
 
 Không bắt user copy riêng:
 
