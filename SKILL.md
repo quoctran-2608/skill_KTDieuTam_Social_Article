@@ -1,85 +1,29 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.8  
-**Ngày:** 07/10/2026  
-**Vai trò:** File điều phối trung tâm / runtime orchestrator  
-**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok writing đang ở playbook thử nghiệm v0.1.
+**Phiên bản:** 0.9  
+**Ngày:** 08/10/2026  
+**Vai trò:** Runtime orchestrator cho content case đa nền tảng  
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.2 đã test qua một case Facebook → TikTok thật; TikTok video production chưa khóa.
 
 ---
 
 # 0. CÁCH DÙNG SKILL NÀY
 
-Khi người dùng đưa URL của `SKILL.md` cùng một yêu cầu làm nội dung, AI phải:
-
-1. **Đọc `SKILL.md` trước.**
-2. Không nhảy thẳng sang viết bài hoàn chỉnh.
-3. Xác định bước hiện tại và chỉ mở những file con được chỉ định cho bước đó.
-4. Thực hiện **một checkpoint tại một thời điểm**.
-5. Trình bày kết quả / khuyến nghị của checkpoint hiện tại.
-6. **Dừng và chờ người dùng duyệt** bằng các tín hiệu như `OK`, `duyệt`, `chốt`, `tiếp tục` trước khi sang checkpoint kế tiếp.
-7. Khi một quyết định đã được duyệt, ghi nhận nó là **decision lock** và không tự đổi ở bước sau.
-
-> **Mặc định là chế độ tương tác từng bước. Chỉ chạy liền nhiều bước nếu người dùng chủ động yêu cầu không cần duyệt từng bước.**
-
-## Quy ước duyệt checkpoint
-
-Ở cuối mỗi checkpoint, AI chỉ xin duyệt **một lần**.
-
-- AI trình bày kết quả của checkpoint hiện tại và dừng.
-- Khi người dùng trả lời `OK`, `duyệt`, `chốt`, `tiếp tục` hoặc chọn một phương án, điều đó đồng thời có nghĩa:
-  1. duyệt checkpoint hiện tại;
-  2. khóa các decision lock vừa được chốt;
-  3. **ngay ở turn kế tiếp, AI phải thực hiện checkpoint tiếp theo và đưa kết quả của checkpoint đó.**
-
-Không được trả lời kiểu:
-
-> “Đã chốt. Hãy nói OK lần nữa để tôi sang bước tiếp.”
-
-Một checkpoint = tối đa một lần duyệt, trừ khi người dùng yêu cầu sửa.
-
-## Chế độ AUTO-START khi user chỉ đưa URL skill
-
 Prompt tối thiểu hợp lệ:
 
 > **“Tiến hành chạy skill https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/SKILL.md”**
 
-Khi nhận đúng kiểu prompt này mà **không có chủ đề, nền tảng hoặc mục tiêu cụ thể**, AI **không được hỏi lại “muốn viết chủ đề gì?”**.
+Khi nhận prompt kiểu này, AI phải:
 
-AI phải tự khởi động như sau:
+1. đọc SKILL.md trước;
+2. không nhảy thẳng sang viết bài;
+3. chỉ mở file con đúng với checkpoint hiện tại;
+4. tự chạy checkpoint;
+5. trình bày recommendation;
+6. dừng tại đúng gate cần user quyết định;
+7. khi user nói **OK**, khóa quyết định và chạy ngay checkpoint tiếp theo ở turn kế tiếp.
 
-1. đọc `SKILL.md`;
-2. mở `docs/research/ktdt-research-workflow.md`;
-3. chạy **CHECKPOINT A — Quét chủ đề nóng**;
-4. tìm các chủ đề mới / nóng / sốt / đang được quan tâm trong **24–72 giờ gần nhất**;
-5. nếu chưa có đủ ứng viên tốt, mở rộng cửa sổ tối đa **7 ngày**;
-6. chỉ giữ chủ đề liên quan rõ đến:
-   - thuế;
-   - kế toán;
-   - hộ kinh doanh;
-   - doanh nghiệp;
-   - hóa đơn;
-   - lao động / BHXH khi có tác động vận hành doanh nghiệp;
-   - chính sách tài chính / thủ tục có ảnh hưởng thực tế tới nhóm khách hàng Diệu Tâm;
-7. xếp hạng và đề xuất chủ đề tốt nhất;
-8. dừng để người dùng duyệt.
-
-Nếu người dùng chỉ trả **OK** mà không chọn số khác, mặc định hiểu là:
-
-> **duyệt chủ đề AI đang khuyến nghị số 1.**
-
-Sau đó AI phải chạy ngay checkpoint nghiên cứu sâu tiếp theo ở turn kế tiếp.
-
-### Mặc định nền tảng khi AUTO-START
-
-Do quy trình hiện tại đã được kiểm chứng sâu nhất cho Facebook dạng ảnh:
-
-> **Nếu user không chỉ định nền tảng, mặc định nền tảng đích = Facebook dạng ảnh.**
-
-Đây là default runtime, không phải quy luật thương hiệu vĩnh viễn. Nếu user chỉ định nền tảng khác thì dùng nền tảng user chọn.
-
-### Không yêu cầu prompt dài
-
-Không yêu cầu người dùng phải ghi thêm:
+Không yêu cầu user phải viết prompt dài với:
 
 - chủ đề;
 - đối tượng;
@@ -89,220 +33,235 @@ Không yêu cầu người dùng phải ghi thêm:
 
 nếu họ muốn skill tự tìm từ đầu.
 
-Không yêu cầu người dùng paste lại file con nếu URL trong danh bạ có thể truy cập được.
+## 0.1. Ý nghĩa của “OK”
 
-Nếu một file bắt buộc không mở được, phải nói rõ file nào không truy cập được và **dừng bước đó**. Không được tự bịa nội dung của file.
+Khi user chỉ trả lời:
+
+> **OK**
+
+mặc định có nghĩa:
+
+1. duyệt recommendation hiện tại;
+2. khóa các decision lock của checkpoint hiện tại;
+3. chạy ngay checkpoint tiếp theo;
+4. không hỏi xác nhận lại lần hai.
+
+Không trả lời kiểu:
+
+> “Đã chốt. Anh có muốn tôi tiếp tục không?”
+
+Một checkpoint = tối đa một lần duyệt, trừ khi user yêu cầu sửa.
+
+## 0.2. Nguyên tắc tự động hóa
+
+> **Không biến checklist nội bộ của AI thành công việc của user. AI tự kiểm những gì có thể tự kiểm; chỉ dừng xin OK ở những quyết định sáng tạo hoặc chiến lược thật sự cần người duyệt.**
+
+Các việc như:
+
+- factual QA;
+- keyword;
+- hashtag research;
+- spacing;
+- emoji;
+- safe zone;
+- kiểm giới hạn nền tảng;
+- AIGC reminder;
+
+mặc định là việc nội bộ, không tạo checkpoint riêng trừ khi chúng làm thay đổi quyết định đã khóa.
 
 ---
 
-# 1. REPO VÀ DANH BẠ FILE CHÍNH THỨC
+# 1. KIẾN TRÚC TỔNG
 
-**Repo:** `quoctran-2608/skill_KTDieuTam_Social_Article`  
-**Branch chuẩn:** `main`  
+Workflow mặc định của một content case:
+
+> **SHARED RESEARCH CORE → FACEBOOK PRODUCTION → TIKTOK ADAPTATION → TIKTOK PRODUCTION**
+
+Nguyên tắc:
+
+> **Research once, adapt many times.**
+
+Và:
+
+> **Kế thừa sự thật và insight; không kế thừa máy móc packaging.**
+
+Nếu user chỉ yêu cầu một nền tảng cụ thể:
+
+- Facebook-only → kết thúc sau Facebook;
+- TikTok-only → chạy Shared Research Core rồi vào TikTok ở Standalone Mode;
+- nền tảng khác chưa có playbook → nói rõ phạm vi đang thử nghiệm.
+
+Nếu user chỉ đưa URL skill và không chỉ định platform:
+
+> **mặc định full workflow = Facebook trước, sau khi Facebook hoàn tất thì tiếp tục TikTok Photo Carousel.**
+
+Không hỏi lại “có muốn làm TikTok không?” trong full workflow.
+
+---
+
+# 2. CONTENT CASE / SHARED RESEARCH CORE
+
+Sau pha research, AI phải giữ một package nội bộ dùng xuyên suốt case:
+
+- Topic / event
+- Verified facts
+- Sources
+- Evidence strength
+- What is certain
+- What is not yet certain
+- Audience
+- Reader situation
+- Main question / pain
+- Dangerous misunderstanding
+- Useful action
+- Core tension
+- Strong wording / conflict-bearing words
+- Content opportunity
+- Approved angle
+- Time-sensitive items requiring refresh
+
+Các factual/audience decision đã được duyệt trở thành **decision lock cấp content case**.
+
+Không tự mở lại ở platform sau trừ khi:
+
+- có nguồn mới;
+- nguồn mâu thuẫn;
+- dữ kiện thời gian có thể đã thay đổi;
+- user yêu cầu kiểm lại;
+- hoặc phát hiện lỗi factual.
+
+Khi cần refresh:
+
+> **refresh phần bị ảnh hưởng, không reset toàn bộ content case.**
+
+---
+
+# 3. REPO VÀ FILE CHÍNH THỨC
+
+**Repo:** quoctran-2608/skill_KTDieuTam_Social_Article  
+**Branch:** main  
 **Repo URL:** https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article
 
-## 1.1. File điều phối
+## Research
 
-- Path: `SKILL.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/SKILL.md
-- Vai trò: xác định thứ tự chạy, checkpoint, decision lock và file con phải đọc.
+- docs/research/ktdt-research-workflow.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
 
-## 1.2. Nghiên cứu
+- docs/research/ktdt-source-verification.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-source-verification.md
 
-### Quy trình nghiên cứu
-- Path: `docs/research/ktdt-research-workflow.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
-- Dùng ở: toàn bộ pha nghiên cứu.
+- docs/research/ktdt-platform-competitor-research.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-platform-competitor-research.md
 
-### Kiểm chứng nguồn
-- Path: `docs/research/ktdt-source-verification.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-source-verification.md
-- Dùng ở: nghiên cứu sự thật, đặc biệt luật / thuế / kế toán / chính sách / số liệu.
+- docs/research/ktdt-research-output.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-output.md
 
-### Nghiên cứu đối thủ và nội dung cạnh tranh theo nền tảng
-- Path: `docs/research/ktdt-platform-competitor-research.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-platform-competitor-research.md
-- Dùng ở: nghiên cứu nội dung cạnh tranh trên nền tảng đích.
+## Writing
 
-### Chuẩn đầu ra nghiên cứu
-- Path: `docs/research/ktdt-research-output.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-output.md
-- Dùng ở: đóng gói hồ sơ nghiên cứu và quyết định có đủ dữ kiện để sáng tạo hay chưa.
+- docs/brand/ktdt-social-writing-dna.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
 
-## 1.3. Viết nội dung
+- docs/content/ktdt-hook-language-psychology.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-hook-language-psychology.md
 
-### DNA thương hiệu
-- Path: `docs/brand/ktdt-social-writing-dna.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
-- Dùng ở: mọi bước viết / đánh giá nội dung Diệu Tâm.
+- docs/content/ktdt-body-writing-retention.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-body-writing-retention.md
 
-### Hook
-- Path: `docs/content/ktdt-hook-language-psychology.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-hook-language-psychology.md
-- Dùng ở: tạo và đánh giá câu mở đầu. **Phải dùng cùng DNA.**
+## Platform
 
-### Thân bài & retention
-- Path: `docs/content/ktdt-body-writing-retention.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-body-writing-retention.md
-- Dùng ở: thiết kế đường giữ người đọc, viết thân bài, xưng hô, độ rõ, CTA.
+- docs/platform/ktdt-facebook-post-playbook.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
 
-## 1.4. Nền tảng
+- docs/platform/ktdt-tiktok-writing-playbook.md  
+  https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
 
-### Facebook dạng ảnh
-- Path: `docs/platform/ktdt-facebook-post-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
-- Dùng ở: chọn 1 ảnh / 3 ảnh, đóng gói caption, spacing, emoji, hashtag, tạo ảnh và QA ảnh.
-
-### TikTok writing
-- Path: `docs/platform/ktdt-tiktok-writing-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
-- Dùng ở: phần chữ TikTok — caption hoặc text post, search keyword, nhịp chữ, CTA và hashtag. **Không dùng để sản xuất video.**
-
-> **Luật tải file:** Không cần đọc toàn bộ repo ở mỗi lần chạy. Chỉ mở file đúng với checkpoint hiện tại theo bảng điều phối bên dưới. Khi một checkpoint yêu cầu nhiều file, phải đọc đủ các file đó trước khi tạo đầu ra.
+> **Luật tải file:** Không đọc toàn bộ repo ở mỗi turn. Chỉ mở file cần cho checkpoint hiện tại. Khi checkpoint yêu cầu nhiều file, đọc đủ trước khi tạo output.
 
 ---
 
-# 2. NGUYÊN TẮC ĐIỀU PHỐI
+# 4. DECISION LOCK
 
-## 2.1. Decision lock
+Khi user đã duyệt, AI không tự đổi:
 
-Khi người dùng đã duyệt một quyết định như:
-
-- nền tảng;
-- đối tượng;
-- mục tiêu;
-- góc chính;
-- định dạng;
+- topic;
+- factual conclusion;
+- audience;
+- objective;
+- angle;
 - hook;
+- retention path;
 - CTA;
+- format;
+- title;
+- số slide;
+- nhiệm vụ từng slide;
+- exact slide copy;
+- caption;
 - chữ trên ảnh;
 - số ảnh;
-- logo / vị trí logo nếu đã chốt;
+- visual concept đã khóa;
+- logo/vị trí logo nếu platform đó có dùng.
 
-thì quyết định đó trở thành **điểm khóa**.
+Chỉ reopen khi:
 
-AI không được tự tối ưu lại ở bước sau, trừ khi:
+- lỗi factual / bằng chứng;
+- lỗi hiển thị khách quan bắt buộc sửa;
+- user chủ động mở lại.
 
-- phát hiện lỗi factual / bằng chứng / an toàn;
-- phát hiện lỗi hiển thị bắt buộc phải sửa;
-- hoặc người dùng chủ động mở lại quyết định.
-
-## 2.2. Không đi trước checkpoint
-
-Không tạo hook khi góc chưa được duyệt.  
-Không viết caption hoàn chỉnh khi hook / retention / CTA chưa được duyệt.  
-Không tạo ảnh khi chữ trên ảnh và format chưa được duyệt.
-
-## 2.3. Chỉ hỏi điều thật sự thiếu
-
-Nếu prompt đã cung cấp đủ thông tin cho checkpoint hiện tại, làm luôn checkpoint đó.
-
-Chỉ hỏi lại khi thiếu dữ kiện làm thay đổi đáng kể kết quả, ví dụ:
-
-- chỉ hỏi về chủ đề nếu user **đã yêu cầu một phạm vi hẹp nhưng phạm vi đó vẫn mơ hồ**;
-- không hỏi chủ đề trong AUTO-START: phải tự quét chủ đề nóng;
-- không hỏi nền tảng trong AUTO-START: mặc định Facebook dạng ảnh;
-- chưa có logo nhưng người dùng yêu cầu phải dùng đúng logo;
-- chưa rõ mục tiêu kinh doanh khi mục tiêu quyết định cách đánh.
+> **Không sáng tạo lại chỉ vì AI nghĩ có thể “hay hơn”.**
 
 ---
 
-# 3. RUNTIME FLOW — CHẠY TỪNG BƯỚC
+# 5. AUTO-START — QUÉT CHỦ ĐỀ NÓNG
 
-## CHECKPOINT 0 — Xác định chế độ chạy
-
-### Nếu user đã cho chủ đề
-
-Ghi nhận:
-
-- chủ đề;
-- nền tảng nếu có;
-- mục tiêu nếu có;
-- tài sản đầu vào nếu có.
-
-Nếu không có nền tảng → mặc định Facebook dạng ảnh, trừ khi yêu cầu cho thấy nền tảng khác.
-
-Sau đó đi thẳng tới **CHECKPOINT 1.1 — Nghiên cứu sự thật**. Không cần xin một lượt OK chỉ để xác nhận lại brief nếu brief đã rõ.
-
-### Nếu user KHÔNG cho chủ đề
-
-Không hỏi lại.
-
-Chạy ngay **CHECKPOINT A — QUÉT CHỦ ĐỀ NÓNG** bên dưới.
-
----
-
-## CHECKPOINT A — QUÉT CHỦ ĐỀ NÓNG / HOT TREND
+Nếu user không cho chủ đề:
 
 ### Bắt buộc đọc
+- docs/research/ktdt-research-workflow.md
+- docs/research/ktdt-source-verification.md khi cần kiểm nhanh
 
-- `docs/research/ktdt-research-workflow.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
+### Cửa sổ
+1. ưu tiên 24–72 giờ gần nhất;
+2. thiếu ứng viên tốt → mở rộng tối đa 7 ngày;
+3. cũ hơn chỉ giữ khi có diễn biến/deadline/thực thi mới.
 
-Khi cần kiểm nhanh độ chắc của ứng viên, dùng thêm:
+Nếu có web/search, phải dùng dữ liệu hiện tại.
 
-- `docs/research/ktdt-source-verification.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-source-verification.md
+### Lọc
+Một ứng viên mạnh nên đạt ít nhất 4/5:
 
-### Cửa sổ thời gian
+1. mới / nóng;
+2. đúng tệp Diệu Tâm;
+3. tác động thực tế;
+4. kiểm chứng được;
+5. có điểm căng thật.
 
-1. ưu tiên tin / thay đổi / thảo luận đáng chú ý trong **24–72 giờ gần nhất**;
-2. nếu chưa có đủ ứng viên chất lượng → mở rộng tối đa **7 ngày**;
-3. chủ đề cũ hơn 7 ngày chỉ được giữ nếu **tuần này có diễn biến mới, deadline mới hoặc mức quan tâm mới**.
+### Output
+Đề xuất 3–5 chủ đề, mỗi chủ đề rất ngắn:
 
-### Phải dùng dữ liệu hiện tại
-
-Nếu môi trường có web/search, phải research web hiện tại.
-
-Không được dùng kiến thức cũ trong model để tự tuyên bố một chủ đề đang “hot”.
-
-### Lọc chủ đề
-
-Mỗi ứng viên phải có ít nhất 4/5 yếu tố:
-
-1. **Mới / đang nóng** — có diễn biến mới hoặc deadline gần.
-2. **Đúng tệp Diệu Tâm** — ảnh hưởng rõ đến doanh nghiệp, hộ kinh doanh, kế toán / vận hành.
-3. **Tác động thực tế** — tiền, thuế, hồ sơ, quyền lợi, nghĩa vụ, thời hạn hoặc quyết định.
-4. **Kiểm chứng được** — có nguồn đủ mạnh để research sâu.
-5. **Có điểm căng nội dung** — tồn tại hiểu lầm, thay đổi, mâu thuẫn, chi phí hoặc câu hỏi thật.
-
-Không coi một chủ đề là hot chỉ vì nhiều báo copy cùng một thông cáo.
-
-### Đầu ra
-
-Đề xuất **3–5 chủ đề**.
-
-Mỗi chủ đề ghi rất ngắn:
-
-- chuyện gì vừa xảy ra;
-- thời điểm / độ mới;
+- chuyện gì mới;
+- thời điểm;
 - ai bị ảnh hưởng;
-- vì sao đáng làm ngay;
-- điểm căng tiềm năng;
-- độ chắc nguồn ban đầu;
-- đánh giá: **Nên làm / Có thể làm / Chưa nên làm**.
+- vì sao đáng làm;
+- tension;
+- độ chắc nguồn;
+- Nên làm / Có thể làm / Chưa nên làm.
 
-Cuối cùng chọn:
+Chọn:
 
 > **KHUYẾN NGHỊ SỐ 1**
 
-và giải thích ngắn vì sao.
-
-### Gate
-
-> **Dừng sau shortlist. Nếu user nói OK → mặc định chọn KHUYẾN NGHỊ SỐ 1, khóa chủ đề và ở turn kế tiếp chạy ngay CHECKPOINT 1.1. Nếu user chọn chủ đề khác → khóa chủ đề đó và chạy CHECKPOINT 1.1.**
+Nếu user nói OK mà không chọn số khác → khóa #1 và chạy Research Core.
 
 ---
 
-## CHECKPOINT 1.1 — Nghiên cứu SỰ THẬT
+# 6. SHARED RESEARCH CORE — CHẠY MỘT LẦN
 
-### Bắt buộc đọc
-- `docs/research/ktdt-research-workflow.md`
-- `docs/research/ktdt-source-verification.md`
+## R1 — Sự thật
 
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-source-verification.md
+### Đọc
+- ktdt-research-workflow.md
+- ktdt-source-verification.md
 
 ### Làm
 - xác minh nguồn;
@@ -311,456 +270,606 @@ URLs:
 - lập sổ nguồn;
 - xác định điều không được phép khẳng định.
 
-Với thông tin hiện hành / luật / thuế / chính sách / dữ liệu mới, phải dùng nguồn web hiện tại nếu có khả năng truy cập web.
-
-### Đầu ra checkpoint
+### Output
 - sự thật trung tâm;
 - điều đã chắc;
-- điều chưa chắc / không được nói;
+- điều chưa chắc;
 - giới hạn dữ liệu.
 
 ### Gate
-> **Chỉ đi tiếp khi đạt: DỮ KIỆN CỐT LÕI ĐÃ CHẮC. Sau đó dừng và chờ OK.**
+> **DỮ KIỆN CỐT LÕI ĐÃ CHẮC** → dừng chờ OK.
 
 ---
 
-## CHECKPOINT 1.2 — Nghiên cứu NGƯỜI ĐỌC
+## R2 — Người đọc
 
-### Bắt buộc đọc
-- `docs/research/ktdt-research-workflow.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
+### Đọc
+- ktdt-research-workflow.md
 
-### Làm
-Xác định:
-
+### Khóa
 - người đọc chính;
 - tình huống thật;
 - họ đang nghĩ gì;
 - họ lo / hỏi / quyết định gì;
 - khoảng cách nhận thức;
-- điều họ cần biết.
+- dangerous misunderstanding;
+- useful action.
 
 ### Gate
-> **Bài này đang nói với ai, họ đang nghĩ gì và tại sao họ phải quan tâm phải được làm rõ. Dừng và chờ OK.**
+Phải trả lời được:
+
+> **Bài này đang nói với ai, họ đang nghĩ gì và tại sao họ phải quan tâm?**
+
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 1.3 — Nghiên cứu NỘI DUNG CẠNH TRANH
+## R3 — Nội dung cạnh tranh cho platform đầu tiên
 
-### Bắt buộc đọc
-- `docs/research/ktdt-research-workflow.md`
-- `docs/research/ktdt-platform-competitor-research.md`
+### Đọc
+- ktdt-research-workflow.md
+- ktdt-platform-competitor-research.md
 
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-platform-competitor-research.md
+Trong full workflow, platform đầu tiên = Facebook.
 
 ### Làm
-- nghiên cứu trên **nền tảng đích**;
-- tách organic / paid nếu có;
+- nghiên cứu platform đích;
+- tách organic / paid nếu cần;
 - không dùng đối thủ để xác nhận luật;
-- không gọi hiệu quả / viral nếu không đủ dữ liệu;
-- không có dữ liệu thì nói `chưa đủ dữ liệu`.
+- không gọi hiệu quả / viral nếu thiếu dữ liệu;
+- tìm content gap.
 
 ### Gate
-> **Chốt được điều đã bão hòa, pattern quan sát được và giới hạn dữ liệu. Dừng và chờ OK.**
+Khóa:
+
+- phần đã bão hòa;
+- pattern quan sát được;
+- giới hạn dữ liệu;
+- ít nhất một khoảng trống đáng thử.
+
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 1.4 — CƠ HỘI NỘI DUNG & HỒ SƠ NGHIÊN CỨU
+## R4 — Cơ hội + Research Package
 
-### Bắt buộc đọc
-- `docs/research/ktdt-research-workflow.md`
-- `docs/research/ktdt-research-output.md`
-
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-workflow.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/research/ktdt-research-output.md
+### Đọc
+- ktdt-research-workflow.md
+- ktdt-research-output.md
 
 ### Làm
-- xác định khoảng trống quan sát được;
-- cơ hội của Diệu Tâm;
-- lời hứa nội dung khả thi;
-- đóng gói hồ sơ theo chuẩn output.
+Đóng gói:
+
+- source package;
+- truth;
+- evidence boundary;
+- audience;
+- situation;
+- reader question;
+- tension;
+- misunderstanding;
+- useful action;
+- observed gap;
+- opportunity;
+- content promise;
+- time-sensitive fields.
 
 ### Gate
-> **Phải kết thúc bằng ✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH hoặc ❌ CHƯA ĐỦ DỮ KIỆN. Nếu ✅, dừng và chờ OK.**
+Phải kết thúc:
+
+> **✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
+
+hoặc:
+
+> **❌ CHƯA ĐỦ DỮ KIỆN**
+
+Nếu ✅ → dừng chờ OK.
 
 ---
 
-## CHECKPOINT 2 — Chốt MỤC TIÊU NỘI DUNG
+# 7. CHỌN CÁCH ĐÁNH CHUNG
 
-### Dùng
-- hồ sơ nghiên cứu đã duyệt;
-- `docs/brand/ktdt-social-writing-dna.md` khi cần kiểm ranh giới thương hiệu.
+## S1 — Mục tiêu
+
+Đề xuất một mục tiêu chính, tối đa một mục tiêu phụ.
+
+Dừng chờ OK.
+
+## S2 — Góc chính
+
+Dùng Research Package + mục tiêu đã khóa.
+
+Đề xuất góc mạnh nhất và lý do ngắn.
+
+Chưa viết hook.
+
+Dừng chờ OK.
+
+Sau S2:
+
+- full workflow / Facebook-only → Facebook Production;
+- TikTok-only → TikTok T0.
+
+---
+
+# 8. FACEBOOK PRODUCTION
+
+## F1 — Format
+
+### Đọc
+- ktdt-facebook-post-playbook.md
+
+Mặc định đề xuất:
+
+- 1 ảnh;
+- 3 ảnh.
+
+AI khuyến nghị theo số bước nhận thức, không theo lượng thông tin.
+
+Dừng chờ OK.
+
+---
+
+## F2 — Hook
+
+### Đọc đồng thời
+- ktdt-social-writing-dna.md
+- ktdt-hook-language-psychology.md
 
 ### Làm
-Đề xuất **một mục tiêu chính** và tối đa một mục tiêu phụ. Nói rõ hành vi mong muốn của người xem.
+- xác định tension;
+- giữ conflict-bearing words;
+- tạo 3–5 hook;
+- đề xuất #1.
 
-### Gate
-> **Trình bày mục tiêu và dừng. Khi người dùng OK/chọn phương án → khóa mục tiêu và ở turn kế tiếp chạy ngay CHECKPOINT 3.**
-
----
-
-## CHECKPOINT 3 — Chốt GÓC CHÍNH
-
-### Dùng
-- hồ sơ nghiên cứu;
-- mục tiêu đã khóa.
-
-### Làm
-Đề xuất góc chính mạnh nhất, giải thích ngắn vì sao nó phù hợp với người đọc + khoảng trống + mục tiêu.
-
-Không viết hook ở bước này.
-
-### Gate
-> **Trình bày góc và dừng. Khi người dùng OK/chọn phương án → khóa góc và ở turn kế tiếp chạy ngay CHECKPOINT 4.**
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 4 — Chốt ĐỊNH DẠNG
+## F3 — Retention path
 
-### Nếu Facebook dạng ảnh, bắt buộc đọc
-- `docs/platform/ktdt-facebook-post-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
+### Đọc
+- ktdt-social-writing-dna.md
+- ktdt-body-writing-retention.md
 
-### Nếu TikTok writing, bắt buộc đọc
-- `docs/platform/ktdt-tiktok-writing-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
-
-### Làm với Facebook
-Mặc định đưa 2 lựa chọn:
-
-- **1 ảnh**;
-- **3 ảnh**.
-
-AI khuyến nghị một phương án dựa trên số bước nhận thức người xem cần đi qua.
-
-### Làm với TikTok writing
-Chỉ chọn định dạng chữ:
-
-- **Caption / phần mô tả TikTok**;
-- **TikTok Text Post**.
-
-Không mở nhánh sản xuất video nếu user chỉ yêu cầu viết bài TikTok.
-
-### Gate
-> **Trình bày lựa chọn format phù hợp và khuyến nghị rồi dừng. Khi người dùng OK/chọn phương án → khóa format và ở turn kế tiếp chạy ngay CHECKPOINT 5.**
-
----
-
-## CHECKPOINT 5 — Tạo và chốt HOOK
-
-### Bắt buộc đọc ĐỒNG THỜI
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-hook-language-psychology.md`
-
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-hook-language-psychology.md
-
-### Làm
-- xác định người đọc đang nghĩ gì;
-- sự thật nào làm họ nhìn lại;
-- chi tiết nào gánh mâu thuẫn;
-- tạo 3–5 phương án đáng dùng;
-- cắt chữ thừa nhưng giữ từ gánh lực;
-- đề xuất một phương án tốt nhất.
-
-Không chèn ví dụ từ tài liệu như đáp án mẫu.
-
-### Gate
-> **Trình bày các hook và khuyến nghị rồi dừng. Khi người dùng OK/chọn một hook → khóa nguyên văn hook và ở turn kế tiếp chạy ngay CHECKPOINT 6.**
-
----
-
-## CHECKPOINT 6 — Chốt ĐƯỜNG GIỮ NGƯỜI ĐỌC
-
-### Bắt buộc đọc
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-body-writing-retention.md`
-
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-body-writing-retention.md
-
-### Làm
-Chỉ dựng **xương sống**, chưa viết caption hoàn chỉnh:
+Chỉ dựng xương sống:
 
 - hook mở món nợ gì;
-- đoạn đầu trả món nợ đó thế nào;
-- các ý tiếp theo theo thứ tự tò mò của người đọc;
-- đâu là điều đã chắc / điều cần giải thích / việc cần làm.
+- trả sớm thế nào;
+- thứ tự tò mò;
+- điều chắc / hiểu sai / việc cần làm.
 
-### Gate
-> **Trình bày retention path và dừng. Khi người dùng OK → khóa cấu trúc và ở turn kế tiếp chạy ngay CHECKPOINT 7.**
-
----
-
-## CHECKPOINT 7 — Chốt CTA
-
-### Bắt buộc dùng
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-body-writing-retention.md`
-
-### Làm
-Đề xuất CTA chính phù hợp mục tiêu đã khóa. CTA phải đi ra tự nhiên từ giá trị bài, không mặc định bán dịch vụ.
-
-### Gate
-> **Trình bày CTA và dừng. Khi người dùng OK/chọn phương án → khóa CTA và ở turn kế tiếp chạy ngay CHECKPOINT 8.**
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 8 — Viết BẢN NỘI DUNG HOÀN CHỈNH
+## F4 — CTA
 
-### Bắt buộc đọc
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-body-writing-retention.md`
-- nếu Facebook: `docs/platform/ktdt-facebook-post-playbook.md`
-- nếu TikTok: `docs/platform/ktdt-tiktok-writing-playbook.md`
+Đề xuất CTA chính phù hợp mục tiêu.
 
-URLs:
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/brand/ktdt-social-writing-dna.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/content/ktdt-body-writing-retention.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
-- https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
+Không mặc định bán dịch vụ.
+
+Dừng chờ OK.
+
+---
+
+## F5 — Viết caption hoàn chỉnh
+
+### Đọc
+- DNA
+- body/retention
+- Facebook playbook
 
 ### Luật
-- giữ nguyên các decision lock;
-- hook caption không được tự đổi;
-- hook mở món nợ nào, thân bài trả món nợ đó sớm;
-- nói với một người thật trong một tình huống thật;
-- không để người đọc phải đoán `cụ thể là gì?`;
-- xưng hô có chức năng;
+- giữ decision lock;
+- hook không tự đổi;
+- hook debt phải được trả sớm;
+- nói với một người thật trong tình huống thật;
+- cụ thể khi có thể;
 - CTA đúng bản đã khóa.
 
-### Gate
-> **Đưa bản viết và dừng. Khi người dùng OK → nếu Facebook chạy CHECKPOINT 9; nếu TikTok chạy CHECKPOINT 9T.**
+Đưa bản viết và dừng chờ OK.
 
 ---
 
-## NHÁNH NỀN TẢNG SAU CHECKPOINT 8
+## F6 — Đóng gói Facebook
 
-- Nếu nền tảng đích là **Facebook dạng ảnh** → chạy CHECKPOINT 9 đến CHECKPOINT 13.
-- Nếu nền tảng đích là **TikTok writing** → chạy CHECKPOINT 9T đến CHECKPOINT 11T.
-- Nếu nền tảng khác và repo chưa có playbook tương ứng → không áp playbook Facebook/TikTok. Nói rõ phần đó chưa khóa và đưa kế hoạch thử nghiệm để user duyệt.
-- Không được bê quy tắc Facebook sang TikTok hoặc ngược lại.
+### Đọc
+- Facebook playbook
 
----
-
-## CHECKPOINT 9T — ĐÓNG GÓI TIKTOK WRITING
-
-### Bắt buộc đọc
-- `docs/platform/ktdt-tiktok-writing-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-tiktok-writing-playbook.md
-
-### Làm
-Tách rõ:
-
-1. hook / câu đầu;
-2. caption hoặc text post;
-3. CTA;
-4. cụm từ khóa tìm kiếm chính;
-5. 3–5 hashtag.
-
-Không tạo shot list, cảnh quay, timeline dựng hay voiceover nếu user chỉ yêu cầu viết bài TikTok.
-
-Keyword và hashtag là dữ liệu động. Nếu có web hoặc công cụ TikTok phù hợp thì research hiện tại trước khi chốt.
-
-### Gate
-> **Đưa bản đóng gói TikTok và dừng. Khi user OK → khóa text / CTA / keyword / hashtag và chạy CHECKPOINT 10T.**
-
----
-
-## CHECKPOINT 10T — QA TIKTOK WRITING
-
-### Bắt buộc đọc
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-body-writing-retention.md`
-- `docs/platform/ktdt-tiktok-writing-playbook.md`
-
-### Kiểm
-- factual / bằng chứng;
-- hook debt đã được trả sớm;
-- từ khóa chính rõ và tự nhiên;
-- không keyword stuffing;
-- nhịp chữ dễ quét;
-- không copy nguyên caption Facebook;
-- CTA chỉ một hành động chính;
-- hashtag liên quan thật;
-- không tự chuyển sang sản xuất video.
-
-### Gate
-> **Nếu đạt, báo `TIKTOK TEXT ĐÃ ĐỦ CHUẨN` và dừng. Khi user OK → chạy CHECKPOINT 11T.**
-
----
-
-## CHECKPOINT 11T — BÀN GIAO TIKTOK
-
-Bàn giao:
-
-1. hook / câu đầu;
-2. caption hoặc text post hoàn chỉnh;
-3. CTA;
-4. từ khóa tìm kiếm chính;
-5. 3–5 hashtag;
-6. ghi chú factual nếu có phần đang chờ hướng dẫn chính thức.
-
-Không thêm tài liệu sản xuất video.
-
----
-
-## CHECKPOINT 9 — ĐÓNG GÓI FACEBOOK
-
-### Bắt buộc đọc
-- `docs/platform/ktdt-facebook-post-playbook.md`
-- URL: https://github.com/quoctran-2608/skill_KTDieuTam_Social_Article/blob/main/docs/platform/ktdt-facebook-post-playbook.md
-
-### Làm
-Tách rõ:
+Output:
 
 1. chữ trên ảnh;
 2. caption;
-3. hashtag.
+3. 5 hashtag đã research phù hợp.
 
-Với Facebook:
+Emoji chủ yếu ở caption; không mặc định emoji trên ảnh.
 
-- chỉnh khoảng trắng để tránh tường chữ;
-- emoji chủ yếu ở caption;
-- hook caption mặc định có ít nhất 1 emoji phù hợp nếu chủ đề cho phép;
-- không mặc định emoji trên ảnh;
-- nghiên cứu **5 hashtag** phù hợp sau khi nội dung đã ổn;
-- hashtag là dữ liệu động: nếu có web, research hiện tại; không tự bịa độ phổ biến.
-
-### Gate
-> **Đưa bản đóng gói và dừng. Khi người dùng OK → khóa chữ trên ảnh / caption / hashtag và ở turn kế tiếp chạy ngay CHECKPOINT 10.**
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 10 — QA NỘI DUNG TRƯỚC ẢNH
+## F7 — QA text
 
-### Dùng
-- `docs/brand/ktdt-social-writing-dna.md`
-- `docs/content/ktdt-body-writing-retention.md`
-- `docs/platform/ktdt-facebook-post-playbook.md` nếu Facebook.
+AI tự kiểm:
 
-### Kiểm
-- factual / số liệu / phạm vi / trạng thái chính thức;
-- lời hứa hook có được trả;
+- factual;
+- evidence boundary;
+- hook debt;
 - câu mơ hồ;
 - giọng có hơi người;
 - spacing / emoji / CTA / hashtag;
-- chữ trên ảnh khớp caption.
+- chữ ảnh khớp caption.
 
-Với chủ đề thời sự / luật / chính sách đang thay đổi, re-check dữ kiện hiện tại nếu cần.
+Nếu đạt:
 
-### Gate
-> **Nếu đạt, báo `TEXT ĐÃ ĐỦ CHUẨN ĐỂ TẠO ẢNH` và dừng. Khi người dùng OK → ở turn kế tiếp chạy ngay CHECKPOINT 11.**
+> **TEXT ĐÃ ĐỦ CHUẨN ĐỂ TẠO ẢNH**
+
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 11 — ĐỀ NGHỊ & CHỐT CONCEPT ẢNH
+## F8 — Concept ảnh
 
-### Bắt buộc đọc
-- `docs/platform/ktdt-facebook-post-playbook.md` nếu Facebook.
+### Đọc
+- Facebook playbook
 
-### Làm
-Tóm tắt ngắn:
+Tóm tắt:
 
 - số ảnh;
-- tỷ lệ / kích thước mục tiêu;
-- chữ chính xác trên ảnh;
+- tỷ lệ;
+- exact text;
 - phong cách;
-- màu chủ đạo nếu đã có;
+- màu nếu đã có;
 - logo có dùng không;
-- vị trí logo;
-- tài sản tham chiếu cần dùng.
+- vị trí logo nếu dùng;
+- tài sản tham chiếu.
 
-Nếu thiếu logo đúng mà bắt buộc phải dùng logo, chỉ lúc này mới yêu cầu người dùng upload / cung cấp logo.
-
-### Gate
-> **Trình bày concept ảnh và hỏi tạo ảnh ngay không. Khi người dùng OK → ở turn kế tiếp tạo ảnh ngay theo CHECKPOINT 12, không hỏi lại các điểm đã khóa.**
+Dừng chờ OK.
 
 ---
 
-## CHECKPOINT 12 — TẠO ẢNH & QA ẢNH
+## F9 — Generate + QA ảnh
 
-### Làm
-Nếu môi trường có công cụ tạo / chỉnh ảnh, phải **dùng công cụ để tạo ảnh thật**, không chỉ mô tả prompt.
+Khi user OK concept:
 
-Giữ nguyên:
+> **tạo ảnh ngay, không hỏi lại các điểm đã khóa.**
 
-- chữ trên ảnh đã khóa;
-- số ảnh;
-- logo / vị trí logo đã khóa;
-- định hướng visual đã duyệt.
+Nếu có tool ảnh, phải tạo ảnh thật.
 
-### QA sau tạo
-Kiểm ít nhất:
+QA:
 
-- đúng tỷ lệ phù hợp nền tảng;
-- chữ dễ đọc trên điện thoại;
-- hook đúng nguyên văn;
-- không lỗi dấu tiếng Việt rõ ràng;
-- logo sạch, đúng vị trí, không nền rác / viền lạ;
-- không chi tiết thừa cạnh tranh với hook;
-- bố cục có vùng thở;
-- phù hợp mục tiêu organic / quảng cáo.
+- tỷ lệ;
+- mobile readability;
+- exact text;
+- dấu tiếng Việt;
+- logo đúng nếu có;
+- không chi tiết thừa;
+- vùng thở;
+- visual hợp mục tiêu.
 
-Nếu có lỗi khách quan rõ ràng, sửa trước khi coi là hoàn chỉnh.
-
-Nếu môi trường không có công cụ tạo ảnh, nói rõ giới hạn và bàn giao **visual brief hoàn chỉnh**; không tuyên bố đã tạo ảnh.
-
-### Gate
-> **Người dùng duyệt ảnh → khóa visual.**
+Lỗi khách quan rõ → tự sửa trước khi bàn giao nếu không cần mở decision lock.
 
 ---
 
-## CHECKPOINT 13 — BÀN GIAO CUỐI
+## F10 — Facebook Handoff
 
-Với Facebook dạng ảnh, bàn giao:
+Bàn giao:
 
 1. ảnh hoàn chỉnh;
 2. chữ trên ảnh;
 3. caption;
-4. 5 hashtag;
-5. ghi chú ngắn nếu còn dữ kiện pháp lý / hướng dẫn đang chờ cập nhật.
+4. hashtag;
+5. factual note nếu còn điểm đang chờ.
 
-Chỉ được coi bài dạng ảnh là hoàn thành khi:
+Bài Facebook chỉ Complete khi:
 
-- ảnh đã được tạo và QA;
-- hoặc người dùng chủ động yêu cầu dừng ở phần text.
+- ảnh đã tạo + QA;
+- hoặc user chủ động yêu cầu dừng ở text.
 
----
+Khi user duyệt bản Facebook cuối:
 
-# 4. SƠ ĐỒ FILE → CHECKPOINT
+> **FACEBOOK COMPLETE**
 
-| Checkpoint | File bắt buộc |
-|---|---|
-| 0 Chế độ chạy | `SKILL.md` | 
-| A Quét chủ đề nóng | `ktdt-research-workflow.md` + `ktdt-source-verification.md` khi cần |
-| 1.1 Sự thật | `ktdt-research-workflow.md` + `ktdt-source-verification.md` |
-| 1.2 Người đọc | `ktdt-research-workflow.md` |
-| 1.3 Cạnh tranh | `ktdt-research-workflow.md` + `ktdt-platform-competitor-research.md` |
-| 1.4 Cơ hội / hồ sơ | `ktdt-research-workflow.md` + `ktdt-research-output.md` |
-| 2 Mục tiêu | hồ sơ nghiên cứu + DNA khi cần |
-| 3 Góc | hồ sơ nghiên cứu |
-| 4 Format Facebook | `ktdt-facebook-post-playbook.md` |
-| 4 Format TikTok writing | `ktdt-tiktok-writing-playbook.md` |
-| 5 Hook | `ktdt-social-writing-dna.md` + `ktdt-hook-language-psychology.md` |
-| 6 Retention | `ktdt-social-writing-dna.md` + `ktdt-body-writing-retention.md` |
-| 7 CTA | DNA + body/retention |
-| 8 Viết | DNA + body/retention + playbook nền tảng |
-| 9 Đóng gói Facebook | Facebook playbook |
-| 10 QA text Facebook | DNA + body/retention + Facebook playbook |
-| 11–12 Ảnh | Facebook playbook + tài sản brand của user |
-| 9T Đóng gói TikTok | TikTok writing playbook |
-| 10T QA TikTok | DNA + body/retention + TikTok writing playbook |
-| 11T Bàn giao TikTok | TikTok writing playbook |
+### Nếu Facebook-only
+Content case có thể kết thúc.
+
+### Nếu full workflow
+User nói OK ở bản Facebook cuối đồng nghĩa:
+
+1. khóa Facebook;
+2. tạo TikTok inheritance handoff;
+3. chạy TikTok T0 nội bộ;
+4. đưa T1 ở turn kế tiếp.
+
+Không hỏi:
+
+> “Có muốn tiếp tục TikTok không?”
 
 ---
 
-# 5. LUẬT NGHIÊN CỨU CỨNG
+# 9. FACEBOOK → TIKTOK INHERITANCE
+
+Sau FACEBOOK COMPLETE, AI tự lập nội bộ:
+
+## INHERIT FROM CONTENT CASE
+- Facts: locked
+- Sources: reusable
+- Audience: locked
+- Situation: locked
+- Core tension: locked
+- Evidence boundary: locked
+- Dangerous misunderstanding: locked
+- Useful action: reusable
+- Approved angle: reusable
+
+## ELIGIBLE FACEBOOK ASSETS
+- approved hook;
+- approved wording;
+- explanation user đã duyệt;
+- misunderstanding xử lý tốt;
+- CTA insight;
+- những từ đang gánh mâu thuẫn.
+
+## REOPEN FOR TIKTOK
+- search wording;
+- Title;
+- cover hook;
+- carousel architecture;
+- exact slide copy;
+- Caption treatment;
+- CTA wording;
+- hashtag;
+- visual concept.
+
+Nguyên tắc:
+
+> **Không sáng tạo lại chỉ để chứng minh TikTok khác Facebook. Cái gì vẫn làm việc thì được reuse.**
+
+Nhưng:
+
+> **Research inheritance ≠ packaging inheritance.**
+
+Không mặc định bê:
+
+- caption Facebook nguyên văn;
+- số ảnh;
+- tỷ lệ;
+- logo;
+- visual;
+- emoji;
+- CTA wording;
+- cách chia đoạn.
+
+---
+
+# 10. TIKTOK PHOTO CAROUSEL
+
+### Bắt buộc đọc trước TikTok production
+- docs/platform/ktdt-tiktok-writing-playbook.md
+- docs/research/ktdt-platform-competitor-research.md
+
+## T0 — Inheritance + Platform Delta Research — INTERNAL
+
+Không xin OK.
+
+Nếu adaptation mode:
+
+- dùng Research Core;
+- dùng approved Facebook assets có chọn lọc;
+- kiểm freshness của time-sensitive fields;
+- không full research lại.
+
+Nếu standalone:
+
+- dùng Research Core vừa hoàn tất;
+- không có Facebook assets thì bỏ qua phần đó.
+
+Delta Research chỉ tìm:
+
+- search intent;
+- keyword;
+- Title treatment;
+- cover behavior;
+- carousel architecture;
+- slide-count hypothesis;
+- TikTok-specific gap;
+- hashtag candidates;
+- platform-specific CTA/visual clue.
+
+Nếu TikTok trực tiếp khó truy cập, dùng fallback trong competitor research và ghi:
+
+> **Suy luận chéo nền tảng — không phải bằng chứng hiệu quả trên TikTok.**
+
+Không dừng workflow chỉ vì không đọc được TikTok trực tiếp.
+
+---
+
+## T1 — Title + Carousel Structure
+
+### Output user thấy
+- Title khuyến nghị;
+- số slide;
+- nhiệm vụ từng slide;
+- lý do ngắn vì sao cấu trúc đó hợp.
+
+Chưa viết Caption.
+
+Rule:
+
+> **Title ≠ Slide 1 Hook.**
+
+Title ưu tiên search/nhận diện.  
+Slide 1 ưu tiên dừng/kéo vuốt.
+
+User OK → khóa:
+
+- Title;
+- số slide;
+- nhiệm vụ slide;
+
+và chạy T2 ngay.
+
+---
+
+## T2 — Exact Slide Copy
+
+### Đọc
+- TikTok playbook
+- DNA
+- hook language
+- body/retention khi cần
+
+Viết exact text Slide 1 → Slide n.
+
+Nguyên tắc:
+
+- mỗi slide = một bước nhận thức;
+- slide không phải caption thu nhỏ;
+- giữ conflict-bearing words;
+- không cắt chỉ để ngắn;
+- Slide 1 kéo;
+- slide giữa giải;
+- slide cuối giúp hành động.
+
+User OK → khóa toàn bộ chữ carousel và chạy T3.
+
+---
+
+## T3 — Caption hoàn chỉnh
+
+AI tự xử lý nội bộ:
+
+- keyword;
+- CTA;
+- hashtag research;
+- spacing;
+- emoji;
+- factual check;
+- evidence boundary.
+
+Caption phải:
+
+- bắt đầu từ người trong tình huống thật khi có thể;
+- trả hook debt sớm;
+- tách điều chắc / chưa chắc;
+- chặn dangerous misunderstanding;
+- có actionable value;
+- không copy carousel;
+- không copy/cắt Facebook máy móc.
+
+### Output user chỉ nhận
+
+**Block 1 — Tiêu đề TikTok**
+
+**Block 2 — Caption TikTok hoàn chỉnh + hashtag ở cuối**
+
+Không tạo block riêng cho keyword / CTA / hashtag.
+
+User OK → khóa Caption/CTA → AI tự QA text → chạy T4.
+
+---
+
+## T4 — Visual Concept
+
+Trình bày ngắn:
+
+- tỷ lệ;
+- số ảnh;
+- hướng visual;
+- typography;
+- exact text đã khóa.
+
+Default:
+
+> **9:16 + không logo + không tên thương hiệu trên ảnh.**
+
+Không khóa template/màu/font cố định cho mọi bài.
+
+Cùng một carousel phải cùng visual system, nhưng layout từng slide thay đổi theo nhiệm vụ slide.
+
+User OK →
+
+> **tạo toàn bộ carousel ngay.**
+
+Không xin OK từng slide.
+
+---
+
+## T5 — Generate + QA + TikTok Handoff
+
+AI tự:
+
+1. tạo toàn bộ carousel;
+2. QA từng slide;
+3. QA cả chuỗi;
+4. kiểm safe zone;
+5. kiểm exact text / dấu / con số;
+6. sửa lỗi khách quan rõ ràng;
+7. bàn giao theo đúng thứ tự đăng.
+
+### QA từng slide
+- đúng decision lock;
+- factual;
+- mobile-readable;
+- contrast;
+- safe zone;
+- không logo;
+- không tên thương hiệu;
+- không artifact rõ.
+
+### QA cả chuỗi
+1. Slide 1 có kéo Slide 2 không?
+2. Slide 2 có trả món nợ Slide 1 chưa?
+3. Mỗi slide có thêm một bước hiểu mới không?
+4. Có slide lặp không?
+5. Bỏ một slide có mất bước hiểu quan trọng không?
+6. Slide cuối có hành động rõ không?
+7. Visual system có nhất quán không?
+8. Có câu nào mạnh hơn bằng chứng không?
+
+### Handoff
+- bộ ảnh carousel theo thứ tự;
+- Block Title;
+- Block Caption + hashtag.
+
+Nếu ảnh được tạo bằng AI, thêm đúng một dòng:
+
+> **Lưu ý khi đăng: ảnh được tạo bằng AI, hãy kiểm tra yêu cầu gắn nhãn nội dung AI của TikTok tại thời điểm đăng.**
+
+Sau handoff:
+
+> **CONTENT CASE COMPLETE**
+
+trừ khi user yêu cầu platform khác.
+
+---
+
+# 11. LUẬT VIẾT CỨNG
+
+Áp dụng xuyên suốt:
+
+> **Câu chữ không được mạnh hơn bằng chứng.**
+
+> **Đúng và dễ hiểu chưa đủ. Nội dung Diệu Tâm cần có cảm giác đang nói với một người thật trong một tình huống thật.**
+
+> **Nếu người đọc có thể hỏi “cụ thể là gì?”, hãy nói cụ thể ngay khi có thể.**
+
+> **Hook mở món nợ nào, thân bài/caption trả món nợ đó sớm.**
+
+> **Giữ những từ đang gánh mâu thuẫn.**
+
+> **Đơn giản không phải cắt nhiều. Đơn giản là chỉ giữ những thứ đang làm việc.**
+
+Không dùng cảm xúc giả bằng “sốc”, “siêu nóng”, “cực kỳ quan trọng” nếu tình huống thật đã đủ lực.
+
+Ưu tiên tension từ:
+
+> **tiền thật + deadline thật + hồ sơ thật + quyền lợi thật + câu hỏi thật.**
+
+---
+
+# 12. LUẬT NGHIÊN CỨU CỨNG
 
 Không dùng đối thủ, social hoặc comment để xác nhận luật.
 
@@ -777,43 +886,57 @@ Không:
 - trộn dự thảo với quy định hiện hành;
 - biến khả năng thành chắc chắn;
 - suy thủ tục chưa ban hành;
-- bịa dữ liệu cho đủ bảng;
-- gọi một nội dung là hiệu quả chỉ vì thấy nó tồn tại.
-
-Luật cốt lõi:
-
-> **Câu chữ không được mạnh hơn bằng chứng.**
+- bịa dữ liệu;
+- gọi nội dung hiệu quả chỉ vì thấy nó tồn tại.
 
 ---
 
-# 6. PHẠM VI HIỆN TẠI
+# 13. SƠ ĐỒ FILE → FLOW
 
-Đã có quy chuẩn thử nghiệm và đã test thực tế cho:
+| Flow | File bắt buộc |
+|---|---|
+| AUTO-START | research workflow + source verification khi cần |
+| R1 Sự thật | research workflow + source verification |
+| R2 Người đọc | research workflow |
+| R3 Cạnh tranh | research workflow + platform competitor research |
+| R4 Research Package | research workflow + research output |
+| S1–S2 | Research Package + DNA khi cần |
+| F1 | Facebook playbook |
+| F2 | DNA + hook psychology |
+| F3–F5 | DNA + body/retention |
+| F6–F10 | Facebook playbook + DNA/body khi cần |
+| T0 | TikTok playbook + platform competitor research |
+| T1–T4 | TikTok playbook + DNA/hook/body khi cần |
+| T5 | TikTok playbook + image tool nếu có |
 
-- nghiên cứu sự thật / người đọc / cạnh tranh / cơ hội;
-- DNA;
-- hook;
-- thân bài / retention;
-- Facebook dạng ảnh;
-- đóng gói Facebook;
-- tạo ảnh và QA visual cơ bản.
+---
+
+# 14. PHẠM VI HIỆN TẠI
+
+Đã test thực tế:
+
+- hot-topic research;
+- factual / reader / competition / opportunity research;
+- DNA / hook / retention;
+- Facebook image post;
+- Facebook visual generation + QA;
+- Facebook → TikTok selective inheritance;
+- TikTok Photo Carousel writing + visual workflow qua một case thật.
 
 Chưa khóa hoàn chỉnh:
 
-- TikTok **video production** (TikTok writing đã có playbook thử nghiệm);
+- TikTok video production;
 - Zalo;
 - YouTube;
-- video;
-- hệ thống visual identity toàn diện;
-- campaign / ad set / placement;
-- đo hiệu quả creative sau chạy;
+- hệ visual identity toàn diện;
+- campaign/ad set/placement;
 - vòng học từ dữ liệu chính chủ;
-- QA đa nền tảng toàn diện.
+- multi-platform QA ngoài Facebook → TikTok.
 
-Nếu người dùng yêu cầu phần chưa khóa, phải nói rõ đây là phần đang thử nghiệm và không tự nâng nó thành quy tắc lâu dài.
+Không nâng một lesson chưa được kiểm chứng thành luật cứng chỉ vì nó xuất hiện một lần.
 
 ---
 
-# 7. CÂU CĂN CHỈNH CHO AI
+# 15. CÂU CĂN CHỈNH CHO AI
 
-> **Nếu user chỉ nói “Tiến hành chạy skill [URL]”, hãy tự bắt đầu bằng quét chủ đề nóng trong ngày/tuần, không hỏi họ muốn viết gì. Sau đó làm một checkpoint, đưa kết quả, chờ duyệt rồi tự chạy checkpoint kế tiếp. Quyết định đã chốt thì giữ nguyên. Nghiên cứu phải chắc trước khi sáng tạo; khi viết phải nói với một người thật trong một tình huống thật; khi đã chọn bài dạng ảnh thì chỉ hoàn thành sau khi ảnh đã được tạo và QA hoặc người dùng chủ động dừng ở phần text.**
+> **Research một lần cho content case. Facebook làm trước. Khi Facebook hoàn tất và user OK, TikTok kế thừa có chọn lọc các sự thật, insight và wording đã được duyệt; chỉ nghiên cứu phần chênh lệch của TikTok. User chỉ cần duyệt những quyết định thật sự đáng duyệt. Mỗi lần user nói OK, khóa quyết định và chạy ngay bước sau. Không biến checklist nội bộ thành công việc của user.**
