@@ -1,6 +1,6 @@
 # CHUẨN ĐẦU RA NGHIÊN CỨU — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
+**Phiên bản:** 0.4  
 **Ngày:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Chuẩn hóa đầu ra sau khi hoàn thành nghiên cứu, trước khi chuyển sang bước chọn cách đánh.
@@ -271,6 +271,31 @@ Không hứa:
 
 nếu chỉ có thể giúp họ hiểu hoặc tự kiểm tra.
 
+## CONTENT WORTHINESS — lớp quyết định đầu tư
+
+Phần này không thay thế 14 mục Research Package.
+
+Nó trả lời câu hỏi khác:
+
+> **Sau khi đã hiểu topic đủ rõ, có đáng đầu tư production không?**
+
+Ghi ngắn:
+
+**Actual novelty:** Cao / Vừa / Thấp  
+**Why now:** Mạnh / Vừa / Yếu  
+**Stakes:** Cao / Vừa / Thấp  
+**Natural tension:** Cao / Vừa / Thấp  
+**Cold-attention potential:** Cao / Vừa / Thấp  
+**Strategic / utility value:** Cao / Vừa / Thấp  
+**Paid-traffic suitability:** Ưu tiên test / Có thể test / Không ưu tiên  
+**Recommended route:** A / B / C
+
+**Lý do:** 1–3 câu.
+
+Không dùng điểm số giả chính xác.
+
+Không coi Paid-traffic suitability là dự báo hiệu suất quảng cáo.
+
 ---
 
 # 4. Mức độ tin cậy của hồ sơ
@@ -323,31 +348,71 @@ Giấu giới hạn mới là lỗi.
 
 ---
 
-# 6. Quyết định: đi tiếp hay dừng
+# 6. HAI QUYẾT ĐỊNH CUỐI RESEARCH
 
-Cuối hồ sơ chỉ được ghi một trong hai trạng thái.
+Research phải kết thúc bằng hai quyết định tách biệt.
 
-## ✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH
+## 6.1. RESEARCH SUFFICIENCY
 
-Chỉ dùng khi:
+### PASS
 
-- sự thật cốt lõi đã chắc;
-- đối tượng chính rõ;
-- khoảng cách nhận thức rõ;
-- có điểm căng thật;
-- đã biết phần nào bão hòa;
-- có ít nhất một khoảng trống hợp lý;
-- lời hứa nội dung không vượt bằng chứng.
+Dùng khi:
 
-## ❌ CHƯA ĐỦ DỮ KIỆN
+- factual core đã chắc;
+- evidence boundary rõ;
+- audience rõ;
+- opportunity đủ hiểu để ra quyết định.
 
-Phải ghi:
+### FAIL
+
+Ghi:
 
 - còn thiếu gì;
-- thiếu phần đó ảnh hưởng gì;
-- cần nghiên cứu tiếp ở đâu.
+- thiếu đó ảnh hưởng kết luận ra sao;
+- cần research tiếp ở đâu.
 
 Không được sang bước viết chỉ vì “đã tốn nhiều thời gian research”.
+
+---
+
+## 6.2. CONTENT WORTHINESS
+
+Chỉ đánh giá khi Research Sufficiency = PASS.
+
+### ROUTE A — PRIORITY / TRAFFIC CANDIDATE
+
+Nên tiếp tục full production.
+
+### ROUTE B — UTILITY / STRATEGIC ORGANIC
+
+Đúng và hữu ích nhưng không phải priority cold-traffic topic.
+
+Có thể:
+
+- giữ làm organic utility;
+- dùng cho education/search/trust;
+- hoặc lưu backlog nếu hiện đang tìm hero/traffic topic.
+
+### ROUTE C — DEPRIORITIZE
+
+Không đáng tiếp tục production lúc này.
+
+Quay lại shortlist.
+
+---
+
+Kết quả:
+
+> **Research PASS + Production NO-GO**
+
+là một kết quả hợp lệ.
+
+Nó có thể tiết kiệm:
+
+- thời gian viết;
+- thiết kế;
+- tạo carousel;
+- ngân sách media.
 
 ---
 
@@ -410,15 +475,39 @@ Dùng mẫu sau:
 ### 14. Lời hứa nội dung
 > Sau khi xem, người đọc sẽ...
 
+### CONTENT WORTHINESS
+
+**Actual novelty:**  
+**Why now:**  
+**Stakes:**  
+**Natural tension:**  
+**Cold-attention potential:**  
+**Strategic / utility value:**  
+**Paid-traffic suitability:**  
+**Recommended route:** A / B / C
+
+**Lý do route:**  
+...
+
 ### Giới hạn nghiên cứu
 - ...
 
-### Trạng thái
-> ✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH
+### RESEARCH SUFFICIENCY
+> PASS / FAIL
+
+### RECOMMENDED ACTION
+
+Ví dụ:
+
+> **CONTINUE FULL PRODUCTION**
 
 hoặc
 
-> ❌ CHƯA ĐỦ DỮ KIỆN
+> **KEEP AS UTILITY ORGANIC — RETURN TO SHORTLIST FOR PRIORITY TOPIC**
+
+hoặc
+
+> **STOP / DEPRIORITIZE — RETURN TO SHORTLIST**
 
 ---
 
@@ -451,10 +540,17 @@ Trước khi bàn giao, hỏi:
 5. Nó có biết thị trường đã nói gì quá nhiều không?
 6. Nó có biết cơ hội khác biệt của Diệu Tâm không?
 7. Nó có thể sang bước chọn cách đánh mà không phải nghiên cứu lại từ đầu không?
+8. Hồ sơ có phân biệt được **đủ dữ kiện** và **đáng đầu tư** không?
+9. Nếu premise ban đầu đã bị factual research làm yếu đi, hồ sơ có phản ánh việc downgrade topic không?
+10. Route có dựa trên actual novelty / stakes / Why Now / strategic value thật, hay đang bị một hook hay đánh lừa?
 
 Nếu có từ 2 câu “không” trở lên:
 
 > hồ sơ chưa đạt.
+
+Nếu riêng câu 8–10 không trả lời được:
+
+> **Content Worthiness chưa đạt.**
 
 ---
 
@@ -482,6 +578,7 @@ Research Package cần giữ được tối thiểu:
 - **Approved angle** khi đã được khóa ở bước sáng tạo
 - **Reusable wording** đã được user duyệt và vẫn còn đúng
 - **Time-sensitive items requiring refresh**
+- **Recommended Route / Content Worthiness**
 
 ## 10.1. Quy tắc reuse
 
@@ -534,6 +631,20 @@ Trước khi coi Research Package là đạt, hỏi thêm:
 4. Có thể thích nghi sang platform khác mà không phải research lại factual core không?
 
 Nếu không, hồ sơ cần bổ sung trước khi handoff.
+
+## 10.4. Route cũng là một phần của Content Case
+
+**Recommended Route** phải được truyền cùng Research Package.
+
+Platform sau không được tự biến Route B/C thành Priority Topic chỉ vì nó tìm ra được một hook mới.
+
+Nếu factual situation hoặc Why Now thay đổi đáng kể sau đó:
+
+> được phép re-evaluate route.
+
+Nguyên tắc:
+
+> **Hook và packaging có thể làm một topic mạnh được thể hiện tốt hơn; chúng không được giả tạo sức nặng mà topic không có.**
 
 ---
 
