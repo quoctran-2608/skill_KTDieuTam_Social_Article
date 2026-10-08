@@ -1,7 +1,7 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
-**Ngày cập nhật:** 07/10/2026  
+**Phiên bản:** 0.4  
+**Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
 
@@ -262,6 +262,50 @@ Trước khi duyệt toàn bài, hỏi:
 
 ---
 
-# 11. Câu căn chỉnh cho AI
+# 11. Handoff sang TikTok trong full cross-platform workflow
+
+> **Facebook Complete không nhất thiết đồng nghĩa Content Case Complete.**
+
+Khi orchestrator đang chạy full workflow Facebook → TikTok, sau khi:
+
+- Caption Facebook đã được user duyệt;
+- ảnh Facebook đã được tạo và QA;
+- user duyệt bản Facebook cuối;
+
+control phải quay về SKILL.md để bắt đầu **TikTok Adaptation**.
+
+Facebook phải bàn giao có chọn lọc các tài sản đã được user duyệt:
+
+- approved hook;
+- approved wording;
+- explanation rõ và hữu ích;
+- dangerous misunderstanding đã xử lý tốt;
+- useful action;
+- CTA insight;
+- visual lesson nếu có nhưng không coi là template bắt buộc.
+
+TikTok được phép reuse các tài sản này nếu vẫn phù hợp.
+
+Nhưng:
+
+> **Research inheritance ≠ packaging inheritance.**
+
+Không mặc định chuyển sang TikTok:
+
+- caption Facebook nguyên văn;
+- số ảnh Facebook;
+- tỷ lệ ảnh Facebook;
+- logo;
+- emoji;
+- visual layout;
+- CTA wording.
+
+Nguyên tắc:
+
+> **Không sáng tạo lại chỉ để chứng minh TikTok khác Facebook; cũng không bê nguyên packaging Facebook sang TikTok.**
+
+---
+
+# 12. Câu căn chỉnh cho AI
 
 > **Đóng gói nội dung theo hành vi người dùng Facebook: dừng nhanh, đọc dễ, hiểu đúng và biết bước tiếp theo. Không thêm ảnh, emoji hay hashtag chỉ để bài trông “đủ”.**
