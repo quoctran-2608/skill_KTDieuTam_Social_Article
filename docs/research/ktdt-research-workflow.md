@@ -1,6 +1,6 @@
 # QUY TRÌNH NGHIÊN CỨU NỘI DUNG MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.4  
+**Phiên bản:** 0.5  
 **Ngày:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Quy trình bắt buộc để biến một chủ đề kế toán – thuế – doanh nghiệp thành một cơ hội nội dung đủ chắc trước khi chọn cách đánh và viết bài.
@@ -64,15 +64,71 @@ Không được tự gọi một chủ đề là “hot” dựa trên kiến th
 - lao động / BHXH khi có tác động doanh nghiệp;
 - thủ tục, chính sách hoặc deadline có ảnh hưởng thực tế đến khách hàng Diệu Tâm.
 
-## 2.3. Năm tiêu chí sàng lọc
+## 2.3. Năm tiêu chí sàng lọc topic
 
-Một ứng viên mạnh nên đạt ít nhất **4/5**:
+Một ứng viên priority mạnh nên đạt tốt phần lớn 5 lớp:
 
-1. **Mới / nóng** — có diễn biến mới hoặc thời điểm cần chú ý.
-2. **Liên quan đúng tệp** — ảnh hưởng rõ tới người đọc Diệu Tâm.
-3. **Tác động thực tế** — có tiền, thời hạn, quyền lợi, nghĩa vụ, hồ sơ, rủi ro hoặc quyết định.
-4. **Kiểm chứng được** — có nguồn đủ mạnh để nghiên cứu sâu.
-5. **Có điểm căng thật** — có hiểu lầm, mâu thuẫn, thay đổi, chi phí ẩn hoặc câu hỏi chưa rõ.
+### 1. ACTUAL NOVELTY + WHY NOW
+
+Không đồng nhất:
+
+> **“có tin mới”**
+
+với:
+
+> **“có thay đổi mới đối với người đọc”.**
+
+Phải hỏi:
+
+- điều gì thực sự thay đổi?
+- người đọc phải hiểu/làm/ra quyết định khác trước ở điểm nào?
+- tại sao topic đáng quan tâm **ngay bây giờ**?
+
+Văn bản mới nhưng chỉ:
+
+- xác nhận lại;
+- giải thích lại;
+- nhắc lại;
+
+một việc đã có từ trước → **Actual Novelty có thể thấp**.
+
+Evergreen topic vẫn có thể có Why Now mạnh nếu xuất hiện catalyst mới.
+
+### 2. ĐÚNG TỆP
+
+Tác động có đủ trực tiếp tới audience Diệu Tâm không?
+
+### 3. STAKES
+
+Nếu bỏ qua topic, người đọc có thể mất/bỏ lỡ/sai điều gì đáng kể?
+
+Xem xét:
+
+- tiền;
+- quyền lợi;
+- rủi ro;
+- deadline;
+- nghĩa vụ;
+- hồ sơ;
+- quyết định;
+- vận hành;
+- thời gian/công sức.
+
+Không mặc định cứ có tác động là stakes cao.
+
+### 4. VERIFY-ABILITY
+
+Có đủ nguồn mạnh để research đến kết luận đáng tin không?
+
+### 5. NATURAL TENSION
+
+> **Sự thật bản thân nó đã có tension chưa?**
+
+Không dùng khả năng nghĩ ra hook hay để chứng minh topic mạnh.
+
+> **Hook không được cứu một topic yếu.**
+
+Nếu cần exaggeration mới tạo attention, phải hạ đánh giá topic thay vì tăng độ giật của hook.
 
 ## 2.4. Không đánh đồng “được đăng nhiều” với “hot”
 
@@ -105,6 +161,32 @@ Cuối shortlist phải có:
 Nếu người dùng chỉ trả **OK**, mặc định chọn khuyến nghị số 1 để nghiên cứu sâu.
 
 Đây chỉ là bước sàng lọc. Chưa được xem là nghiên cứu sâu và chưa được viết hook.
+
+## 2.6. Topic Strength Preview
+
+Trước khi recommend #1, đánh giá qualitative:
+
+- Actual novelty
+- Why now
+- Stakes
+- Natural tension
+- Cold-attention potential
+- Strategic / utility value
+- Likely route
+
+Không cần chấm điểm số.
+
+Mức như:
+
+> **Cao / Vừa / Thấp / Chưa xác định**
+
+là đủ nếu nó giúp ra quyết định.
+
+Nếu Actual Novelty còn chưa rõ:
+
+> ghi rõ premise cần được R1 xác minh.
+
+Không giả định văn bản mới = thay đổi mới.
 
 ---
 
@@ -166,11 +248,47 @@ Phải tạo được một **hồ sơ sự thật** gồm:
 - điều chưa chốt;
 - điều chưa được phép khẳng định.
 
+## Premise Recheck sau factual verification
+
+Research sự thật không chỉ dùng để xác nhận claim.
+
+Nó còn phải kiểm:
+
+> **lý do khiến topic được chọn có còn đúng không?**
+
+So kết quả verify với Topic Strength Preview.
+
+Nếu phát hiện premise thay đổi đáng kể, ví dụ:
+
+> “mới” → thực ra đã có từ trước
+
+hoặc:
+
+> “thay đổi lớn” → thực ra chỉ clarification
+
+thì phải re-evaluate:
+
+- Actual novelty
+- Why now
+- Stakes
+- Natural tension
+- likely route
+
+Không tiếp tục research sâu chỉ vì topic đã được shortlist.
+
+Nguyên tắc:
+
+> **Research có quyền loại topic.**
+
+Việc chứng minh một topic không đáng production là một kết quả có giá trị.
+
 ## Điều kiện được đi tiếp
 
 Chỉ sang bước 2 khi:
 
 > **DỮ KIỆN CỐT LÕI ĐÃ CHẮC**
+
+và Premise Recheck không cho thấy topic cần dừng/đổi route ngay.
 
 Nếu phần chưa chắc ảnh hưởng trực tiếp tới kết luận chính, phải dừng hoặc đổi góc nội dung.
 
@@ -398,6 +516,86 @@ Không hứa:
 
 nếu nội dung chỉ có thể giúp người đọc hiểu hoặc tự kiểm tra.
 
+## Content Worthiness
+
+Một content gap tồn tại **không tự động có nghĩa topic đáng đầu tư**.
+
+Ví dụ:
+
+> đối thủ chưa giải thích rõ một mẹo nhỏ
+
+có thể tạo ra content gap thật, nhưng topic vẫn có:
+
+- stakes thấp;
+- Why Now yếu;
+- cold-attention thấp.
+
+Vì vậy sau khi tìm được opportunity phải đánh giá thêm:
+
+### ACTUAL NOVELTY
+
+Thực sự có gì mới đối với người đọc?
+
+### WHY NOW
+
+Vì sao phải quan tâm lúc này?
+
+### STAKES
+
+Nếu bỏ qua, có gì đáng kể bị mất/bỏ lỡ/sai?
+
+### NATURAL TENSION
+
+Sự thật có tự tạo tension hay cần copywriting cứu?
+
+### COLD-ATTENTION
+
+Một người chưa biết Diệu Tâm có lý do đủ mạnh để dừng không?
+
+### STRATEGIC / UTILITY VALUE
+
+Dù attention không mạnh, topic có giá trị cho:
+
+- education;
+- trust;
+- search;
+- khách hàng hiện hữu;
+- campaign support;
+
+hay không?
+
+### PAID-TRAFFIC SUITABILITY
+
+Topic có đáng được ưu tiên để test creative với cold traffic không?
+
+Không suy rằng:
+
+> **“suitable to test” = “ads chắc chắn hiệu quả”.**
+
+## Routing sau research
+
+Phân loại qualitative:
+
+> **A — Priority / Traffic Candidate**  
+> **B — Utility / Strategic Organic**  
+> **C — Deprioritize**
+
+Route không phải điểm chất lượng tuyệt đối.
+
+Một bài Route B có thể rất tốt về chuyên môn.
+
+Nó chỉ không phải trận nên ưu tiên ngân sách/production lúc này.
+
+Guardrail:
+
+> **Đừng tối ưu skill thành máy chỉ tìm nỗi sợ, mất tiền hoặc deadline.**
+
+Nội dung education/trust có giá trị chiến lược phải được giữ Route B khi phù hợp.
+
+Ngược lại:
+
+> **Đừng dùng “hữu ích” để biện minh cho việc đưa một utility topic nhỏ thành priority traffic creative.**
+
 ---
 
 # 7. Chuẩn bàn giao
@@ -429,9 +627,26 @@ Nghiên cứu chỉ được kết thúc khi có đủ:
 13. **Cơ hội của Diệu Tâm**
 14. **Lời hứa nội dung khả thi**
 
-Khi đủ:
+Ngoài việc đủ dữ kiện, research phải kết thúc bằng **hai kết luận riêng**:
 
-> **ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
+### RESEARCH SUFFICIENCY
+
+> **PASS / FAIL**
+
+### CONTENT WORTHINESS
+
+> **Route A / Route B / Route C**
+
+Một kết quả hoàn toàn hợp lệ có thể là:
+
+> **Research Sufficiency: PASS**  
+> **Content Worthiness: Route B hoặc C**
+
+Điều đó có nghĩa:
+
+> **ta đã hiểu topic đủ tốt để biết rằng không nên đầu tư production theo cách ban đầu.**
+
+Không coi đây là research thất bại.
 
 Khi thiếu phần có thể làm sai hướng:
 
@@ -601,6 +816,47 @@ Không mặc định bê sang TikTok:
 
 ---
 
-# 12. Câu căn chỉnh cho AI
+# 12. Regression cases cho Topic Selection / Worthiness
 
-> **Đừng vội hỏi “viết gì cho hay”. Hãy làm rõ trước: điều gì là sự thật, ai thật sự quan tâm, họ đang hiểu thiếu ở đâu, người khác đã nói gì và Diệu Tâm còn điều gì đáng nói hơn.**
+Khi sửa logic research trong tương lai, phải kiểm ít nhất:
+
+**Case 1 — Công văn 7336 / xác nhận lại chức năng cũ**  
+Expected:
+- Actual novelty thấp sau R1
+- Stakes thấp
+- Cold-attention thấp
+- Route B
+- Không ưu tiên paid/full production
+
+**Case 2 — thay đổi mới tác động trực tiếp tiền/nghĩa vụ + deadline**  
+Expected:
+- Why Now mạnh
+- Stakes cao
+- Route A
+
+**Case 3 — evergreen pain + catalyst mới**  
+Expected:
+- không bị loại chỉ vì bản thân pain không mới
+- Why Now được đánh giá qua catalyst
+- có thể Route A
+
+**Case 4 — mẹo nhỏ hữu ích/search utility cao**  
+Expected:
+- Route B
+- không bị reject chỉ vì stakes thấp
+
+**Case 5 — headline nghe sốc nhưng actual impact thấp**  
+Expected:
+- không được Route A nhờ hook
+- Route B hoặc C
+
+**Case 6 — education/trust strategic nhưng không có nỗi đau lớn**  
+Expected:
+- giữ Route B nếu strategic value rõ
+- không bị Route C máy móc
+
+---
+
+# 13. Câu căn chỉnh cho AI
+
+> **Đừng vội hỏi “viết gì cho hay”. Hãy làm rõ trước: điều gì là sự thật, ai thật sự quan tâm, họ đang hiểu thiếu ở đâu, người khác đã nói gì và Diệu Tâm còn điều gì đáng nói hơn. Content gap chưa đủ: phải biết topic có đáng là trận để đầu tư hay chỉ nên là utility content. Hook không được cứu một topic yếu.**
