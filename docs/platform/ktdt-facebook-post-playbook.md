@@ -1,6 +1,6 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.4  
+**Phiên bản:** 0.5  
 **Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
@@ -99,6 +99,17 @@ Caption áp dụng:
 - docs/content/ktdt-body-writing-retention.md
 - docs/brand/ktdt-social-writing-dna.md
 
+### Nhịp biên tập Facebook — nói việc chính, đưa giá trị sớm
+
+Với bài cập nhật quy định, tự kiểm hoặc hướng dẫn thủ tục, ưu tiên:
+
+- **Mở thẳng vào câu hỏi/việc người đọc quan tâm**; không dựng nhiều lớp cảnh báo trước khi nói thông tin chính.
+- **Trả lời sớm** bằng kết luận, ngưỡng, bước kiểm tra hoặc mốc cần nhớ; thân bài chia theo **trường hợp hoặc việc người đọc cần làm**, không theo thứ tự người viết muốn kể.
+- Đặt **điều kiện, ngoại lệ và giới hạn** ngay cạnh thông tin liên quan; chỉ viết thao tác cụ thể khi đã được research xác minh.
+- **Cắt câu dẫn kịch tính hoặc đoạn nhắc lại cùng một rủi ro** nếu không thêm hiểu biết hoặc hành động. Ngắn là kết quả của bỏ phần thừa, không phải mục tiêu độ dài.
+
+Khi bài liên quan quy định và có căn cứ đã xác minh, ưu tiên ghi **Nguồn/Căn cứ** cùng **ngày cập nhật** gọn ở cuối; không tự bịa nguồn. Với bài organic phù hợp, có thể dùng nhận diện: **🌿 Kế toán Diệu Tâm — Hiểu đúng hôm nay – An tâm ngày mai.** Không ép cùng một footer, số bước hay CTA vào mọi bài.
+
 ---
 
 # 5. Nhịp đọc và khoảng trắng
@@ -167,7 +178,7 @@ Với bài cần hashtag:
 
 1. hoàn thiện nội dung trước;
 2. nghiên cứu hashtag phù hợp với Facebook hiện tại;
-3. chọn **5 hashtag** phù hợp nhất với:
+3. chọn **3–5 hashtag** phù hợp nhất với:
    - chủ đề;
    - đối tượng;
    - thương hiệu;
