@@ -1,7 +1,7 @@
 # QUY TRÌNH NGHIÊN CỨU NỘI DUNG MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.3  
-**Ngày:** 07/10/2026  
+**Phiên bản:** 0.4  
+**Ngày:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Quy trình bắt buộc để biến một chủ đề kế toán – thuế – doanh nghiệp thành một cơ hội nội dung đủ chắc trước khi chọn cách đánh và viết bài.
 
@@ -482,6 +482,125 @@ Bước **chọn cách đánh** mới quyết định:
 
 ---
 
-# 11. Câu căn chỉnh cho AI
+# 11. SHARED RESEARCH CORE — NGHIÊN CỨU MỘT LẦN, DÙNG CHO NHIỀU NỀN TẢNG
+
+Factual research và reader research được thực hiện ở cấp **content case**, không mặc định làm lại ở từng platform.
+
+Nguyên tắc:
+
+> **Research once, adapt many times.**
+
+Research Core phải đủ để trả lời:
+
+1. Chuyện gì thực sự xảy ra?
+2. Nguồn nào xác nhận?
+3. Điều gì đã chắc?
+4. Điều gì chưa được phép nói chắc?
+5. Ai bị ảnh hưởng?
+6. Họ đang ở tình huống thực tế nào?
+7. Câu hỏi họ thực sự sẽ hỏi là gì?
+8. Hiểu sai nào có thể gây hậu quả?
+9. Họ có thể làm gì ngay?
+10. Mâu thuẫn nội dung mạnh nhất nằm ở đâu?
+
+Sau khi được duyệt, các phần sau trở thành **decision lock cấp content case**:
+
+- verified facts;
+- source package;
+- evidence strength;
+- điều đã chắc;
+- điều chưa chắc;
+- audience;
+- reader situation;
+- main question / pain;
+- dangerous misunderstanding;
+- useful action;
+- core tension;
+- approved angle;
+- các từ / cách diễn đạt đã được duyệt và còn hữu ích.
+
+Platform sau không được tự full research lại các phần này chỉ vì đổi nền tảng.
+
+## 11.1. Khi chuyển Facebook → TikTok
+
+TikTok kế thừa Research Core có chọn lọc.
+
+Không research lại từ đầu:
+
+- luật;
+- phạm vi;
+- đối tượng;
+- factual core;
+- evidence boundary;
+- reader problem;
+
+nếu các phần đó vẫn còn mới và không có dấu hiệu xung đột.
+
+TikTok chỉ nghiên cứu phần chênh lệch phục vụ packaging:
+
+- search wording;
+- Title;
+- cover;
+- carousel architecture;
+- mật độ chữ;
+- caption treatment;
+- CTA wording;
+- hashtag;
+- visual behavior.
+
+Nguyên tắc:
+
+> **Kế thừa “mình biết gì và người đọc đang gặp gì”; làm mới “platform nên kể nó như thế nào”.**
+
+## 11.2. Freshness / refresh có chọn lọc
+
+“Kế thừa” không có nghĩa dùng dữ liệu cũ bất chấp thời gian.
+
+Chỉ reopen phần Research Core bị ảnh hưởng khi có:
+
+- diễn biến mới;
+- văn bản mới;
+- hướng dẫn mới;
+- deadline mới;
+- số liệu mới;
+- nguồn mâu thuẫn;
+- dấu hiệu dữ kiện cũ đã thay đổi;
+- hoặc user yêu cầu kiểm lại.
+
+Khi đó:
+
+> **refresh phần bị ảnh hưởng, không reset toàn bộ content case.**
+
+## 11.3. Tài sản Facebook được phép truyền sang TikTok
+
+Ngoài Research Core, platform sau được phép xem các tài sản đã được user duyệt ở Facebook như:
+
+- approved hook;
+- approved wording;
+- explanation rõ và hữu ích;
+- dangerous misunderstanding đã xử lý tốt;
+- useful action;
+- CTA insight.
+
+Không sáng tạo lại chỉ để chứng minh TikTok khác Facebook.
+
+Nhưng:
+
+> **Research inheritance ≠ packaging inheritance.**
+
+Không mặc định bê sang TikTok:
+
+- độ dài caption;
+- số ảnh;
+- tỷ lệ ảnh;
+- logo;
+- visual;
+- emoji;
+- CTA wording;
+- cách chia đoạn.
+
+---
+
+# 12. Câu căn chỉnh cho AI
 
 > **Đừng vội hỏi “viết gì cho hay”. Hãy làm rõ trước: điều gì là sự thật, ai thật sự quan tâm, họ đang hiểu thiếu ở đâu, người khác đã nói gì và Diệu Tâm còn điều gì đáng nói hơn.**
