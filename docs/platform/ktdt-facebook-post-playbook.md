@@ -1,6 +1,6 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.5  
+**Phiên bản:** 0.6  
 **Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
@@ -108,7 +108,9 @@ Với bài cập nhật quy định, tự kiểm hoặc hướng dẫn thủ t�
 - Đặt **điều kiện, ngoại lệ và giới hạn** ngay cạnh thông tin liên quan; chỉ viết thao tác cụ thể khi đã được research xác minh.
 - **Cắt câu dẫn kịch tính hoặc đoạn nhắc lại cùng một rủi ro** nếu không thêm hiểu biết hoặc hành động. Ngắn là kết quả của bỏ phần thừa, không phải mục tiêu độ dài.
 
-Khi bài liên quan quy định và có căn cứ đã xác minh, ưu tiên ghi **Nguồn/Căn cứ** cùng **ngày cập nhật** gọn ở cuối; không tự bịa nguồn. Với bài organic phù hợp, có thể dùng nhận diện: **🌿 Kế toán Diệu Tâm — Hiểu đúng hôm nay – An tâm ngày mai.** Không ép cùng một footer, số bước hay CTA vào mọi bài.
+Khi bài liên quan quy định và có căn cứ đã xác minh, ưu tiên ghi **Nguồn/Căn cứ** cùng **ngày cập nhật** gọn ở cuối; không tự bịa nguồn.
+
+**Mọi caption Facebook hoàn chỉnh bắt buộc có chữ ký thương hiệu đúng hai dòng** đã khóa trong `docs/brand/ktdt-social-writing-dna.md`, đặt sau nội dung/CTA và trước căn cứ/ngày cập nhật/hashtag nếu có. Không thay chữ ký bằng một dòng biến thể, không tự đặt chữ ký lên ảnh. Không ép cùng một số bước hoặc kiểu CTA vào mọi bài.
 
 ---
 
