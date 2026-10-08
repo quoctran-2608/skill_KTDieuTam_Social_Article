@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.12  
+**Phiên bản:** 0.13  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -281,12 +281,22 @@ Nếu user không cho chủ đề:
 - docs/research/ktdt-research-workflow.md
 - docs/research/ktdt-source-verification.md khi cần kiểm nhanh
 
-### Cửa sổ
+### Cửa sổ research — ưu tiên yêu cầu của user
+
+**Nếu user chỉ định khoảng thời gian ngay trong prompt chạy skill** (ví dụ: "1 tháng vừa qua", "30 ngày gần đây", "tháng 9/2026", "từ 01/09 đến 30/09/2026"), thì **dùng chính khoảng thời gian đó cho AUTO-START/shortlist**, thay thế hoàn toàn mặc định 24–72 giờ / tối đa 7 ngày ở đây **và trong các file research con**.
+
+- Với mốc tương đối, tính theo **ngày chạy skill** và múi giờ phù hợp. "1 tháng vừa qua" = một tháng tính lùi từ ngày chạy; không tự đổi thành "tháng trước". "30 ngày gần đây" = 30 ngày tính lùi.
+- Ghi ngắn **khoảng ngày thực tế đã hiểu** khi trình shortlist, để user kiểm tra; không tạo checkpoint xác nhận thời gian riêng nếu yêu cầu đã rõ.
+- Chỉ chọn các topic có **diễn biến, thay đổi hoặc catalyst đáng nói trong khoảng user yêu cầu**. Có thể tra nguồn ngoài khoảng đó để kiểm chứng bối cảnh, nhưng không được lấy tin cũ không có diễn biến trong kỳ làm ứng viên rồi gọi là tin trong kỳ.
+- Không âm thầm thu hẹp về hôm nay/tuần này hoặc mở rộng ngoài khoảng đã được yêu cầu. Nếu không đủ 3–5 topic mạnh, nói rõ và đưa số ứng viên thực sự đạt thay vì tự đổi phạm vi.
+
+**Chỉ khi user không chỉ định thời gian**, áp dụng mặc định:
+
 1. ưu tiên 24–72 giờ gần nhất;
 2. thiếu ứng viên tốt → mở rộng tối đa 7 ngày;
 3. cũ hơn chỉ giữ khi có diễn biến/deadline/thực thi mới.
 
-Nếu có web/search, phải dùng dữ liệu hiện tại.
+Nếu có web/search, phải dùng dữ liệu phù hợp với cửa sổ đã chọn và kiểm chứng tình trạng hiện tại khi cần.
 
 ### Lọc topic — ưu tiên strength trước khi nghĩ hook
 
