@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.13  
+**Phiên bản:** 0.14  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -713,6 +713,8 @@ Dùng Research Package + mục tiêu đã khóa.
 
 Đề xuất góc mạnh nhất và lý do ngắn.
 
+Trước khi khóa góc, xác định **giá trị chính người đọc cần nhận**: hiểu một kết luận, tự đối chiếu trường hợp hay thực hiện một việc. Nếu bài hứa hướng dẫn/tự kiểm, ưu tiên góc giúp người đọc **biết cách làm**, không chỉ biết vì sao nên làm.
+
 Chưa viết hook.
 
 Dừng chờ OK.
@@ -771,13 +773,15 @@ Chỉ dựng xương sống:
 - thứ tự tò mò;
 - điều chắc / hiểu sai / việc cần làm.
 
+Với bài hướng dẫn/tự kiểm: đưa cách thực hiện, điều kiện và bước tiếp theo **đã xác minh** lên sớm; không kéo dài bằng nhiều đoạn lặp lại lý do cần cảnh giác.
+
 Dừng chờ OK.
 
 ---
 
 ## F4 — CTA
 
-Đề xuất CTA chính phù hợp mục tiêu.
+Đề xuất CTA chính phù hợp mục tiêu; với bài thuần thông tin, có thể đề xuất **không thêm CTA kêu gọi tương tác** nếu bài đã có kết thúc tự nhiên.
 
 Không mặc định bán dịch vụ.
 
@@ -813,7 +817,7 @@ Output:
 
 1. chữ trên ảnh;
 2. caption;
-3. 5 hashtag đã research phù hợp.
+3. 3–5 hashtag đã research phù hợp.
 
 Emoji chủ yếu ở caption; không mặc định emoji trên ảnh.
 
@@ -831,7 +835,8 @@ AI tự kiểm:
 - câu mơ hồ;
 - giọng có hơi người;
 - spacing / emoji / CTA / hashtag;
-- chữ ảnh khớp caption.
+- chữ ảnh khớp caption;
+- **giá trị chính đến đủ sớm**; nếu bài hứa hướng dẫn/tự kiểm, người đọc có biết cách làm bằng các bước đã xác minh không; có đoạn nào chỉ nhắc lại cùng một cảnh báo không.
 
 Nếu đạt:
 
