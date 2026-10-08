@@ -1,9 +1,9 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.15  
+**Phiên bản:** 0.16  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
-**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.5 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
 
 ---
 
@@ -1257,6 +1257,10 @@ Một đoạn dài phải thêm ít nhất một việc:
 - action.
 
 Nếu chỉ đổi cách nói → cắt.
+
+**Trước khi thêm lời dẫn hoặc đào sâu:** với bài hướng dẫn/tự kiểm, thông tin giúp người đọc thực hiện hay tự đối chiếu **đã xác minh** có đến đủ sớm chưa? Nếu carousel đã chứa thao tác, Caption có tạo lớp hiểu mới thay vì lặp lại không?
+
+**Cắt** câu chỉ nhắc lại lý do cần quan tâm, cảnh báo hoặc trấn an mà không thêm thông tin, điều kiện, giới hạn hay hành động mới. **Không cắt** lưu ý thực sự cần để tránh hiểu sai và giữ đúng bằng chứng.
 
 Mọi phần “sâu” phải được Research Core hỗ trợ.
 
