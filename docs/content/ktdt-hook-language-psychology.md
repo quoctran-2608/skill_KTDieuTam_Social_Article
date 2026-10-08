@@ -1,6 +1,6 @@
 # QUY CHUẨN CÂU MỞ ĐẦU MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.4  
+**Phiên bản:** 0.5  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Giúp AI tìm và viết phần mở đầu ngắn, tự nhiên, có lực nhưng vẫn đúng bằng chứng.
@@ -19,7 +19,9 @@ Không cần tóm tắt toàn bài.
 
 Luật lõi:
 
-> **Mâu thuẫn thật + chi tiết vừa đủ + câu chữ tự nhiên.**
+> **Lý do quan tâm thật + chi tiết vừa đủ + câu chữ tự nhiên.**
+
+Lý do để dừng và đọc tiếp có thể là **câu hỏi thực tế cần giải đáp, thông tin/việc cần làm có giá trị ngay, hoặc một mâu thuẫn/rủi ro thật**. Không ép bài cập nhật hay hướng dẫn thành câu cảnh báo, nghịch lý chỉ để tạo attention; nếu có tension tự nhiên mạnh, vẫn khai thác.
 
 ---
 
@@ -27,15 +29,15 @@ Luật lõi:
 
 Trước khi nghĩ câu chữ, chỉ cần chốt 3 thứ:
 
-### 1. Người đọc đang nghĩ gì?
+### 1. Người đọc đang cần hiểu, phân biệt hay làm gì?
 
-> “Họ có thể đang nghĩ: …”
+> “Câu hỏi hoặc việc thật của họ là: …”
 
-### 2. Sự thật nào khiến họ phải nhìn lại?
+### 2. Vì sao đúng người nên quan tâm ngay?
 
-> “Điều họ cần biết thêm là: …”
+> “Điều hữu ích/đáng chú ý nhất bài này sẽ trả lời là: …”
 
-### 3. Chi tiết nào đang gánh lực cho mâu thuẫn?
+### 3. Chi tiết nào tạo sức nặng cho lý do quan tâm đó?
 
 Có thể là:
 
@@ -49,11 +51,11 @@ Có thể là:
 
 Không hỏi “chi tiết nào quan trọng với chủ đề?”. Hỏi:
 
-> **“Chi tiết nào đang làm mâu thuẫn này tồn tại hoặc trở nên rõ?”**
+> **“Chi tiết nào làm câu hỏi, việc cần làm hoặc mâu thuẫn này rõ và đáng quan tâm hơn?”**
 
 Nếu bỏ chi tiết đó mà lực của câu giảm rõ → đó là chi tiết phải giữ.
 
-Nếu chưa có mâu thuẫn thật → đừng cố làm câu giật.
+Nếu chưa có mâu thuẫn thật, có thể mở thẳng bằng câu hỏi/việc người đọc đang cần; đừng cố làm câu giật.
 
 ---
 
@@ -71,19 +73,21 @@ Nếu chưa có mâu thuẫn thật → đừng cố làm câu giật.
 
 Chỉ mang vào:
 
-> **những chi tiết đang làm mâu thuẫn rõ hơn, đúng hơn hoặc đáng quan tâm hơn.**
+> **những chi tiết khiến đúng người hiểu ngay bài sẽ giải quyết điều gì và vì sao đáng đọc.**
 
 Phần còn lại để thân bài trả lời.
 
 Nguyên tắc:
 
-> **Giữ những từ đang gánh mâu thuẫn. Thêm chi tiết nếu nó làm câu rõ hơn mà không làm nặng câu. Cắt phần chỉ làm câu đầy đủ hơn nhưng không làm người đọc hiểu hoặc quan tâm hơn.**
+> **Giữ chi tiết làm lý do đọc tiếp có sức nặng; với hook dựa trên mâu thuẫn, giữ đúng những từ đang gánh mâu thuẫn. Thêm chi tiết nếu làm câu rõ hơn mà không làm nặng câu.**
 
 ---
 
 # 4. Quy trình tạo câu mở đầu
 
-## Bước 1 — Chọn mâu thuẫn mạnh nhất
+## Bước 1 — Chọn lý do quan tâm mạnh nhất
+
+Xác định người đọc muốn có câu trả lời, muốn tự đối chiếu hay cần biết việc phải làm. Nếu chính câu hỏi/mốc/việc cần làm đã đủ hấp dẫn, mở trực diện bằng nó.
 
 Nếu chủ đề đã có một mâu thuẫn tự nhiên mạnh:
 
@@ -119,7 +123,7 @@ Tránh biến câu mở đầu thành câu thuyết minh pháp lý nếu chưa c
 
 Không cần sáu cơ chế khác nhau.
 
-Có thể giữ cùng một mâu thuẫn và thử:
+Có thể giữ cùng một lý do quan tâm và thử:
 
 - câu khẳng định + câu hỏi;
 - đối lập hai vế;
@@ -127,7 +131,7 @@ Có thể giữ cùng một mâu thuẫn và thử:
 - một câu rất ngắn;
 - cách nói trực tiếp hơn.
 
-Chỉ đổi sang cơ chế khác khi mâu thuẫn hiện tại chưa đủ lực.
+Chỉ đổi kiểu mở khi lý do quan tâm hiện tại chưa đủ rõ hoặc chưa đủ lực.
 
 ---
 
@@ -135,7 +139,7 @@ Chỉ đổi sang cơ chế khác khi mâu thuẫn hiện tại chưa đủ lự
 
 Với mỗi phương án, hỏi lần lượt:
 
-> **Từ này có đang gánh mâu thuẫn không?**
+> **Từ này có đang làm câu hỏi, việc cần làm hoặc mâu thuẫn trở nên có lực không?**
 
 > **Từ này có làm câu rõ hoặc đáng tin hơn mà không làm nặng câu không?**
 
@@ -175,7 +179,7 @@ Chỉ kiểm:
 
 ### Cửa 2 — Muốn biết tiếp
 
-Có một điều chưa được giải quyết khiến họ muốn xem tiếp không?
+Người đọc có lý do thật để đọc tiếp nhằm biết câu trả lời, điều kiện hoặc cách làm không?
 
 ### Cửa 3 — Đúng bằng chứng
 
@@ -199,7 +203,7 @@ Chi tiết trong câu mở đầu có ba loại:
 
 ## Chi tiết gánh lực
 
-Nếu bỏ đi, mâu thuẫn yếu rõ.
+Nếu bỏ đi, sức nặng của câu hỏi/việc cần làm/mâu thuẫn yếu rõ.
 
 → **Phải giữ.**
 
@@ -241,13 +245,13 @@ Yếu:
 
 Tốt hơn về bản chất:
 
-> một câu hỏi đặt trực tiếp hai vế thật đang mâu thuẫn với nhau, bằng ngôn ngữ người đọc tự dùng.
+> một câu hỏi đúng việc cần biết/tự đối chiếu, hoặc hai vế thật đang mâu thuẫn, bằng ngôn ngữ người đọc tự dùng.
 
 ---
 
 # 7. Hộp gợi ý khi bí
 
-Chỉ dùng khi chưa tìm được mâu thuẫn tự nhiên.
+Chỉ dùng khi chưa tìm được cách mở đủ rõ và có lực; không ép bài nào cũng phải có nghịch lý.
 
 Có thể thử nhìn chủ đề qua:
 
@@ -321,4 +325,4 @@ Nếu chỉ thêm để câu nghe “chuyên nghiệp hơn” → thường nên
 
 # 11. Câu căn chỉnh cho AI
 
-> **Tìm mâu thuẫn thật mạnh nhất. Giữ những từ đang gánh mâu thuẫn. Thêm chi tiết nếu nó làm câu rõ hơn mà không làm nặng câu. Cắt phần chỉ làm câu đầy đủ hơn nhưng không làm người đọc hiểu hoặc quan tâm hơn. Viết như người thật đang nghĩ.**
+> **Tìm lý do đúng người cần đọc ngay: câu hỏi, việc cần biết/làm hoặc mâu thuẫn thật. Giữ chi tiết làm lý do ấy có lực; không ép căng thẳng khi một câu hỏi trực diện đã đủ hấp dẫn. Viết tự nhiên, không mạnh hơn bằng chứng.**
