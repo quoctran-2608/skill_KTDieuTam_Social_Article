@@ -1,6 +1,6 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.4  
+**Phiên bản:** 0.5  
 **Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Thử nghiệm — bổ sung Depth & Voice Review sau lesson từ case thực tế  
 **Phạm vi:** TikTok Photo Carousel gồm Title, chữ từng slide, Caption, Hashtag, concept ảnh, tạo ảnh và QA. Không bao gồm sản xuất video trừ khi user chủ động yêu cầu.
@@ -260,7 +260,9 @@ Nguyên tắc:
 
 > **Hook mở món nợ nào, Caption trả món nợ đó sớm.**
 
-Thứ tự mặc định khi phù hợp:
+Nếu câu hỏi hoặc việc người đọc cần làm đã rõ, **đi thẳng vào câu trả lời/giá trị chính**; không buộc phải thêm một lớp dẫn tình huống trước. Chỉ giữ phần dẫn giúp hiểu đúng.
+
+Thứ tự tham khảo khi phù hợp:
 
 1. chạm đúng tình huống;
 2. trả câu hỏi chính;
@@ -391,8 +393,10 @@ Opening nên làm ít nhất một việc:
 
 - đặt đúng tình huống;
 - trả câu hỏi chính;
-- mở tension;
-- phá assumption.
+- mở tension thật nếu có;
+- phá assumption có căn cứ.
+
+**Câu hỏi hoặc việc cần làm thực tế đã đủ hấp dẫn thì mở thẳng bằng nó**, không thêm cảnh báo/trấn an chỉ để tạo cảm giác có lực.
 
 Không mở bằng:
 
@@ -766,6 +770,10 @@ Nếu nghiêng về loại hai → FAIL.
 Mỗi đoạn có nhiệm vụ riêng không?
 
 Mọi insight có được Research Core hỗ trợ không?
+
+**Kiểm giá trị thực tế trước khi làm sâu câu chữ:** Với bài hướng dẫn/tự kiểm, đã đưa cách làm, điều kiện và bước tiếp theo **được xác minh** lên đủ sớm chưa? Nếu carousel đã hướng dẫn thao tác, Caption cần bổ sung cách hiểu/đối chiếu/giới hạn hữu ích thay vì kể lại các bước.
+
+Cắt các câu chỉ **lặp lại lý do phải quan tâm, cảnh báo hoặc trấn an** mà không thêm thông tin, điều kiện, giới hạn hay hành động mới. **Giữ** lưu ý thực sự cần để ngăn hiểu sai hoặc bảo toàn căn cứ pháp lý; không cắt chỉ để làm Caption ngắn.
 
 > **Không invent insight để làm bài có vẻ sâu.**
 
