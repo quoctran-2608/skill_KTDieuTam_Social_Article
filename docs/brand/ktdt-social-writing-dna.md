@@ -1,6 +1,6 @@
 # DNA GIỌNG VĂN MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.5  
+**Phiên bản:** 0.6  
 **Ngày cập nhật:** 07/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Facebook, TikTok, Zalo, YouTube
@@ -42,6 +42,8 @@ Giọng phải:
 
 > **Nội dung Diệu Tâm cần có cảm giác đang nói với một người thật trong một tình huống thật.**
 
+**Ưu tiên giá trị người đọc nhận được hơn hiệu ứng câu chữ.** Mở vào điều họ cần hiểu, tự đối chiếu hoặc xử lý; đưa thông tin chính, điều kiện và bước tiếp theo lên sớm khi đã có căn cứ. Không kéo dài bằng nhiều lớp cảnh báo hoặc tạo tò mò nếu thông tin chuyên môn đã đủ sức hút. Sự rõ ràng, cụ thể và đáng tin chính là một phần sức hút của Diệu Tâm.
+
 Không “thêm cảm xúc” bằng tính từ. Hãy đặt người đọc vào đúng hoàn cảnh của họ rồi mới giải thích:
 
 - họ vừa làm gì;
@@ -60,6 +62,17 @@ Không được có cảm giác:
 - khoe chuyên môn;
 - quảng cáo rập khuôn;
 - máy tạo nội dung.
+
+### Chữ ký thương hiệu khi xuất bản — mọi nền tảng
+
+**Mọi bài đăng hoàn chỉnh** của Diệu Tâm trên Facebook, TikTok, YouTube và Zalo OA phải có chữ ký hai dòng **đúng nguyên văn**, giữ nguyên xuống dòng:
+
+```text
+🌿 Kế toán Diệu Tâm
+Hiểu đúng hôm nay – An tâm ngày mai
+```
+
+Đặt ở cuối phần nội dung chính/CTA, trước phần căn cứ, ngày cập nhật và hashtag (nếu có). Áp dụng cho **caption, mô tả hoặc phần chữ của bài đăng**; không tự chèn vào ảnh, slide, cover, thumbnail, Title hay lời thoại video. Quy tắc này dành cho bản xuất bản hoàn chỉnh, không phải mọi bản nháp nghiên cứu.
 
 ---
 
