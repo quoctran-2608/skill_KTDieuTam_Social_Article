@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.10  
+**Phiên bản:** 0.11  
 **Ngày:** 08/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.3 đang thử nghiệm sau lesson Depth & Voice từ case thật; TikTok video production chưa khóa.
@@ -287,29 +287,113 @@ Nếu user không cho chủ đề:
 
 Nếu có web/search, phải dùng dữ liệu hiện tại.
 
-### Lọc
-Một ứng viên mạnh nên đạt ít nhất 4/5:
+### Lọc topic — ưu tiên strength trước khi nghĩ hook
 
-1. mới / nóng;
-2. đúng tệp Diệu Tâm;
-3. tác động thực tế;
-4. kiểm chứng được;
-5. có điểm căng thật.
+Một ứng viên mạnh phải được nhìn qua 5 câu hỏi:
 
-### Output
-Đề xuất 3–5 chủ đề, mỗi chủ đề rất ngắn:
+**1. ACTUAL NOVELTY / WHY NOW**
 
-- chuyện gì mới;
-- thời điểm;
+Không chỉ hỏi:
+
+> “Có tin hoặc văn bản mới không?”
+
+Phải hỏi:
+
+> **Điều gì thực sự mới hoặc vừa thay đổi đối với người đọc, và tại sao họ nên quan tâm ngay lúc này?**
+
+Một văn bản mới, bài giải thích mới hoặc xác nhận lại cách làm cũ **không tự động tạo actual novelty**.
+
+Nếu chưa đủ dữ kiện để biết có thay đổi thật hay không:
+
+> **CHƯA XÁC ĐỊNH — R1 PHẢI KIỂM LẠI PREMISE**
+
+**2. ĐÚNG TỆP**
+
+Topic có liên quan rõ tới người đọc Diệu Tâm hay không?
+
+**3. STAKES / TÁC ĐỘNG THỰC**
+
+Nếu người đọc bỏ qua, họ có thể:
+
+- mất tiền;
+- bỏ lỡ quyền lợi;
+- gặp rủi ro;
+- trễ deadline;
+- sai nghĩa vụ;
+- sai hồ sơ;
+- ra quyết định sai;
+- tốn đáng kể thời gian/công sức;
+- hoặc bị ảnh hưởng vận hành?
+
+Không phải “có tác động” là đủ. Phải nhìn **mức độ tác động**.
+
+**4. KIỂM CHỨNG ĐƯỢC**
+
+Có nguồn đủ mạnh để research sâu không?
+
+**5. NATURAL TENSION**
+
+Sự thật bản thân nó có lý do khiến đúng người quan tâm không?
+
+> **Hook không được cứu một topic yếu.**
+
+Nếu phải dùng copywriting quá mạnh mới khiến một việc nhỏ trông đáng sợ hoặc cấp bách, topic đó không được coi là strong candidate.
+
+Topic ưu tiên số 1 thường nên mạnh ở phần lớn các tiêu chí trên.
+
+Tuy nhiên:
+
+> **stakes thấp không tự động đồng nghĩa topic vô giá trị.**
+
+Một topic có thể vẫn hữu ích cho education, trust, search hoặc chăm audience và được phân loại thành Utility / Strategic Organic.
+
+### TOPIC STRENGTH PREVIEW — qualitative, không chấm điểm giả chính xác
+
+Với mỗi ứng viên shortlist, AI tự đánh giá ngắn:
+
+- **Actual novelty:** Mạnh / Vừa / Yếu / Chưa xác định
+- **Why now:** Rõ / Có nhưng yếu / Không rõ
+- **Stakes:** Cao / Vừa / Thấp
+- **Natural tension:** Cao / Vừa / Thấp
+- **Cold-attention potential:** Cao / Vừa / Thấp
+- **Strategic / utility value:** Cao / Vừa / Thấp
+- **Likely route:** A / B / C
+
+Không dùng kiểu:
+
+> 7.2/10 = PASS  
+> 6.8/10 = FAIL
+
+vì các con số đó dễ tạo cảm giác chính xác giả.
+
+Đây là preview ban đầu, chưa phải kết luận cuối. R1–R4 được phép nâng hoặc hạ route khi bằng chứng mới xuất hiện.
+
+### Output shortlist
+
+Đề xuất **3–5 chủ đề**.
+
+Mỗi chủ đề chỉ cần:
+
+- chuyện gì đang xảy ra;
+- **Why now / actual change ban đầu**;
 - ai bị ảnh hưởng;
-- vì sao đáng làm;
-- tension;
+- stakes chính;
+- natural tension;
 - độ chắc nguồn;
-- Nên làm / Có thể làm / Chưa nên làm.
+- likely route;
+- đánh giá: **Nên làm / Có thể làm / Chưa nên làm**.
 
-Chọn:
+Cuối cùng chọn:
 
 > **KHUYẾN NGHỊ SỐ 1**
+
+Khi AUTO-START không có mục tiêu khác từ user, ưu tiên khuyến nghị topic có khả năng trở thành:
+
+> **Route A — Priority / Traffic Candidate**
+
+hơn một topic chỉ hữu ích nhỏ.
+
+Route B vẫn được giữ nếu có strategic/utility value rõ, nhưng không được giả vờ rằng nó là strong cold-traffic candidate.
 
 Nếu user nói OK mà không chọn số khác → khóa #1 và chạy Research Core.
 
@@ -336,8 +420,52 @@ Nếu user nói OK mà không chọn số khác → khóa #1 và chạy Research
 - điều chưa chắc;
 - giới hạn dữ liệu.
 
+### PREMISE RECHECK — chỉ kích hoạt khi factual research làm thay đổi lý do topic được chọn
+
+Sau khi xác minh sự thật, AI phải so kết quả R1 với premise lúc shortlist.
+
+Tự hỏi:
+
+> **Research vừa rồi có làm suy yếu đáng kể Actual Novelty, Why Now, Stakes hoặc Natural Tension khiến topic được chọn không?**
+
+Ví dụ:
+
+- tưởng có chức năng mới → thực ra chức năng đã tồn tại;
+- tưởng nghĩa vụ mới → thực ra chỉ là nhắc lại;
+- tưởng thay đổi áp dụng rộng → thực ra phạm vi rất hẹp;
+- tưởng có deadline mới → thực ra deadline không đổi.
+
+Nếu **không**:
+
+> tiếp tục flow R1 bình thường.
+
+Nếu **có**:
+
+chạy **TOPIC STRENGTH RECHECK** ngay.
+
+Output rất ngắn:
+
+- Actual novelty sau verify
+- Why now sau verify
+- Stakes
+- Natural tension
+- Likely route mới
+- Recommendation
+
+Nếu topic vẫn Route A:
+
+> tiếp tục R2, không tạo thêm checkpoint.
+
+Nếu topic rơi rõ xuống Route B hoặc C và không còn phù hợp mục tiêu content ưu tiên:
+
+> **không tiếp tục R2 → R4 theo quán tính.**
+
+Trình user recommendation sớm.
+
+Với bare `OK`, thực hiện recommendation đang được AI đề xuất.
+
 ### Gate
-> **DỮ KIỆN CỐT LÕI ĐÃ CHẮC** → dừng chờ OK.
+> **DỮ KIỆN CỐT LÕI ĐÃ CHẮC** → dừng chờ OK, trừ khi PREMISE RECHECK đã kích hoạt route change cần user quyết định.
 
 ---
 
@@ -391,7 +519,7 @@ Dừng chờ OK.
 
 ---
 
-## R4 — Cơ hội + Research Package
+## R4 — Cơ hội + Research Package + Content Worthiness
 
 ### Đọc
 - ktdt-research-workflow.md
@@ -414,16 +542,133 @@ Dừng chờ OK.
 - content promise;
 - time-sensitive fields.
 
-### Gate
-Phải kết thúc:
+Sau khi đóng gói Research Package, AI phải trả lời **hai câu hỏi khác nhau**.
 
-> **✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
+### GATE 1 — RESEARCH SUFFICIENCY
 
-hoặc:
+> **Dữ kiện đã đủ chắc để ra quyết định chưa?**
+
+Chỉ có:
+
+- **PASS**
+- **FAIL**
+
+Nếu FAIL:
 
 > **❌ CHƯA ĐỦ DỮ KIỆN**
 
-Nếu ✅ → dừng chờ OK.
+và nói rõ còn thiếu gì.
+
+### GATE 2 — CONTENT WORTHINESS
+
+Chỉ chạy nếu Research Sufficiency = PASS.
+
+Hỏi:
+
+> **Với những gì research vừa chứng minh, topic này đáng đầu tư content ở mức nào?**
+
+Đánh giá qualitative:
+
+- Actual novelty
+- Why now
+- Stakes
+- Natural tension
+- Cold-attention potential
+- Strategic / utility value
+- Paid-traffic suitability
+
+**Paid-traffic suitability không phải dự đoán ads sẽ thắng.**
+
+Nó chỉ trả lời:
+
+> topic này có đủ lý do để đáng ưu tiên đem đi test với cold audience hay không.
+
+Không được nói “quảng cáo sẽ hiệu quả” nếu chưa có dữ liệu thực.
+
+### RECOMMENDED ROUTE
+
+**ROUTE A — PRIORITY / TRAFFIC CANDIDATE**
+
+Topic đủ mạnh để tiếp tục full production:
+
+> Research → Facebook → TikTok
+
+và có thể cân nhắc làm creative để test cold traffic.
+
+Một topic đặc biệt mạnh có thể gọi là **Hero Topic**, nhưng Hero chỉ là nhãn nhấn mạnh bên trong Route A, không tạo workflow riêng.
+
+---
+
+**ROUTE B — UTILITY / STRATEGIC ORGANIC**
+
+Topic:
+
+- đúng;
+- hữu ích;
+- có giá trị giáo dục/search/trust/chăm audience;
+
+nhưng attention/stakes/Why Now chưa đủ mạnh để ưu tiên paid traffic hoặc production lớn.
+
+Route B **không phải bài dở**.
+
+Nếu mục tiêu là organic utility hoặc strategic education:
+
+> có thể tiếp tục.
+
+Nếu mục tiêu hiện tại là tìm topic chủ lực/cold traffic:
+
+> khuyến nghị lưu topic này vào utility backlog và quay lại shortlist chọn topic mạnh hơn.
+
+---
+
+**ROUTE C — DEPRIORITIZE**
+
+Topic có thể đúng nhưng:
+
+- actual novelty thấp;
+- Why Now yếu;
+- stakes thấp;
+- tension thấp;
+- strategic value không đủ;
+
+nên không đáng tiếp tục tốn production lúc này.
+
+> **Dừng topic và quay lại shortlist.**
+
+---
+
+Guardrail:
+
+> **Stakes thấp một mình không đủ để đưa topic vào Route C.**
+
+Topic giáo dục hoặc trust-building có strategic value rõ phải được giữ ở Route B thay vì bị loại chỉ vì nó không gây đau.
+
+### Sau R4
+
+**Research FAIL**
+
+→ dừng / research thêm.
+
+**Research PASS + Route A**
+
+→ dừng chờ OK; OK chạy S1.
+
+**Research PASS + Route B**
+
+→ AI đưa recommendation:
+
+- tiếp tục nếu mục tiêu là utility/education/strategic organic;
+- quay lại shortlist nếu đang tìm priority/traffic topic.
+
+Bare `OK` = làm theo recommendation.
+
+**Research PASS + Route C**
+
+→ không chạy S1;
+
+→ quay lại shortlist và recommend candidate tiếp theo.
+
+> **Một topic bị NO-GO production sau research vẫn là một kết quả research thành công.**
 
 ---
 
