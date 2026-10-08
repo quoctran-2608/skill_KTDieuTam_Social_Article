@@ -556,11 +556,13 @@ Nếu riêng câu 8–10 không trả lời được:
 
 # 10. RESEARCH PACKAGE DÙNG XUYÊN PLATFORM
 
-Sau khi hồ sơ đạt trạng thái:
+Sau khi hồ sơ đạt:
 
-> **✅ ĐỦ DỮ KIỆN ĐỂ CHỌN CÁCH ĐÁNH**
+> **Research Sufficiency: PASS**
 
-AI phải coi nó là **Research Package / Content Case source of truth** cho các platform tiếp theo.
+AI phải coi nó là **Research Package / Content Case source of truth**.
+
+Nếu content tiếp tục sang platform khác, Research Package này là nguồn kế thừa; nếu Route B/C khiến production dừng, package vẫn được giữ để có thể tái sử dụng khi Why Now hoặc mục tiêu thay đổi.
 
 Research Package cần giữ được tối thiểu:
 
