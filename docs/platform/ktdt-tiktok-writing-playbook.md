@@ -1,6 +1,6 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.5  
+**Phiên bản:** 0.6  
 **Ngày cập nhật:** 08/10/2026  
 **Trạng thái:** Thử nghiệm — bổ sung Depth & Voice Review sau lesson từ case thực tế  
 **Phạm vi:** TikTok Photo Carousel gồm Title, chữ từng slide, Caption, Hashtag, concept ảnh, tạo ảnh và QA. Không bao gồm sản xuất video trừ khi user chủ động yêu cầu.
@@ -735,6 +735,8 @@ Caption thêm giá trị gì ngoài carousel?
 
 Nếu người đã xem hết carousel chỉ nhận lại cùng thông tin bằng nhiều chữ hơn → FAIL.
 
+**Đối chiếu từng ý với exact carousel đã khóa:** Caption phải bổ sung ít nhất một tiêu chí, điều kiện, cách phân biệt hoặc cách áp dụng **có ích và có căn cứ** mà các slide chưa trả lời. Đổi cách nói, đặt tên cho bước hiển nhiên hoặc lặp lại cảnh báo/giới hạn cũ không tính là giá trị mới. Không chứng minh được phần thêm → chưa PASS; viết lại, không tự sáng tạo claim cho đủ chiều sâu.
+
 ### 2. UNDERSTANDING
 
 Caption có thêm ít nhất một lớp phù hợp:
@@ -756,6 +758,8 @@ Người đọc có biết:
 - kiểm theo thứ tự nào;
 - hoặc áp logic vào trường hợp của mình ra sao?
 
+**Sơ đồ hay danh sách bước chỉ là mental model hữu ích khi làm rõ biến/tiêu chí cần xét hoặc quyết định thay đổi theo kết quả;** không tính riêng việc đặt nhãn các bước là self-application.
+
 ### 4. HUMAN VOICE
 
 Bỏ Title/hashtag đi, bài nghe giống:
@@ -774,6 +778,8 @@ Mọi insight có được Research Core hỗ trợ không?
 **Kiểm giá trị thực tế trước khi làm sâu câu chữ:** Với bài hướng dẫn/tự kiểm, đã đưa cách làm, điều kiện và bước tiếp theo **được xác minh** lên đủ sớm chưa? Nếu carousel đã hướng dẫn thao tác, Caption cần bổ sung cách hiểu/đối chiếu/giới hạn hữu ích thay vì kể lại các bước.
 
 Cắt các câu chỉ **lặp lại lý do phải quan tâm, cảnh báo hoặc trấn an** mà không thêm thông tin, điều kiện, giới hạn hay hành động mới. **Giữ** lưu ý thực sự cần để ngăn hiểu sai hoặc bảo toàn căn cứ pháp lý; không cắt chỉ để làm Caption ngắn.
+
+Nếu rewrite phát sinh nhận định mới về quyền, nghĩa vụ hoặc hệ quả pháp lý, phải có **chứng cứ cụ thể trong Research Core**; dẫn nguồn chung về tính năng/thủ tục hoặc diễn đạt dè dặt không thay được chứng cứ. Thiếu căn cứ thì bỏ hoặc xác minh bổ sung, không cho PASS.
 
 > **Không invent insight để làm bài có vẻ sâu.**
 
