@@ -1,8 +1,8 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.2  
+**Phiên bản:** 0.3  
 **Ngày cập nhật:** 08/10/2026  
-**Trạng thái:** Thử nghiệm — đã được test qua một case Facebook → TikTok thật  
+**Trạng thái:** Thử nghiệm — bổ sung Depth & Voice Review sau lesson từ case thực tế  
 **Phạm vi:** TikTok Photo Carousel gồm Title, chữ từng slide, Caption, Hashtag, concept ảnh, tạo ảnh và QA. Không bao gồm sản xuất video trừ khi user chủ động yêu cầu.
 
 ---
@@ -85,6 +85,42 @@ Và:
 Nếu không có Research Core trước đó, chạy research workflow chung trước rồi mới dùng playbook này.
 
 User không cần tự chọn mode. AI tự xác định từ context.
+
+## 2.3. Depth Target
+
+Sau khi kế thừa Research Core và chạy TikTok Delta Research, AI phải xác định một câu:
+
+> **Người đã hiểu carousel vẫn cần hiểu sâu thêm điều gì để có thể suy nghĩ hoặc tự kiểm đúng?**
+
+Đây là **Depth Target**.
+
+Depth Target:
+
+- không phải hook;
+- không phải CTA;
+- không phải thêm thật nhiều kiến thức;
+- không phải checkpoint cho user.
+
+Nó là tiêu chuẩn nội bộ để đánh giá Caption.
+
+Depth Target có thể thuộc:
+
+- mechanism;
+- condition;
+- implication;
+- exception;
+- decision model;
+- how-to-check.
+
+Không ép mọi bài phải có causal WHY.
+
+Với bài deadline/thủ tục/update, Depth Target có thể là:
+
+> **WHAT CHANGES / WHO IT CHANGES FOR / HOW TO CHECK / WHAT TO DO NEXT**
+
+Depth Target phải xuất phát từ Research Core hoặc dữ kiện đã verify.
+
+> **Không được tạo chiều sâu bằng suy đoán mục đích chính sách, nguyên nhân hoặc logic không có bằng chứng.**
 
 ---
 
@@ -290,6 +326,20 @@ Mỗi bài nên tự hỏi:
 
 Nếu hiểu sai có hậu quả thực tế, phải chặn nó sớm bằng câu cụ thể.
 
+Nếu dangerous misunderstanding là trọng tâm bài, chỉ nói:
+
+> **“đừng hiểu như vậy”**
+
+là chưa đủ.
+
+Khi evidence cho phép, phải giúp người đọc hiểu:
+
+1. vì sao cách hiểu đó có vẻ hợp lý;
+2. nó đang bỏ sót biến nào;
+3. logic đúng thay thế là gì.
+
+Không invent nguyên nhân ngoài nguồn chỉ để bài nghe sâu.
+
 ## 7.6. Actionability
 
 Caption phải cố trả lời:
@@ -305,6 +355,18 @@ Có thể là:
 - chờ đúng văn bản;
 - theo dõi cập nhật.
 
+### Mental model
+
+Giá trị cao hơn checklist là giúp người đọc biết **thứ tự suy nghĩ**.
+
+Ví dụ cấu trúc chung:
+
+> **xác định trường hợp → xác định biến quyết định → xác định kỳ/mẫu/quyền/nghĩa vụ → mới thao tác**
+
+Đây chỉ là dạng mental model, không phải template bắt buộc.
+
+Nếu bài có thể cho người đọc cách tự kiểm mà không làm quá bằng chứng, ưu tiên làm điều đó.
+
 ## 7.7. Mỗi đoạn phải có nhiệm vụ
 
 Nếu một đoạn không:
@@ -319,23 +381,93 @@ thì cân nhắc bỏ.
 
 Không khóa độ dài Caption. Có bài ngắn, có bài cần dài hơn để giữ evidence boundary. Không cắt chỉ vì “TikTok phải ngắn”.
 
+## 7.8. Opening block phải tự đứng được
+
+Caption được phép dài khi giá trị cần thiết đòi hỏi, nhưng opening block phải ngay lập tức cho đúng người lý do để đọc.
+
+Opening nên làm ít nhất một việc:
+
+- đặt đúng tình huống;
+- trả câu hỏi chính;
+- mở tension;
+- phá assumption.
+
+Không mở bằng:
+
+- “Theo quy định…”;
+- “Hiện nay…”;
+- “Trong bài viết này…”;
+
+nếu có cách đi thẳng vào vấn đề tốt hơn.
+
+> **Không cắt Caption chỉ vì định kiến “TikTok phải ngắn”. Độ dài do giá trị bổ sung quyết định.**
+
 ---
 
-# 8. Carousel và Caption phải bổ sung nhau
+# 8. CAROUSEL VÀ CAPTION — KNOWLEDGE GAIN DELTA
 
-> **Carousel kể theo bước. Caption giải thích thêm.**
+> **Carousel giúp người xem hiểu bài. Caption phải giúp người quan tâm hiểu sâu hơn.**
 
-Caption có thể lặp conflict chính ở đầu để giữ mạch, nhưng không đọc lại toàn bộ carousel.
+Carousel chịu trách nhiệm:
 
-Caption nên bổ sung những gì slide không đủ chỗ nói:
+- dẫn người xem qua các bước nhận thức;
+- làm rõ takeaway chính;
+- giữ nhịp vuốt.
 
+Caption chịu trách nhiệm mở thêm lớp:
+
+- vì sao nếu WHY là lớp cần thiết;
 - điều kiện;
 - ngoại lệ;
-- ranh giới bằng chứng;
-- giải thích;
-- việc nên làm.
+- cơ chế;
+- implication;
+- cách tự xác định trường hợp;
+- ranh giới kết luận;
+- hành động tiếp theo.
 
-Không bê nguyên caption Facebook sang TikTok. Cũng không cắt caption Facebook một cách cơ học rồi gọi đó là TikTok.
+Trước khi Caption được khóa, phải trả lời:
+
+> **Nếu người xem đã đọc hết carousel, họ học thêm được điều gì khi đọc Caption?**
+
+Nếu câu trả lời chỉ là:
+
+> **“chi tiết hơn một chút”**
+
+→ chưa đạt.
+
+Không bê nguyên Caption Facebook sang TikTok.
+
+Không nối các slide thành đoạn văn rồi gọi đó là Caption.
+
+> **Đừng chỉ cho người đọc kết luận. Hãy cho họ cách hiểu để tự đi đến kết luận đúng.**
+
+## 8.1. Depth không đồng nghĩa với dài
+
+> **Depth = thêm đúng lớp giải thích giúp người đọc hiểu bản chất.**
+
+Không phải:
+
+> **Depth = thêm nhiều kiến thức.**
+
+Không tự thêm:
+
+- lịch sử;
+- căn cứ dư thừa;
+- ngoại lệ không liên quan;
+- lý thuyết ngoài nhu cầu người đọc.
+
+Caption sâu nhưng gọn tốt hơn Caption dài nhưng loãng.
+
+Mỗi đoạn phải thêm ít nhất một giá trị mới:
+
+- mechanism;
+- condition;
+- implication;
+- misunderstanding;
+- mental model;
+- action.
+
+Đoạn chỉ đổi cách nói → bỏ.
 
 ---
 
@@ -404,7 +536,11 @@ Khi bàn giao, hashtag phải nằm **ngay cuối Caption**, không tạo block 
 
 # 12. Output chữ cho user
 
-Khi Caption đã được duyệt, output copy cuối chỉ cần:
+Chỉ Caption sau **T3B + user OK** mới là Final Caption để copy/paste.
+
+Caption ở T3A là Draft được user duyệt hướng, không phải output cuối.
+
+Output copy cuối chỉ cần:
 
 ## Block 1 — Tiêu đề TikTok
 
@@ -487,7 +623,7 @@ Khi tạo ảnh, AI tự kiểm:
 
 # 15. Workflow TikTok
 
-## T0 — Inheritance + Platform Delta Research — nội bộ, không xin OK
+## T0 — Inheritance + Delta Research + Depth Target — nội bộ, không xin OK
 
 Nếu có Research Core:
 
@@ -502,6 +638,8 @@ Nếu standalone:
 - dùng Research Core vừa hoàn tất;
 - chạy Delta Research như bình thường.
 
+Cuối T0 phải có **Depth Target** nội bộ.
+
 ## T1 — Title + Carousel Structure — xin OK
 
 Đưa:
@@ -512,6 +650,12 @@ Nếu standalone:
 - lý do ngắn cho cấu trúc.
 
 Chưa viết Caption.
+
+AI tự kiểm:
+
+- các slide có dẫn đúng tới Depth Target không;
+- carousel đã đủ để hiểu vấn đề cơ bản chưa;
+- phần nào nên để Caption giải thích sâu hơn thay vì nhồi lên slide.
 
 User nói **OK**:
 
@@ -524,32 +668,142 @@ User nói **OK**:
 
 Viết chữ hoàn chỉnh Slide 1 → Slide n.
 
+Không cố nhét toàn bộ Depth Target lên slide.
+
+> **Slide ngắn không phải vì TikTok cần ít chữ; slide ngắn vì mỗi slide chỉ nên gánh một bước nhận thức.**
+
 User nói **OK**:
 
 - khóa toàn bộ chữ carousel;
-- chạy T3 ngay.
+- chạy T3A ngay.
 
-## T3 — Caption hoàn chỉnh — xin OK
+## T3A — Caption Draft — xin OK hướng
 
-AI tự xử lý nội bộ:
+Caption Draft là bản đầy đủ đầu tiên.
 
-- keyword;
-- CTA;
-- hashtag research;
-- spacing;
-- emoji;
-- factual check;
-- evidence boundary.
+Không cố tình viết nông chỉ vì còn T3B.
+
+Baseline bắt buộc:
+
+- factual đúng;
+- evidence boundary đúng;
+- search language tự nhiên;
+- CTA đúng hướng;
+- hashtag phù hợp;
+- không lặp carousel máy móc;
+- người không chuyên hiểu được;
+- actionable.
 
 User chỉ nhận:
 
 - **Block Tiêu đề**
-- **Block Caption + hashtag**
+- **Block Caption Draft + hashtag**
 
 User nói **OK**:
 
-- khóa Caption/CTA;
-- tự QA text;
+> **HƯỚNG CAPTION ĐƯỢC DUYỆT — CHƯA KHÓA EXACT WORDING**
+
+Sau đó chuyển sang T3B.
+
+## T3B — Depth & Voice Review + Rewrite — xin OK final
+
+Đây là **một turn riêng với T3A**.
+
+AI phải đổi vai:
+
+> **writer → editor/reviewer**
+
+Không bảo vệ Draft.
+
+Review theo bốn lớp:
+
+> **ĐÚNG → RÕ → SÂU → CÓ HƠI NGƯỜI**
+
+Tầng trước đạt không có nghĩa tầng sau tự động đạt.
+
+### 1. NEW VALUE
+
+Caption thêm giá trị gì ngoài carousel?
+
+Nếu người đã xem hết carousel chỉ nhận lại cùng thông tin bằng nhiều chữ hơn → FAIL.
+
+### 2. UNDERSTANDING
+
+Caption có thêm ít nhất một lớp phù hợp:
+
+- mechanism;
+- condition;
+- implication;
+- exception;
+- decision model;
+- how-to-check?
+
+Không bắt mọi bài phải có causal WHY.
+
+### 3. SELF-APPLICATION
+
+Người đọc có biết:
+
+- phải nhìn vào biến nào;
+- kiểm theo thứ tự nào;
+- hoặc áp logic vào trường hợp của mình ra sao?
+
+### 4. HUMAN VOICE
+
+Bỏ Title/hashtag đi, bài nghe giống:
+
+- người có chuyên môn đang giải thích cho khách hàng;
+- hay tài liệu tổng hợp / công văn / AI summary?
+
+Nếu nghiêng về loại hai → FAIL.
+
+### 5. ECONOMY + EVIDENCE
+
+Mỗi đoạn có nhiệm vụ riêng không?
+
+Mọi insight có được Research Core hỗ trợ không?
+
+> **Không invent insight để làm bài có vẻ sâu.**
+
+### Opening Block Test
+
+Opening block phải tự đứng được và làm ít nhất một việc:
+
+- đặt đúng tình huống;
+- trả tension;
+- phá assumption;
+- đưa câu trả lời chính.
+
+### Depth Guardrail
+
+> **Depth = thêm đúng lớp giải thích giúp người đọc hiểu bản chất; không phải thêm nhiều kiến thức.**
+
+Nếu fail một gate quan trọng:
+
+> **rewrite trước khi trình user.**
+
+Chỉ trình khi đạt:
+
+> **CAPTION DEPTH PASS**
+
+### Output user thấy
+
+Một dòng ngắn:
+
+> **Bản sau Depth & Voice Review**
+
+Sau đó:
+
+- **Block Tiêu đề**
+- **Block Caption Final + hashtag**
+
+Không dump checklist review.
+
+User nói **OK**:
+
+- khóa exact Caption;
+- khóa exact CTA;
+- khóa hashtag;
 - chạy T4.
 
 ## T4 — Visual Concept — xin OK
@@ -661,6 +915,6 @@ Không dừng workflow chỉ vì không đọc được TikTok trực tiếp.
 
 # 20. Câu căn chỉnh cho AI
 
-> **Đừng viết TikTok như một caption Facebook ngắn hơn. Hãy xây một chuỗi vuốt có lý do: Title giúp người ta tìm thấy, Slide 1 khiến họ dừng, mỗi slide sau giúp họ hiểu thêm một bước, Caption bổ sung giá trị còn thiếu và Slide cuối giúp họ biết nên làm gì.**
+> **Đừng viết TikTok như một caption Facebook ngắn hơn. Carousel giúp người xem đi qua mạch chính; Caption phải tạo Knowledge Gain Delta cho người thật sự quan tâm. Viết Draft trước, rồi ở turn kế tiếp đổi vai thành editor: tìm chỗ đúng nhưng nông, chỗ chỉ lặp carousel, chỗ thiếu mechanism/condition/mental model hoặc còn giống tài liệu tổng hợp. Rewrite trước khi gọi Caption là Final. Sâu không có nghĩa nhiều chữ; sâu là giúp người đọc hiểu đúng bản chất bằng những gì Research Core thực sự hỗ trợ.**
 
-> **Không biến checklist nội bộ của AI thành công việc của user. AI tự kiểm những gì có thể tự kiểm; chỉ dừng xin OK ở những quyết định sáng tạo hoặc chiến lược thật sự cần người duyệt.**
+> **Không biến checklist nội bộ của AI thành công việc của user. T3A và T3B được tách thành hai turn vì writer và reviewer có nhiệm vụ khác nhau; user chỉ cần OK hướng Draft rồi OK Final Caption.**
