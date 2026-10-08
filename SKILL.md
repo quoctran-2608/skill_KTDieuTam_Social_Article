@@ -145,6 +145,7 @@ Sau pha research, AI phải giữ một package nội bộ dùng xuyên suốt c
 - Content opportunity
 - Approved angle
 - Time-sensitive items requiring refresh
+- Recommended Route / Content Worthiness
 
 Các factual/audience decision đã được duyệt trở thành **decision lock cấp content case**.
 
@@ -454,7 +455,7 @@ Output rất ngắn:
 
 Nếu topic vẫn Route A:
 
-> tiếp tục R2, không tạo thêm checkpoint.
+> tiếp tục **R1 Gate bình thường**, không tạo checkpoint riêng cho Premise Recheck.
 
 Nếu topic rơi rõ xuống Route B hoặc C và không còn phù hợp mục tiêu content ưu tiên:
 
