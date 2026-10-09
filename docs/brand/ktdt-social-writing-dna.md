@@ -1,7 +1,7 @@
 # DNA GIỌNG VĂN MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.6  
-**Ngày cập nhật:** 07/10/2026  
+**Phiên bản:** 0.7  
+**Ngày cập nhật:** 09/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Facebook, TikTok, Zalo, YouTube
 
@@ -193,6 +193,8 @@ Lời kêu gọi phải tương xứng với bài:
 - bình luận tình huống;
 - theo dõi phần tiếp theo;
 - nhắn Diệu Tâm khi cần xem trường hợp cụ thể.
+
+> **CTA là lời mời thực hiện một hành động chính, không phải nơi tóm tắt hoặc giải thích lại bài. Nếu cần câu chốt nội dung, hãy tách câu chốt khỏi CTA.**
 
 Không kết mọi bài bằng “liên hệ ngay”.
 
