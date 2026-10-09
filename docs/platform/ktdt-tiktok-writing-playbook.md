@@ -1,6 +1,6 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.7
+**Phiên bản:** 0.8
 **Ngày cập nhật:** 09/10/2026
 **Trạng thái:** Thử nghiệm — ưu tiên giá trị người xem và chuyển thể Facebook-first
 **Phạm vi:** Title, chữ carousel, Caption, hashtag, hình ảnh và QA cho TikTok Photo Carousel. Sản xuất video chỉ khi user yêu cầu rõ.
@@ -106,6 +106,8 @@ Nhịp thường hữu ích (không bắt buộc):
 
 Được rút câu dẫn, tính từ và phần giải thích không cần thiết; **không được rút tên mục hoặc thao tác thành một khẩu hiệu chung chung** nếu khiến người xem không tự làm được.
 
+**Với nội dung có nhiều thao tác:** sắp xếp theo trình tự để mắt quét nhanh; dùng số bước, nhãn ngắn hoặc mũi tên khi chúng giúp làm theo dễ hơn. Mỗi bước phải nói rõ **làm gì, ở đâu hoặc với thông tin nào** khi chi tiết đó cần thiết. Không bắt mọi bài phải có ba bước hay mỗi bước chỉ được một hành động.
+
 Thông tin dài nhưng bắt buộc phải hiểu đúng thì có thể chia ra hai slide hoặc chuyển phần giải thích bổ sung sang caption, **không được bỏ nội dung thiết yếu**. Một slide không cần tự chứa toàn bộ căn cứ pháp lý, nhưng không được khiến người đọc hiểu sai vì thiếu điều kiện quyết định.
 
 **Kiểm trước khi khóa slide:** Chỉ vuốt bộ ảnh này, người xem đã nhận được lời giải cho vấn đề Slide 1 nêu chưa? Có phần nào thiếu chi tiết quan trọng so với bài Facebook đã duyệt không?
@@ -122,6 +124,7 @@ Khi Facebook đã có caption tốt, **bắt đầu từ caption đó**. Giữ c
 - Trình bày tên mục, thao tác, đối tượng, mốc, số liệu và điều kiện **cụ thể, chính xác** khi chúng cần để người đọc hiểu hoặc làm đúng.
 - Nêu lưu ý thực sự ngăn hiểu sai, đặt gần thông tin liên quan. Không lặp cảnh báo hoặc trấn an bằng nhiều cách diễn đạt.
 - Mỗi đoạn mang một thông tin, lời giải thích, điều kiện hoặc bước tiếp theo có ích; bỏ đoạn chỉ diễn giải lại ý cũ.
+- **Với caption hướng dẫn:** ưu tiên đánh số/xuống dòng để người đọc tìm lại đúng bước cần làm; giữ cụm đường dẫn và tên nút rõ ràng, không biến quy trình thành tường chữ. Không ép đánh số với bài không có quy trình.
 - Độ dài do nhu cầu và bằng chứng quyết định; không ép ngắn, không thêm chiều sâu để kéo dài.
 - Có thể dùng sơ đồ/checklist khi làm việc dễ hiểu hơn; không dùng sơ đồ hiển nhiên chỉ để tạo cảm giác có “mental model”.
 - Mọi claim, hướng dẫn và hệ quả pháp lý phải được Research Core hỗ trợ. Không sáng tạo insight mới để làm khác Facebook hoặc carousel.
