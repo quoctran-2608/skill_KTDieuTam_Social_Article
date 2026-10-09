@@ -3,7 +3,7 @@
 **Phiên bản:** 0.20  
 **Ngày:** 09/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
-**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.7 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.8 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
 
 ---
 
