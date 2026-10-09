@@ -1,6 +1,6 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.19  
+**Phiên bản:** 0.20  
 **Ngày:** 09/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.7 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
@@ -236,6 +236,8 @@ Chỉ reopen khi:
 - user chủ động mở lại.
 
 > **Không sáng tạo lại chỉ vì AI nghĩ có thể “hay hơn”.**
+
+> **Khóa Hook là khóa câu chữ; emoji và định dạng trình bày quanh Hook thuộc packaging, trừ khi user đã khóa cụ thể.**
 
 ## TikTok Caption — Soft Lock và Hard Lock
 
@@ -804,7 +806,8 @@ Dừng chờ OK.
 - hook debt phải được trả sớm;
 - nói với một người thật trong tình huống thật;
 - cụ thể khi có thể;
-- CTA đúng bản đã khóa.
+- CTA đúng bản đã khóa;
+- áp dụng emoji theo Facebook playbook: nếu chủ đề phù hợp, Hook có emoji dẫn mắt và thân bài dùng emoji có chức năng tại các điểm chuyển ý quan trọng.
 
 Đưa bản viết và dừng chờ OK.
 
