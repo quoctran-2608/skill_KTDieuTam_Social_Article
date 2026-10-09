@@ -1,7 +1,7 @@
 # QUY CHUẨN CÂU MỞ ĐẦU MẠNG XÃ HỘI — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.5  
-**Ngày cập nhật:** 07/10/2026  
+**Phiên bản:** 0.6  
+**Ngày cập nhật:** 09/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Vai trò:** Giúp AI tìm và viết phần mở đầu ngắn, tự nhiên, có lực nhưng vẫn đúng bằng chứng.
 
@@ -11,318 +11,176 @@
 
 Một câu mở đầu tốt phải khiến đúng người có phản xạ:
 
-> **“Khoan, chuyện này liên quan đến mình — và mình muốn biết tiếp.”**
+> **“Chuyện này liên quan đến mình — và mình muốn biết tiếp.”**
 
-Không cần thể hiện hết chuyên môn ở câu đầu.
-
-Không cần tóm tắt toàn bài.
+Không cần thể hiện hết chuyên môn hoặc tóm tắt toàn bài ở câu đầu.
 
 Luật lõi:
 
-> **Lý do quan tâm thật + chi tiết vừa đủ + câu chữ tự nhiên.**
+> **Lý do quan tâm thật + chi tiết gánh lực + câu chữ người đọc tự nhiên dùng.**
 
-Lý do để dừng và đọc tiếp có thể là **câu hỏi thực tế cần giải đáp, thông tin/việc cần làm có giá trị ngay, hoặc một mâu thuẫn/rủi ro thật**. Không ép bài cập nhật hay hướng dẫn thành câu cảnh báo, nghịch lý chỉ để tạo attention; nếu có tension tự nhiên mạnh, vẫn khai thác.
+Lý do đọc tiếp có thể là:
 
----
+- một câu hỏi thật;
+- một việc cần biết/làm;
+- một mâu thuẫn hoặc rủi ro thật.
 
-# 2. Ba việc phải biết trước khi viết
-
-Trước khi nghĩ câu chữ, chỉ cần chốt 3 thứ:
-
-### 1. Người đọc đang cần hiểu, phân biệt hay làm gì?
-
-> “Câu hỏi hoặc việc thật của họ là: …”
-
-### 2. Vì sao đúng người nên quan tâm ngay?
-
-> “Điều hữu ích/đáng chú ý nhất bài này sẽ trả lời là: …”
-
-### 3. Chi tiết nào tạo sức nặng cho lý do quan tâm đó?
-
-Có thể là:
-
-- một con số;
-- một mốc thời gian;
-- một khoản tiền;
-- một từ chỉ phạm vi như “cả”, “trước”, “sau”;
-- một loại hồ sơ;
-- một hành động;
-- một tình huống.
-
-Không hỏi “chi tiết nào quan trọng với chủ đề?”. Hỏi:
-
-> **“Chi tiết nào làm câu hỏi, việc cần làm hoặc mâu thuẫn này rõ và đáng quan tâm hơn?”**
-
-Nếu bỏ chi tiết đó mà lực của câu giảm rõ → đó là chi tiết phải giữ.
-
-Nếu chưa có mâu thuẫn thật, có thể mở thẳng bằng câu hỏi/việc người đọc đang cần; đừng cố làm câu giật.
+Không ép bài hướng dẫn/cập nhật thành cảnh báo hoặc nghịch lý nếu bản thân thông tin đã đủ đáng đọc.
 
 ---
 
-# 3. Nguyên tắc quan trọng nhất
+# 2. Trước khi viết
 
-## Hook không phải bản tóm tắt thu nhỏ của bài
+Chốt 3 thứ:
 
-Đừng nhét vào câu mở đầu:
+1. **Người đọc đang cần hiểu, phân biệt hay làm gì?**
+2. **Vì sao họ nên quan tâm ngay?**
+3. **Chi tiết nào làm lý do đó có sức nặng?**
 
-- toàn bộ căn cứ;
-- tất cả điều kiện;
-- mọi ngoại lệ;
+Chi tiết gánh lực có thể là:
+
+- tiền;
+- mốc thời gian;
+- con số;
+- hồ sơ;
+- hành động;
+- một tình huống cụ thể;
+- từ thể hiện phạm vi/thời điểm làm thay đổi mâu thuẫn.
+
+Nếu bỏ chi tiết đó mà câu vẫn rõ và gần như không mất lực → thường không cần giữ trong Hook.
+
+---
+
+# 3. Hook không phải nơi chứa đủ context
+
+Hook chỉ cần chứa phần giúp đúng người:
+
+> **hiểu ngay vấn đề + có lý do đọc tiếp.**
+
+Không nhét vào Hook chỉ để bài “đủ thông tin”:
+
+- căn cứ;
+- bối cảnh dài;
+- mọi điều kiện/ngoại lệ;
 - thuật ngữ chuyên môn chưa cần;
 - phần giải thích mà thân bài sẽ trả lời.
 
-Chỉ mang vào:
+Nếu một chi tiết **cần cho bài chính xác nhưng không trực tiếp tạo lực cho câu mở đầu**, thử chuyển nó xuống câu kế tiếp, subheadline hoặc phần thân.
 
-> **những chi tiết khiến đúng người hiểu ngay bài sẽ giải quyết điều gì và vì sao đáng đọc.**
-
-Phần còn lại để thân bài trả lời.
+Ngoại lệ: nếu bỏ chi tiết đó làm thay đổi bản chất claim hoặc khiến người đọc hiểu sai phạm vi pháp lý → phải giữ.
 
 Nguyên tắc:
 
-> **Giữ chi tiết làm lý do đọc tiếp có sức nặng; với hook dựa trên mâu thuẫn, giữ đúng những từ đang gánh mâu thuẫn. Thêm chi tiết nếu làm câu rõ hơn mà không làm nặng câu.**
+> **Hook không cần đủ context; Hook cần đủ đúng và đủ lực.**
 
 ---
 
-# 4. Quy trình tạo câu mở đầu
+# 4. Quy trình tạo Hook
 
 ## Bước 1 — Chọn lý do quan tâm mạnh nhất
 
-Xác định người đọc muốn có câu trả lời, muốn tự đối chiếu hay cần biết việc phải làm. Nếu chính câu hỏi/mốc/việc cần làm đã đủ hấp dẫn, mở trực diện bằng nó.
+Nếu người đọc đã có một câu hỏi/việc cần làm đủ hấp dẫn → mở trực diện.
 
-Nếu chủ đề đã có một mâu thuẫn tự nhiên mạnh:
+Nếu có mâu thuẫn tự nhiên mạnh → đào sâu đúng mâu thuẫn đó, không bịa thêm tension.
 
-> **đào sâu mâu thuẫn đó.**
+## Bước 2 — Viết như người đọc tự nghĩ
 
-Không bắt buộc tìm thêm cơ chế khác chỉ để đa dạng.
+Ưu tiên tiếng Việt đời thường, cụ thể.
 
-Ví dụ bản chất:
+Tự hỏi:
 
-> quyền lợi áp dụng cho toàn kỳ  
-> nhưng một phần tiền đã được nộp từ trước.
+> **Câu này nghe giống điều người đọc tự hỏi, hay giống người có chuyên môn đang mô tả vấn đề cho họ?**
 
-Đây đã là một mâu thuẫn đủ mạnh.
+Nếu là vế sau → viết lại gần ngôn ngữ người đọc hơn.
 
-Trong ví dụ này, các từ thể hiện **phạm vi toàn kỳ** và **thời điểm đã nộp trước** chính là những từ gánh lực. Không được cắt chúng chỉ để câu ngắn hơn.
+Ưu tiên vật/việc nhìn thấy được như:
 
----
+- tiền;
+- hóa đơn;
+- hồ sơ;
+- ngày phải nộp;
+- việc phải làm;
 
-## Bước 2 — Viết như người đọc tự nói
-
-Ưu tiên ngôn ngữ đời thường:
-
-- “đã nộp rồi”;
-- “thì sao?”;
-- “có phải…?”;
-- “vậy phần này tính thế nào?”
-
-Tránh biến câu mở đầu thành câu thuyết minh pháp lý nếu chưa cần.
-
----
+thay cho khái niệm trừu tượng khi không làm mất độ chính xác.
 
 ## Bước 3 — Tạo 3–5 phương án
 
-Không cần sáu cơ chế khác nhau.
-
 Có thể giữ cùng một lý do quan tâm và thử:
 
-- câu khẳng định + câu hỏi;
-- đối lập hai vế;
+- câu hỏi trực tiếp;
+- hai vế đối lập;
 - tình huống ngắn;
-- một câu rất ngắn;
-- cách nói trực tiếp hơn.
+- câu khẳng định ngắn;
+- cách nói đời thường hơn.
 
-Chỉ đổi kiểu mở khi lý do quan tâm hiện tại chưa đủ rõ hoặc chưa đủ lực.
+Không cần cố tạo nhiều cơ chế khác nhau nếu một tension đã rõ.
 
----
+## Bước 4 — Cắt phần không làm việc
 
-## Bước 4 — Cắt
+Với mỗi phương án, hỏi:
 
-Với mỗi phương án, hỏi lần lượt:
+> **Phần này có trực tiếp làm câu rõ hơn, đúng hơn hoặc đáng đọc hơn không?**
 
-> **Từ này có đang làm câu hỏi, việc cần làm hoặc mâu thuẫn trở nên có lực không?**
+Nếu không, bỏ hoặc chuyển xuống câu sau.
 
-> **Từ này có làm câu rõ hoặc đáng tin hơn mà không làm nặng câu không?**
+Đặc biệt cắt/chuyển:
 
-> **Nếu bỏ nó, người đọc có hiểu hoặc quan tâm ít hơn không?**
-
-Chỉ bỏ khi câu vẫn đúng, vẫn rõ và vẫn giữ nguyên lực.
-
-Đặc biệt cắt:
-
+- context chỉ để “đủ bài”;
 - thuật ngữ chưa cần;
 - lời giải thích;
 - tính từ mạnh;
-- phần chứng minh;
-- từ nối hành chính.
+- từ nối hành chính;
+- phần chứng minh.
 
 Mục tiêu:
 
-> **câu gọn nhất vẫn giữ nguyên lực.**
+> **Ít chữ thừa nhất, không phải ít chữ nhất.**
 
-Không tối ưu cho “ít chữ nhất”.
-
-Tối ưu cho:
-
-> **ít chữ thừa nhất.**
-
----
-
-## Bước 5 — Chọn bằng 4 cửa
+## Bước 5 — Chọn bằng 5 cửa
 
 Không chấm điểm.
 
-Chỉ kiểm:
+1. **Hiểu ngay:** đúng người có hiểu trong một nhịp không?
+2. **Muốn biết tiếp:** có lý do thật để đọc tiếp không?
+3. **Tiếng người:** nghe như câu người đọc có thể nghĩ/nói không?
+4. **Đúng bằng chứng:** có mạnh hơn dữ kiện hoặc giấu điều kiện làm đổi bản chất không?
+5. **Thân bài trả được:** Hook mở món nợ nào, phần sau có trả đúng món nợ đó không?
 
-### Cửa 1 — Hiểu ngay
-
-Đúng người có hiểu trong một nhịp câu không?
-
-### Cửa 2 — Muốn biết tiếp
-
-Người đọc có lý do thật để đọc tiếp nhằm biết câu trả lời, điều kiện hoặc cách làm không?
-
-### Cửa 3 — Đúng bằng chứng
-
-Câu có hứa hoặc khẳng định quá mức không?
-
-Nếu có → loại.
-
-### Cửa 4 — Thân bài trả được
-
-Phần sau có trả đúng điều câu mở đầu đặt ra không?
-
-Nếu không → loại.
+Không đạt một cửa quan trọng → sửa hoặc loại.
 
 ---
 
-# 5. Cụ thể nhưng không nhồi chi tiết
-
-“Cụ thể” không có nghĩa là đưa càng nhiều số liệu càng tốt.
-
-Chi tiết trong câu mở đầu có ba loại:
-
-## Chi tiết gánh lực
-
-Nếu bỏ đi, sức nặng của câu hỏi/việc cần làm/mâu thuẫn yếu rõ.
-
-→ **Phải giữ.**
-
-## Chi tiết làm rõ
-
-Không tạo mâu thuẫn nhưng giúp câu chính xác, cụ thể hoặc đáng tin hơn mà gần như không làm nặng câu.
-
-→ **Có thể thêm.**
-
-## Chi tiết chỉ làm đầy đủ
-
-Đúng nhưng không làm người đọc hiểu hơn, quan tâm hơn hoặc tin hơn ở khoảnh khắc đầu.
-
-→ **Để xuống thân bài.**
-
-Nguyên tắc:
-
-> **Không phải càng ít chi tiết càng tốt. Phải giữ đúng chi tiết đang làm việc.**
-
-Một con số có thể đáng giữ nếu nó làm câu cụ thể hơn mà không phá nhịp.
-
-Một thuật ngữ có thể đáng bỏ nếu chỉ làm câu nghe chuyên môn hơn mà không thay đổi cách người đọc hiểu vấn đề.
-
----
-
-# 6. Khi nào dùng câu hỏi
-
-Câu hỏi tốt khi:
-
-- đó là câu hỏi người đọc thật sự có;
-- đáp án không hiển nhiên;
-- câu hỏi chứa tình huống đủ cụ thể.
-
-Không hỏi chỉ để tạo tò mò.
-
-Yếu:
-
-> “Bạn đã biết quy định mới chưa?”
-
-Tốt hơn về bản chất:
-
-> một câu hỏi đúng việc cần biết/tự đối chiếu, hoặc hai vế thật đang mâu thuẫn, bằng ngôn ngữ người đọc tự dùng.
-
----
-
-# 7. Hộp gợi ý khi bí
-
-Chỉ dùng khi chưa tìm được cách mở đủ rõ và có lực; không ép bài nào cũng phải có nghịch lý.
-
-Có thể thử nhìn chủ đề qua:
-
-- **ảo giác an toàn:** tưởng ổn nhưng chưa đủ để kết luận;
-- **hai con số trái nhau:** số này tốt nhưng số kia xấu;
-- **hiểu lầm:** quy tắc tưởng đơn giản nhưng còn điều kiện;
-- **chi phí ẩn:** tiết kiệm trước mắt nhưng tốn hơn về sau;
-- **độ trễ:** hôm nay chưa thấy nhưng hậu quả đến sau;
-- **sai thứ tự:** phản xạ đầu tiên không phải việc nên làm trước;
-- **mâu thuẫn quyết định:** hai bên nhìn cùng việc nhưng kết luận khác;
-- **cơ hội bỏ quên:** có lợi ích hoặc cách làm tốt hơn chưa được tận dụng.
-
-Đây là **gợi ý khi bí**, không phải checklist phải chạy qua.
-
----
-
-# 8. Những lỗi thường làm câu mở đầu yếu đi
+# 5. Những lỗi phải tránh
 
 Loại hoặc sửa khi thấy:
 
-- cố chứng minh chuyên môn ngay câu đầu;
-- thêm quá nhiều điều kiện;
-- dùng từ hành chính khi từ đời thường đã đủ;
+- cố chứng minh chuyên môn ở câu đầu;
+- nhét audience + bối cảnh + điều kiện + lời giải vào cùng một Hook;
+- dùng từ hành chính khi tiếng Việt bình thường đã đủ;
+- hỏi mơ hồ kiểu “Bạn đã biết quy định mới chưa?”;
 - giải thích luôn câu trả lời;
-- bịa nghịch lý để gây chú ý;
-- dùng “sốc”, “bí mật”, “100%”, “chắc chắn”;
-- hỏi mơ hồ;
-- đổi vài từ nhưng thực chất tạo nhiều câu giống nhau;
-- ép phải khác cơ chế dù một cơ chế đang rất mạnh.
+- bịa nghịch lý/rủi ro để gây chú ý;
+- dùng “sốc”, “bí mật”, “100%”, “chắc chắn” khi bằng chứng không cho phép;
+- tạo nhiều phương án chỉ bằng cách đổi vài từ.
+
+Câu mở đầu được phép sắc hơn văn bản hành chính nhưng **không được mạnh hơn bằng chứng**.
 
 ---
 
-# 9. Chống lặp
+# 6. Chống lặp
 
-Giọng có thể nhất quán nhưng cách vào bài không nên giống nhau liên tục.
+Khi có lịch sử bài gần đây, tránh dùng liên tục cùng:
 
-Khi có lịch sử bài gần đây, tránh dùng nhiều bài liên tiếp:
+- nhịp câu;
+- kiểu cảnh báo;
+- kiểu câu hỏi;
+- “nếu… thì…”;
+- cách mở bằng con số.
 
-- cùng nhịp câu;
-- cùng kiểu cảnh báo;
-- cùng một câu hỏi;
-- cùng “nếu… thì…”;
-- cùng kiểu mở bằng con số.
-
-Nhưng:
-
-> **không hy sinh câu hay chỉ để khác.**
-
-Nếu một cách mở là tốt nhất cho sự thật hiện tại, ưu tiên chất lượng trước.
+Nhưng không hy sinh câu tốt chỉ để khác.
 
 ---
 
-# 10. Ranh giới an toàn
+# 7. Câu căn chỉnh cho AI
 
-Câu mở đầu được phép sắc hơn văn bản hành chính.
-
-Không được:
-
-- mạnh hơn bằng chứng;
-- biến khả năng thành chắc chắn;
-- bịa số;
-- bịa hậu quả;
-- giấu điều kiện làm thay đổi bản chất;
-- tạo cảm giác chắc chắn sẽ được hoàn/giảm/xử lý theo một cách khi thủ tục chưa chốt.
-
-Nếu cần thêm một từ để tránh hiểu sai bản chất → thêm.
-
-Nếu chỉ thêm để câu nghe “chuyên nghiệp hơn” → thường nên bỏ.
-
----
-
-# 11. Câu căn chỉnh cho AI
-
-> **Tìm lý do đúng người cần đọc ngay: câu hỏi, việc cần biết/làm hoặc mâu thuẫn thật. Giữ chi tiết làm lý do ấy có lực; không ép căng thẳng khi một câu hỏi trực diện đã đủ hấp dẫn. Viết tự nhiên, không mạnh hơn bằng chứng.**
+> **Tìm lý do thật khiến đúng người muốn đọc. Viết như câu họ có thể tự nghĩ. Giữ chi tiết gánh lực; context không gánh lực thì chuyển xuống sau. Ít chữ thừa, không mạnh hơn bằng chứng.**
