@@ -1,7 +1,7 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.18  
-**Ngày:** 08/10/2026  
+**Phiên bản:** 0.19  
+**Ngày:** 09/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
 **Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.7 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
 
@@ -754,6 +754,7 @@ Dừng chờ OK.
 - xác định **lý do đúng người đọc cần quan tâm**: câu hỏi cần giải đáp, thông tin/việc cần làm hữu ích, hoặc mâu thuẫn thật;
 - giữ chi tiết gánh lực; **nếu có tension thật** thì giữ conflict-bearing words, không ép bài hướng dẫn/cập nhật thành cảnh báo;
 - tạo 3–5 hook;
+- trước khi chọn #1, thử chuyển xuống câu sau mọi context không trực tiếp tạo lực cho Hook và kiểm tra câu có giống điều người đọc tự nghĩ/nói hay không;
 - đề xuất #1.
 
 Dừng chờ OK.
@@ -781,9 +782,10 @@ Dừng chờ OK.
 
 ## F4 — CTA
 
-Đề xuất CTA chính phù hợp mục tiêu; với bài thuần thông tin, có thể đề xuất **không thêm CTA kêu gọi tương tác** nếu bài đã có kết thúc tự nhiên.
-
-Không mặc định bán dịch vụ.
+- Chọn **một hành động chính** phù hợp mục tiêu: lưu / gửi / theo dõi / bình luận / nhắn / không CTA.
+- CTA phải cho người đọc một **lý do cụ thể** để làm hành động đó.
+- **Không dùng CTA để tóm tắt hoặc giải thích lại bài**; nếu cần câu chốt nội dung/factual note, tách riêng.
+- Với bài thuần thông tin, có thể không thêm CTA nếu bài đã có kết thúc tự nhiên; không mặc định bán dịch vụ.
 
 Dừng chờ OK.
 
