@@ -275,7 +275,7 @@ Trước khi duyệt toàn bài, hỏi:
 8. Hashtag đã được research sau khi chốt nội dung chưa?
 9. Nếu bài là dạng ảnh, ảnh hoàn chỉnh đã được tạo và QA chưa?
 
-**F7 — kiểm tinh gọn trước PASS:** Với mỗi đoạn, thử bỏ nó: nếu không mất ý thiết yếu hoặc hành động, phải bỏ/gộp; nếu một câu có thể nói ngắn và gần lời nói thường ngày hơn mà không đổi nghĩa, hãy sửa. Đọc trên điện thoại để kiểm số đoạn và nhịp đọc. Không tăng số chữ chỉ để bài có vẻ chuyên sâu.
+**F7 — kiểm tinh gọn trước PASS:** Thử bỏ từng đoạn; nếu bỏ mà không mất giá trị hoặc hành động thì đoạn ấy cần gộp/bỏ. Đọc trên điện thoại để xem có câu hành chính, nhiều đoạn lặp hoặc tường chữ không. **Nếu caption/Hook/CTA đã được duyệt, F7 chỉ phát hiện và xin mở khóa đúng phần cần sửa; không tự đổi chữ đã khóa.** Không báo PASS khi còn lỗi biên tập rõ ràng.
 
 ---
 
