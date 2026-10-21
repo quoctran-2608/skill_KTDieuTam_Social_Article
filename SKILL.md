@@ -1,9 +1,9 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.21  
+**Phiên bản:** 0.22  
 **Ngày:** 21/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
-**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.9 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.10 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
 
 ---
 
@@ -809,7 +809,9 @@ Dừng chờ OK.
 - CTA đúng bản đã khóa;
 - áp dụng emoji theo Facebook playbook: nếu chủ đề phù hợp, Hook có emoji dẫn mắt và thân bài dùng emoji có chức năng tại các điểm chuyển ý quan trọng.
 
-Đưa bản viết và dừng chờ OK.
+**Biên tập hai lượt nội bộ ngay trong F5 (không thêm checkpoint):** lượt đầu viết đúng và đủ; lượt sau thử bỏ lời dẫn, gộp ý lặp, thay câu hành chính bằng lời tự nhiên, giảm số đoạn chỉ có tác dụng nhấn mạnh. Đối chiếu bản gọn với Research Core và các khóa đã duyệt: không mất kết luận, đối tượng, điều kiện, ngoại lệ, hành động, Hook/CTA/chữ ký/nguồn cần thiết. Nếu bản gọn vẫn đủ và dễ đọc hơn, **chọn bản gọn**; không rút bằng mọi giá hoặc trình cả hai bản.
+
+Đưa bản viết đã biên tập và dừng chờ OK.
 
 ---
 
@@ -842,6 +844,7 @@ AI tự kiểm:
 - spacing / emoji / CTA / hashtag;
 - chữ ảnh khớp caption;
 - **giá trị chính đến đủ sớm**; nếu bài hứa hướng dẫn/tự kiểm, người đọc có biết cách làm bằng các bước đã xác minh không; có đoạn nào chỉ nhắc lại cùng một cảnh báo không.
+- **Editorial compression QA:** thử bỏ từng câu/đoạn dẫn hoặc lặp; nếu bỏ mà vẫn đủ kết luận, điều kiện và việc cần làm thì đó là chữ thừa. Kiểm câu còn giọng hành chính khi có thể nói tự nhiên hơn. Nếu cần chỉnh **caption/Hook/CTA đã được user khóa**, phải báo xin mở đúng phần bị ảnh hưởng, **không âm thầm sửa tại F7**; chưa báo PASS khi còn lỗi biên tập rõ ràng.
 
 Nếu đạt:
 
@@ -995,7 +998,7 @@ User OK → khóa exact slide copy và chạy T3A ngay.
 
 ## T3A — CAPTION DRAFT — xin OK hướng
 
-**Mặc định bắt đầu từ caption Facebook đã duyệt**, nếu có. Nhưng phải biên tập lại theo nhiệm vụ của TikTok Photo Carousel: tránh biến Description thành bản kể lại từng slide hoặc lặp nguyên Title ở đầu khi không thêm giá trị. Có thể kế thừa gần nguyên văn chỉ khi thực sự gọn, rõ và hữu ích; không cắt mất điều kiện bắt buộc.
+**Mặc định kế thừa sự thật, điều kiện và câu chữ tốt từ Facebook — không kế thừa máy móc độ dài.** Description phải tự đủ để người chỉ đọc phần này hiểu kết luận, điều kiện/ngoại lệ làm thay đổi kết luận và việc cần làm; không bắt buộc kể lại mọi slide, ví dụ hay lặp Title. Chỉ giữ gần nguyên văn caption Facebook nếu đã thật sự gọn và phù hợp TikTok.
 
 Caption Draft phải:
 - trả lời điều Title/Slide 1 hứa; đưa giá trị chính lên sớm;
@@ -1004,7 +1007,7 @@ Caption Draft phải:
 - tránh ý lặp, cảnh báo giả, hoặc viết khác Facebook chỉ để tạo mới;
 - có CTA/hashtag phù hợp, không ép độ dài hay chiều sâu bổ sung.
 
-Draft phải đáng dùng ngay, không cố viết nông để chờ T3B.
+Ngay T3A, tự thử gộp ý trùng và giảm câu dẫn để Draft đáng dùng ngay; không cố viết dài hoặc viết nông để chờ T3B.
 
 ### Output user thấy
 **Block 1 — Tiêu đề TikTok**
@@ -1027,7 +1030,7 @@ User OK → **SOFT LOCK:** duyệt hướng caption, không khóa nguyên văn; 
 3. Rõ, tự nhiên, không lặp hoặc cắt mất chi tiết thực tế?
 4. Đúng nguồn và giới hạn bằng chứng, không tạo claim mới thiếu căn cứ?
 
-Nếu có lỗi → **sửa đúng chỗ sai**; nếu Draft đã tốt → giữ nguyên hoặc chỉnh rất ít. Không tạo Depth Target, Knowledge Gain Delta hoặc mental model chỉ để đạt PASS. Không tự tuyên bố đạt nếu thiếu giá trị thiết yếu.
+**Trước khi báo PASS, bắt buộc thử bản Description tinh gọn nội bộ**: bỏ/gộp câu dẫn, cảnh báo lặp, ví dụ đã rõ và chữ hành chính; so lại với Research Core, Title, carousel và decision lock. Nếu bản ngắn hơn vẫn tự đủ, đúng luật và dễ đọc hơn thì **chọn bản ngắn hơn**. Nếu rút làm mất điều kiện, ngoại lệ hoặc thao tác thiết yếu thì giữ phần cần thiết. Không tạo Depth Target, Knowledge Gain Delta hoặc mental model chỉ để đạt PASS; không tự tuyên bố đạt khi còn chữ thừa rõ ràng hoặc thiếu giá trị.
 
 Nếu exact slide copy đã khóa có lỗi factual hoặc thiếu dữ liệu thiết yếu đến mức gây hiểu sai/hụt lời hứa, **không âm thầm sửa slide đã khóa**: báo đúng chỗ cần mở lại theo Decision Lock.
 

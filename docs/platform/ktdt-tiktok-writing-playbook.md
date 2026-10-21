@@ -1,6 +1,6 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.9
+**Phiên bản:** 0.10
 **Ngày cập nhật:** 21/10/2026
 **Trạng thái:** Thử nghiệm — ưu tiên giá trị người xem và chuyển thể Facebook-first
 **Phạm vi:** Title, chữ carousel, Caption, hashtag, hình ảnh và QA cho TikTok Photo Carousel. Sản xuất video chỉ khi user yêu cầu rõ.
@@ -118,16 +118,16 @@ Thông tin dài nhưng bắt buộc phải hiểu đúng thì có thể chia ra 
 
 # 6. Viết caption: đọc riêng vẫn hữu ích
 
-> **Đọc caption mà chưa xem slide, người đọc vẫn phải hiểu được việc chính bài đang nói.**
+> **Đọc Description riêng vẫn hiểu đúng câu trả lời, điều kiện/ngoại lệ quan trọng và việc cần làm — không cần đọc lại toàn bộ carousel.**
 
-Khi Facebook đã có caption tốt, **bắt đầu từ caption đó**. Giữ cả những bước hoặc điều kiện thiết yếu đã giải thích rõ. Chỉ biên tập cho ngữ cảnh TikTok khi thật sự tăng khả năng đọc/hiểu, không mặc định viết bản khác hoàn toàn.
+Khi Facebook đã có caption tốt, **kế thừa kết luận, điều kiện và câu chữ tốt, không mặc định kế thừa độ dài**. Description không phải bản thu nhỏ từng đoạn của Facebook hay bản kể lại mọi slide; ưu tiên câu trả lời, điều kiện thật sự làm thay đổi kết luận và hành động hữu ích.
 
 - Mở trực diện bằng nhu cầu/câu hỏi thật; trả lời hoặc hướng dẫn đủ sớm.
 - Trình bày tên mục, thao tác, đối tượng, mốc, số liệu và điều kiện **cụ thể, chính xác** khi chúng cần để người đọc hiểu hoặc làm đúng.
 - Nêu lưu ý thực sự ngăn hiểu sai, đặt gần thông tin liên quan. Không lặp cảnh báo hoặc trấn an bằng nhiều cách diễn đạt.
 - Mỗi đoạn mang một thông tin, lời giải thích, điều kiện hoặc bước tiếp theo có ích; bỏ đoạn chỉ diễn giải lại ý cũ.
 - **Với caption hướng dẫn:** ưu tiên đánh số/xuống dòng để người đọc tìm lại đúng bước cần làm; giữ cụm đường dẫn và tên nút rõ ràng, không biến quy trình thành tường chữ. Không ép đánh số với bài không có quy trình.
-- Độ dài do nhu cầu và bằng chứng quyết định; không ép ngắn, không thêm chiều sâu để kéo dài. Với bài giáo dục khoảng 5–7 slide, có thể **tham khảo ban đầu 600–1.200 ký tự** cho Description, **không phải chuẩn nền tảng, giới hạn cứng hay lời hứa hiệu quả**; được dài hơn khi điều kiện pháp lý hoặc thao tác thực sự cần. Ưu tiên bỏ phần kể lại từng slide, câu mở đầu trùng Title và diễn giải lặp trước khi cắt thông tin làm thay đổi kết luận.
+- Độ dài do nhu cầu và bằng chứng quyết định; không ép ngắn, không thêm chiều sâu để kéo dài. Với bài giáo dục khoảng 5–7 slide, có thể **tham khảo ban đầu 600–1.200 ký tự** cho Description, **không phải độ dài mục tiêu, mức tối thiểu, giới hạn cứng hay lời hứa hiệu quả**; được ngắn hoặc dài hơn tùy nội dung thực sự cần. Ưu tiên bỏ phần kể lại từng slide, câu mở đầu trùng Title và diễn giải lặp trước khi cắt thông tin làm thay đổi kết luận.
 - Có thể dùng sơ đồ/checklist khi làm việc dễ hiểu hơn; không dùng sơ đồ hiển nhiên chỉ để tạo cảm giác có “mental model”.
 - Mọi claim, hướng dẫn và hệ quả pháp lý phải được Research Core hỗ trợ. Không sáng tạo insight mới để làm khác Facebook hoặc carousel.
 
@@ -153,7 +153,7 @@ Không dùng “Knowledge Gain Delta” hay “Depth Target” làm điều ki�
 3. **Rõ và tự nhiên:** có chữ giật gân, câu dẫn thừa, ý lặp, từ chung chung; hoặc ngược lại, cắt quá tay mất thông tin không?
 4. **Đúng bằng chứng:** mọi điều kiện, số liệu, thao tác và nhận định mới (nhất là quyền, nghĩa vụ, hệ quả pháp lý) có căn cứ phù hợp không?
 
-Nếu có lỗi, sửa **đúng lỗi** trước khi trình. Nếu Draft đã tốt, được phép giữ nguyên hoặc chỉnh rất ít. **Không tự báo PASS chỉ vì checklist đã được điền**, không sáng tác claim mới để tạo khác biệt. Việc T3A và T3B diễn ra ở hai lượt cùng các khóa quyết định do SKILL.md điều phối.
+**Trước khi báo T3B PASS, bắt buộc thử một bản Description gọn hơn trong nội bộ:** bỏ câu dẫn, cảnh báo lặp, ví dụ chỉ nhắc lại carousel và cụm từ hành chính; đối chiếu lại từng điều kiện, ngoại lệ, mốc, CTA, nguồn, chữ ký và các khóa đã duyệt. Nếu bản ngắn hơn vẫn tự đủ, đúng và dễ đọc hơn thì chọn nó; nếu mất giá trị thiết yếu thì giữ phần cần thiết. Không tự PASS chỉ vì đủ dữ kiện hay điền xong checklist. Không sinh claim mới để tạo khác biệt; T3A và T3B vẫn là hai lượt với khóa quyết định do SKILL.md điều phối.
 
 ---
 
