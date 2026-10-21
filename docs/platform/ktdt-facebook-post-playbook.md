@@ -1,7 +1,7 @@
 # FACEBOOK POST PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.6  
-**Ngày cập nhật:** 08/10/2026  
+**Phiên bản:** 0.7  
+**Ngày cập nhật:** 21/10/2026  
 **Trạng thái:** Đang thử nghiệm  
 **Phạm vi:** Bài Facebook dạng ảnh, gồm nội dung organic và creative có thể dùng để chạy quảng cáo.
 
@@ -107,6 +107,8 @@ Với bài cập nhật quy định, tự kiểm hoặc hướng dẫn thủ t�
 - **Trả lời sớm** bằng kết luận, ngưỡng, bước kiểm tra hoặc mốc cần nhớ; thân bài chia theo **trường hợp hoặc việc người đọc cần làm**, không theo thứ tự người viết muốn kể.
 - Đặt **điều kiện, ngoại lệ và giới hạn** ngay cạnh thông tin liên quan; chỉ viết thao tác cụ thể khi đã được research xác minh.
 - **Cắt câu dẫn kịch tính hoặc đoạn nhắc lại cùng một rủi ro** nếu không thêm hiểu biết hoặc hành động. Ngắn là kết quả của bỏ phần thừa, không phải mục tiêu độ dài.
+
+**Biên tập hai lượt ngay tại F5:** sau bản đúng/đủ, thử bản tinh gọn: bỏ lời dẫn không tạo giá trị, gộp các lần giải thích cùng một kết luận, nói tự nhiên thay cho câu hành chính. Chọn bản ít chữ thừa hơn **chỉ khi** vẫn giữ đúng người áp dụng, mốc, điều kiện, ngoại lệ, kết luận và bước làm; không cắt pháp lý để chạy theo số ký tự.
 
 Khi bài liên quan quy định và có căn cứ đã xác minh, ưu tiên ghi **Nguồn/Căn cứ** cùng **ngày cập nhật** gọn ở cuối; không tự bịa nguồn.
 
@@ -272,6 +274,8 @@ Trước khi duyệt toàn bài, hỏi:
 7. CTA có khớp mục tiêu bài không?
 8. Hashtag đã được research sau khi chốt nội dung chưa?
 9. Nếu bài là dạng ảnh, ảnh hoàn chỉnh đã được tạo và QA chưa?
+
+**F7 — kiểm tinh gọn trước PASS:** Với mỗi đoạn, thử bỏ nó: nếu không mất ý thiết yếu hoặc hành động, phải bỏ/gộp; nếu một câu có thể nói ngắn và gần lời nói thường ngày hơn mà không đổi nghĩa, hãy sửa. Đọc trên điện thoại để kiểm số đoạn và nhịp đọc. Không tăng số chữ chỉ để bài có vẻ chuyên sâu.
 
 ---
 
