@@ -1,9 +1,9 @@
 # KẾ TOÁN DIỆU TÂM — SOCIAL CONTENT SKILL
 
-**Phiên bản:** 0.20  
-**Ngày:** 09/10/2026  
+**Phiên bản:** 0.21  
+**Ngày:** 21/10/2026  
 **Vai trò:** Runtime orchestrator cho content case đa nền tảng  
-**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.8 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
+**Trạng thái:** Đang phát triển — Facebook dạng ảnh đã test thực tế; TikTok Photo Carousel v0.9 đang thử nghiệm theo hướng Facebook-first, rõ giá trị người xem; TikTok video production chưa khóa.
 
 ---
 
@@ -989,12 +989,13 @@ Viết exact text Slide 1 → Slide n, đọc tốt trên điện thoại.
 - Không ép mâu thuẫn; nếu tension thật có sức nặng thì giữ chi tiết quan trọng.
 - Không tự thêm claim hay làm mạnh hơn bằng chứng.
 - So với Facebook đã duyệt, **không làm rơi thông tin quan trọng** khi chuyển thành carousel.
+- **Quick-Grasp QA nội bộ:** nhìn tiêu đề/điểm nhấn đã hiểu slide nói gì; đọc một lượt nắm được kết luận/điều kiện/bước làm; câu dài và ký hiệu mốc doanh thu không gây khựng. Diễn đạt ngưỡng tự nhiên, rõ biên (ví dụ “trên 1 tỷ đến 3 tỷ”) nhưng không bỏ điều kiện pháp lý để rút chữ.
 
 User OK → khóa exact slide copy và chạy T3A ngay.
 
 ## T3A — CAPTION DRAFT — xin OK hướng
 
-**Mặc định bắt đầu từ caption Facebook đã duyệt**, nếu có. Có thể kế thừa gần nguyên văn khi đã rõ, đúng và phù hợp TikTok. Chỉ biên tập chỗ thật sự giúp đọc tốt hơn.
+**Mặc định bắt đầu từ caption Facebook đã duyệt**, nếu có. Nhưng phải biên tập lại theo nhiệm vụ của TikTok Photo Carousel: tránh biến Description thành bản kể lại từng slide hoặc lặp nguyên Title ở đầu khi không thêm giá trị. Có thể kế thừa gần nguyên văn chỉ khi thực sự gọn, rõ và hữu ích; không cắt mất điều kiện bắt buộc.
 
 Caption Draft phải:
 - trả lời điều Title/Slide 1 hứa; đưa giá trị chính lên sớm;
@@ -1008,7 +1009,7 @@ Draft phải đáng dùng ngay, không cố viết nông để chờ T3B.
 ### Output user thấy
 **Block 1 — Tiêu đề TikTok**
 
-**Block 2 — Caption Draft + hashtag**
+**Block 2 — Description Draft + hashtag**
 
 User OK → **SOFT LOCK:** duyệt hướng caption, không khóa nguyên văn; chạy T3B ngay ở lượt tiếp.
 
@@ -1039,7 +1040,7 @@ Một dòng ngắn: **Bản caption sau biên tập cuối**
 
 **Block 1 — Tiêu đề TikTok**
 
-**Block 2 — Caption Final + hashtag**
+**Block 2 — Description Final + hashtag**
 
 Không dump checklist QA. User OK → HARD LOCK exact Caption/CTA/hashtag; sang T4.
 
@@ -1049,7 +1050,7 @@ Không dump checklist QA. User OK → HARD LOCK exact Caption/CTA/hashtag; sang 
 
 Đề xuất gọn tỷ lệ, concept, typography, bố cục, độ dễ đọc và cách thể hiện exact slide copy đã khóa.
 
-Mặc định **9:16, không logo, không tên thương hiệu trên ảnh**. Không khóa template/màu/font cho mọi bài; cùng bộ ảnh có hệ thị giác nhất quán nhưng bố cục từng slide có thể khác.
+Mặc định **9:16, không logo, không tên thương hiệu trên ảnh**. Không khóa template/màu/font cho mọi bài; cùng bộ ảnh có hệ thị giác nhất quán nhưng bố cục từng slide có thể khác. Với carousel từ 3 slide, đề xuất navigation `1/N` đến `N/N` ở vị trí nhất quán, trừ khi mẫu hoặc giao diện đã có chỉ báo tương đương gây rối. Minh họa phải làm rõ thông tin, không chiếm chỗ đọc chỉ để trang trí.
 
 User OK → tạo toàn bộ carousel ở T5; không hỏi lại từng slide.
 
@@ -1057,12 +1058,12 @@ User OK → tạo toàn bộ carousel ở T5; không hỏi lại từng slide.
 
 ## T5 — Generate + QA + TikTok Handoff
 
-AI tự:
-1. tạo toàn bộ carousel theo thứ tự đã duyệt;
-2. QA exact text, dấu tiếng Việt, số, căn cứ, khả năng đọc trên điện thoại, contrast, safe zone;
-3. QA mạch nội dung, không thiếu bước hoặc slide chỉ lặp vô ích;
-4. sửa lỗi khách quan rõ trước khi bàn giao;
-5. bàn giao **bộ ảnh + Block Title + Block Caption Final (chữ ký/nguồn/hashtag)**.
+AI tự tạo bộ carousel đã duyệt và chạy **ba vòng QA nội bộ, không tạo gate mới**:
+1. **Accuracy:** con số, mốc thời gian, trạng thái đề xuất/hiệu lực, điều kiện, ngoại lệ và căn cứ; refresh đúng phần có thể đổi theo thời gian.
+2. **Communication:** mỗi slide dễ nắm qua tiêu đề/điểm nhấn, đọc một lượt hiểu; mật độ chữ, minh họa có chức năng, contrast và safe zone phù hợp điện thoại.
+3. **Production:** đối chiếu **chính ảnh xuất ra** với exact slide copy đã khóa (dấu tiếng Việt, số, từng câu; không thêm nhãn/chữ không duyệt), đủ N ảnh đúng thứ tự và navigation `1/N…N/N` nếu dùng; xác minh tỷ lệ **và kích thước pixel thực tế**, định dạng, khả năng truy cập file. Nếu có thể, bàn giao PNG theo thứ tự và ZIP tiện tải.
+
+Tự sửa lỗi khách quan trong phạm vi được phép; nếu buộc đổi chữ đã khóa thì xin mở đúng phần bị ảnh hưởng. Nếu AI sinh chữ sai liên tiếp, ưu tiên chèn chữ bằng công cụ bố cục kiểm soát được; **không tuyên bố T5 PASS khi file chưa đạt**. Bàn giao **bộ ảnh + Block Title + Block Description Final (chữ ký/nguồn/hashtag)**.
 
 Không tự thêm logo/tên thương hiệu lên ảnh. Với ảnh AI, nhắc user kiểm tra yêu cầu gắn nhãn nội dung AI của TikTok khi đăng.
 
