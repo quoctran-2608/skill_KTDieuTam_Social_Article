@@ -844,7 +844,7 @@ AI tự kiểm:
 - spacing / emoji / CTA / hashtag;
 - chữ ảnh khớp caption;
 - **giá trị chính đến đủ sớm**; nếu bài hứa hướng dẫn/tự kiểm, người đọc có biết cách làm bằng các bước đã xác minh không; có đoạn nào chỉ nhắc lại cùng một cảnh báo không.
-- **Editorial compression QA:** thử bỏ từng câu/đoạn dẫn hoặc lặp: nếu bỏ mà người đọc vẫn hiểu đúng, biết điều kiện và cách làm thì phải bỏ/gộp. Kiểm tra câu nào còn giọng văn bản hành chính dù có thể nói tự nhiên hơn. Không PASS chỉ vì đủ thông tin nếu còn phần thừa rõ ràng.
+- **Editorial compression QA:** thử bỏ từng câu/đoạn dẫn hoặc lặp; nếu bỏ mà vẫn đủ kết luận, điều kiện và việc cần làm thì đó là chữ thừa. Kiểm câu còn giọng hành chính khi có thể nói tự nhiên hơn. Nếu cần chỉnh **caption/Hook/CTA đã được user khóa**, phải báo xin mở đúng phần bị ảnh hưởng, **không âm thầm sửa tại F7**; chưa báo PASS khi còn lỗi biên tập rõ ràng.
 
 Nếu đạt:
 
