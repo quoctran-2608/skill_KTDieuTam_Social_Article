@@ -1,7 +1,7 @@
 # TIKTOK PHOTO CAROUSEL PLAYBOOK — KẾ TOÁN DIỆU TÂM
 
-**Phiên bản:** 0.8
-**Ngày cập nhật:** 09/10/2026
+**Phiên bản:** 0.9
+**Ngày cập nhật:** 21/10/2026
 **Trạng thái:** Thử nghiệm — ưu tiên giá trị người xem và chuyển thể Facebook-first
 **Phạm vi:** Title, chữ carousel, Caption, hashtag, hình ảnh và QA cho TikTok Photo Carousel. Sản xuất video chỉ khi user yêu cầu rõ.
 
@@ -75,7 +75,7 @@ Các nhóm trên chỉ là gợi ý chọn thông tin, **không phải template*
 
 # 4. Title và Slide 1: khác nhiệm vụ, cùng lời hứa
 
-**Title** giúp người xem và công cụ tìm kiếm nhận diện đúng chủ đề. Dùng từ khóa hoặc cách nói người xem thực sự có thể tìm, nhưng không nhồi SEO.
+**Title** giúp người xem và công cụ tìm kiếm nhận diện đúng chủ đề. Dùng từ khóa hoặc cách nói người xem thực sự có thể tìm, nhưng không nhồi SEO. Với bài đăng ảnh, Title và Description là **hai trường nhập liệu riêng**: không mặc định chép nguyên Title thành câu mở đầu Description nếu chỉ tạo trùng lặp.
 
 **Slide 1** cho đúng người một lý do để dừng và vuốt tiếp: câu hỏi cần giải đáp, thông tin/việc cần làm thực tế, hoặc mâu thuẫn thật.
 
@@ -112,6 +112,8 @@ Thông tin dài nhưng bắt buộc phải hiểu đúng thì có thể chia ra 
 
 **Kiểm trước khi khóa slide:** Chỉ vuốt bộ ảnh này, người xem đã nhận được lời giải cho vấn đề Slide 1 nêu chưa? Có phần nào thiếu chi tiết quan trọng so với bài Facebook đã duyệt không?
 
+**Quick-Grasp QA:** chỉ nhìn tiêu đề và phần nhấn đã biết slide nói gì; đọc một lượt hiểu kết luận/điều kiện/hành động; không phải đọc lại vì nhiều tầng thuật ngữ hoặc khoảng doanh thu ghi tắt khó hiểu. Với các mốc như “trên 1–3 tỷ”, ưu tiên diễn đạt tự nhiên và đúng biên, ví dụ “trên 1 tỷ đến 3 tỷ”. Không đặt giới hạn cứng số từ/slide; nếu nội dung thiết yếu quá dày, điều chỉnh bố cục hoặc chia ý trước khi khóa T2.
+
 ---
 
 # 6. Viết caption: đọc riêng vẫn hữu ích
@@ -125,7 +127,7 @@ Khi Facebook đã có caption tốt, **bắt đầu từ caption đó**. Giữ c
 - Nêu lưu ý thực sự ngăn hiểu sai, đặt gần thông tin liên quan. Không lặp cảnh báo hoặc trấn an bằng nhiều cách diễn đạt.
 - Mỗi đoạn mang một thông tin, lời giải thích, điều kiện hoặc bước tiếp theo có ích; bỏ đoạn chỉ diễn giải lại ý cũ.
 - **Với caption hướng dẫn:** ưu tiên đánh số/xuống dòng để người đọc tìm lại đúng bước cần làm; giữ cụm đường dẫn và tên nút rõ ràng, không biến quy trình thành tường chữ. Không ép đánh số với bài không có quy trình.
-- Độ dài do nhu cầu và bằng chứng quyết định; không ép ngắn, không thêm chiều sâu để kéo dài.
+- Độ dài do nhu cầu và bằng chứng quyết định; không ép ngắn, không thêm chiều sâu để kéo dài. Với bài giáo dục khoảng 5–7 slide, có thể **tham khảo ban đầu 600–1.200 ký tự** cho Description, **không phải chuẩn nền tảng, giới hạn cứng hay lời hứa hiệu quả**; được dài hơn khi điều kiện pháp lý hoặc thao tác thực sự cần. Ưu tiên bỏ phần kể lại từng slide, câu mở đầu trùng Title và diễn giải lặp trước khi cắt thông tin làm thay đổi kết luận.
 - Có thể dùng sơ đồ/checklist khi làm việc dễ hiểu hơn; không dùng sơ đồ hiển nhiên chỉ để tạo cảm giác có “mental model”.
 - Mọi claim, hướng dẫn và hệ quả pháp lý phải được Research Core hỗ trợ. Không sáng tạo insight mới để làm khác Facebook hoặc carousel.
 
@@ -173,17 +175,19 @@ Không tự chèn chữ ký/tên thương hiệu lên Title, cover, ảnh hoặc
 
 ## 8.3. Bàn giao chữ
 
-Hai block copy cuối:
-1. **Tiêu đề TikTok** — Title hoàn chỉnh.
-2. **Caption TikTok hoàn chỉnh + hashtag** — gồm phần chữ ký và nguồn nếu có.
+TikTok Photo Carousel có **hai trường để dán riêng**; bàn giao đúng hai block:
+1. **Tiêu đề TikTok — Title:** nội dung trường tiêu đề hoàn chỉnh.
+2. **Mô tả TikTok — Description:** caption hoàn chỉnh kèm CTA (nếu có), chữ ký, nguồn/ngày cập nhật (khi cần) và hashtag ở cuối.
 
-Không bắt user tự ghép keyword, CTA, SEO note, hashtag hoặc checklist QA. Caption Draft ở T3A chỉ duyệt hướng; Final Caption được khóa sau T3B + user OK theo SKILL.md.
+Không lặp Title ở đầu Description chỉ để đủ mẫu, không bắt user tự ghép keyword, CTA, SEO note hoặc hashtag. T3A chỉ duyệt hướng; T3B + user OK mới HARD LOCK Description. Kiểm giới hạn kỹ thuật hiện hành bằng tài liệu đáng tin trước bàn giao khi cần.
 
 ## 8.4. Visual mặc định
 
 Ảnh carousel mặc định **dọc 9:16, slide 1 làm cover, không logo và không tên thương hiệu trên ảnh**. Nếu user yêu cầu logo, làm theo logo user cung cấp và quyết định được duyệt.
 
-Không khóa màu, font, background hay template. Giữ **một hệ thị giác nhất quán** giữa các ảnh; bố cục mỗi slide được phép khác nhau theo nội dung.
+Không khóa màu, font, background hay template. Giữ **một hệ thị giác nhất quán** giữa các ảnh; bố cục mỗi slide được phép khác nhau theo nội dung. **Minh họa có nhiệm vụ** thu hút, giải thích, phân biệt, hướng dẫn hoặc giúp nhớ; bỏ yếu tố trang trí lặp không thêm giá trị. Không mặc định lặp hình cửa hàng/tiền xu/biểu đồ tăng trưởng ở mọi slide hoặc dùng hình ngụ ý hệ quả chưa có căn cứ.
+
+Với bộ từ **3 slide trở lên**, mặc định đề xuất chỉ báo vị trí `1/N, 2/N, … N/N` ở vị trí/kích cỡ nhất quán, đủ rõ mà không lấn nội dung; có thể bỏ khi người dùng chọn khác hoặc giao diện/mẫu đã có chỉ báo tương đương gây rối. Chỉ báo và nhãn phụ không được tự thay đổi exact slide copy đã khóa.
 
 Đặt headline và các thông tin quan trọng trong vùng dễ nhìn, tránh mép và vùng giao diện TikTok có thể che; đủ tương phản, cỡ chữ đọc được trên điện thoại. Không tự tạo màn hình ứng dụng hoặc dữ liệu giả khiến người đọc hiểu là ảnh chụp thật.
 
@@ -197,13 +201,12 @@ Không khóa màu, font, background hay template. Giữ **một hệ thị giác
 - Chỉ xem slide hoặc chỉ đọc caption có hiểu được điều chính?
 - Có lời dẫn/cảnh báo lặp, claim mạnh hơn bằng chứng hoặc chiều sâu không có nguồn?
 
-**QA hình ảnh — trước bàn giao:**
-- exact text đã duyệt, dấu tiếng Việt, mã số/con số và trình tự slide đều đúng;
-- đọc tốt trên điện thoại, độ tương phản và safe zone ổn;
-- không logo/tên thương hiệu ngoài ý muốn, không artifact làm sai nội dung;
-- slide nối ý rõ, không thiếu hoặc thừa bước cần thiết, hệ thị giác thống nhất.
+**QA hình ảnh — ba vòng nội bộ trước bàn giao (không thêm checkpoint):**
+- **Accuracy:** kiểm con số, điều kiện, ngoại lệ, hiệu lực/dự thảo, nguồn và những gì có thể đổi theo thời điểm; không tự làm mạnh kết luận.
+- **Communication:** người xem hiểu nhanh tiêu đề/điểm nhấn và kết luận mỗi slide; mật độ chữ, minh họa, độ tương phản, vùng an toàn đều phục vụ đọc trên điện thoại.
+- **Production:** so từng ảnh **thực tế** với exact slide copy đã khóa: đúng từng chữ, dấu tiếng Việt, con số, thứ tự; không thêm/chế nhãn chữ chỉ để đẹp. Nếu có navigation, đủ và đúng `1/N` đến `N/N`; kiểm đủ số ảnh, tỷ lệ **lẫn pixel thực tế**, định dạng và khả năng mở/tải file. Nếu làm được, bàn giao PNG tuần tự và ZIP cả bộ.
 
-Nếu phát hiện lỗi khách quan như sai chữ, sai dấu, factual mismatch hoặc bố cục che thông tin, sửa trước khi bàn giao theo decision lock.
+Lỗi khách quan trong phạm vi đã duyệt phải sửa trước bàn giao. Nếu chỉnh sửa làm đổi quyết định/wording đã khóa, báo xin mở đúng phạm vi. Nếu ảnh AI liên tục sai chữ, chọn cách chèn chữ có kiểm soát thay vì PASS hình còn lỗi. Không báo T5 PASS khi file xuất chưa đạt.
 
 Ảnh tạo bằng AI: khi handoff nhắc user kiểm tra yêu cầu gắn nhãn nội dung AI của TikTok tại thời điểm đăng. Không tạo checkpoint riêng cho việc này.
 
